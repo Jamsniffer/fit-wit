@@ -1,2 +1,4 @@
 DROP DATABASE IF EXISTS dataBase_db;
+
 CREATE DATABASE dataBase_db;
+
