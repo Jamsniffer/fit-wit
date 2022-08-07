@@ -2,21 +2,29 @@
 
 <section>
 
-    <div class="wrapper">
+<div class="wrapper">
     <div class="top_navbar">
-        <input type="button" 
-        <a href="#"></a>
-        </div>
+        <nav>
+            {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}       
+        </nav>       
+     </div>
+
     <div class="sidebar">
         {{!-- profile image and text --}}
         <!--menu items-->
          <div class="home">
                 <img src="">
                 <h3>Home</h3>
+                
                 <a href="#" class="active"></a>
                    <span class="icon"><i class="fas fa-home"></i></span>
                         <span class="item">Home</span>
-
+                        <button id="home-btn" class="btn-no-style">Logout</button>
+                        <a href="/homepage">Home</a>
 <ul>
                 {{!-- <li>
                     <a href="#" class="active">
@@ -29,6 +37,7 @@
                     <a href="#">
                         <span class="icon"><i class="fas fa-user-friends"></i></span>
                         <span class="item">People</span>
+                        
                     </a>
                 </li>
                 <li>
