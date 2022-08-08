@@ -22,19 +22,17 @@
         {{!-- profile image and text --}}
         <!--menu items-->
          <div class="home">
-            <h3>Home</h3>
+            <a href="/homepage"><h1>Home</h1></a>           
         </div>
         
         <div class="profile">
                 <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png">
-                <h1>Username</h1>
+                <h4>Username</h4>
                 </div>
                 <a href="#" class="active"></a>
-                   <span class="icon"><i class="fas fa-home"></i></span>
-                        <span class="item">Home</span>
-                        <button id="home-btn" class="btn-no-style">Logout</button>
-                        <a href="/homepage">Home</a>
-            <ul>
+                   <span class="icon"><i class="fas fa-home"></i></span>                               
+                
+                <ul>
                 {{!-- <li>
                     <a href="#" class="active">
                         <span class="icon"><i class="fas fa-home"></i></span>
@@ -45,26 +43,27 @@
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-user-friends"></i></span>
-                        <span class="item">Total Exercises</span>
-                        
-                    </a>
+                        <a href="/user-dashboard">Number of Exercises</a>       
+                  
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
-                        <span class="item">Finish Selection</span>
+                    <a href="/user-dashboard">Finsh Up</a>  
+                        
+                        {{!-- <span class="item">Finish Selection</span> --}}
                     </a>
                 </li>
                   <li>
                     <a href="#">
-                        <span class="icon"><i class="fas fa-desktop"></i></span>
-                        <span class="item">My Dashboard</span>
+                       <span class="icon"><i class="fas fa-desktop"></i></span>
+                       <a href="/user-dashboard">Go to Dashboard</a>  
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <span class="icon"><i class="fas fa-chart-line"></i></span>
-                        <span class="item">Tips for Safety</span>
+                       <a href="/safety">Tips for Safety</a>  
                     </a>
                 </li>
 
