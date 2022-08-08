@@ -1,5 +1,2 @@
-// const Post = require("./");
+// import all models
 
-// module.exports = {
-//     Post 
-// }
