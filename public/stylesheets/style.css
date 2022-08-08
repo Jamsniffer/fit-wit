@@ -9,6 +9,34 @@ box-sizing: border-box;
 font-family: sans-serif;
 }
 
+/*cart styling*/
+.cart__activate,
+.cart_content {
+    position: fixed;
+    bottom: 20px;
+    right: 5%;
+    transition: transform .3s;
+}
+.cart--empty .cart__activate,
+.cart--empty .cart__load { /*hide cart*/
+    transform: translateY(150px);
+}
+
+.cart__design {
+    z-index: 2;
+    box-shadow: 0 5px 23px black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-height: 70px;
+    min-width: 70px;
+    transition: height .3s .1s, width .3s .1s, box-shadow .2s;
+    background: white;
+}
+
+.cart--open .cart__layout
+
+
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
