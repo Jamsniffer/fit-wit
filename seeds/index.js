@@ -1,6 +1,9 @@
 const seedBodyBuilding = require("./bodybuildingSeed");
 const seedCalisthenics = require("./calisthenicsSeed");
 const seedCardio = require("./cardioSeed");
+const seedCrossfit = require("./crossfitSeed");
+const seedPowerlifting = require("./powerLiftingSeed");
+const seedWeightlifting = require("./weightLiftingSeed");
 
 const sequelize = require("../config/connection");
 
@@ -16,6 +19,15 @@ const seedAll = async () => {
 
   await seedCardio();
   console.log("\n----- CARDIO EXERCISES SEEDED -----\n");
+
+  await seedCrossfit();
+  console.log("\n----- CROSSFIT EXERCISES SEEDED -----\n");
+
+  await seedPowerlifting();
+  console.log("\n----- POWERLIFTING EXERCISES SEEDED -----\n");
+
+  await seedWeightlifting();
+  console.log("\n----- WEIGHTLIFTING EXERCISES SEEDED -----\n");
 
   process.exit(0);
 };
