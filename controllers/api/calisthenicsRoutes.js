@@ -1,31 +1,69 @@
 //import model here 
-//const { x } = require(../../models)
-
 const router = require('express').Router();
+const { Calisthenics } = require('../../models/Calisthenics');
 
-router.get('/', (req, res) => {
+router.get('/', async (req, res) => {
     //find all
-    res.send('made it to get')
+    Calisthenics.findAll().then((calisthenicsData) => {
+        res.json(calisthenicsData);
+    })
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    res.send('made it to get by id')
+    Calisthenics.findByPk(req.params.id).then((calisthenicsData) => {
+        res.json(calisthenicsData);
+    });
 });
 
 router.post('/', (req, res) => {
-   //add to api
-   res.send('made it to post')
+    //add to api
+    Calisthenics.create(req.body)
+        .then((newCalisthenics) => {
+            res.json(newCalisthenics);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
 });
 
 router.put('/:id', (req, res) => {
-   //update by id
-   res.send('made it to put')
+    //update by id
+    Calisthenics.update(
+        {
+            // All the fields you can update and the data attached to the request body.
+            name: req.body.name,
+            description: req.body.description
+        },
+        {
+            where: {
+                calisthenics_id: req.params.calisthenics_id,
+            },
+        }
+    )
+        .then((updatedCalisthenics) => {
+            res.json(updatedCalisthenics);
+        })
+        .catch((err) => {
+            console.log(err);
+            res.json(err);
+        })
 });
 
 router.delete('/:id', (req, res) => {
     //delete by id
     res.send('made it to delete')
+    Calisthenics.destroy({
+        where: {
+            calisthenics_id: req.params.calisthenics_id,
+        },
+    })
+        .then((deletedCalisthenics) => {
+            res.json(deletedCalisthenics);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
 });
 
 module.exports = router

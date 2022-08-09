@@ -1,30 +1,69 @@
 //import model here 
 const router = require('express').Router();
-const { Bodybuilding } = require('../../models');
+const { Bodybuilding } = require('../../models/Bodybuilding');
 
 router.get('/', async (req, res) => {
     //find all
-    res.status(200).json(bodybuildingdata)
+    Bodybuilding.findAll().then((BodybuildingData) => {
+        res.json(BodybuildingData);
+    })
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    res.send('made it to get by id')
+    Bodybuilding.findByPk(req.params.id).then((BodybuildingData) => {
+        res.json(BodybuildingData);
+    });
 });
 
 router.post('/', (req, res) => {
-   //add to api
-   res.send('made it to post')
+    //add to api
+    Bodybuilding.create(req.body)
+        .then((newBodybuilding) => {
+            res.json(newBodybuilding);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
 });
 
 router.put('/:id', (req, res) => {
-   //update by id
-   res.send('made it to put')
+    //update by id
+    Bodybuilding.update(
+        {
+            // All the fields you can update and the data attached to the request body.
+            name: req.body.name,
+            description: req.body.description
+        },
+        {
+            where: {
+                bodybuilding_id: req.params.bodybuilding_id,
+            },
+        }
+    )
+        .then((updatedBodybuilding) => {
+            res.json(updatedBodybuilding);
+        })
+        .catch((err) => {
+            console.log(err);
+            res.json(err);
+        })
 });
 
 router.delete('/:id', (req, res) => {
     //delete by id
     res.send('made it to delete')
+    Bodybuilding.destroy({
+        where: {
+            bodybuilding_id: req.params.bodybuilding_id,
+        },
+    })
+        .then((deletedBodybuilding) => {
+            res.json(deletedBodybuilding);
+        })
+        .catch((err) => {
+            res.json(err);
+        });
 });
 
 module.exports = router
