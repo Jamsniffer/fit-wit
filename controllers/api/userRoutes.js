@@ -1,12 +1,11 @@
 //import model here 
 //const { x } = require(../../models)
-const { Bodybuilding } = require('../../models';)
 
 const router = require('express').Router();
 
-router.get('/', async (req, res) => {
+router.get('/', (req, res) => {
     //find all
-    res.status(200).json(bodybuildingdata)
+    res.send('made it to get')
 });
 
 router.get('/:id', (req, res) => {
