@@ -24,11 +24,12 @@
          <div class="home">
             <a href="/homepage"><h1>Home</h1></a>           
         </div>
-        
-        <div class="profile">
-                <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png">
-                <h4>Username</h4>
+                {{#if loggedIn}}
+                <div class="profile">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png">
+                    <h4>Username</h4>
                 </div>
+                {{/if}}
                 <a href="#" class="active"></a>
                    <span class="icon"><i class="fas fa-home"></i></span>                               
                 
