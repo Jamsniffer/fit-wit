@@ -2,7 +2,7 @@ const { Crossfit } = require("../models/Crossfit");
 
 const crossfitData = [
   {
-    exercise_name: "",
+    exercise_name: "Bur",
     description: "",
   },
   {
