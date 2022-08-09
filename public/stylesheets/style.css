@@ -104,11 +104,29 @@ padding: 0;
 }
 
 .login {
+    position: relative;
     font-family: sans-serif;
-    background-color: darkblue;
-    
-    color: whitesmoke;
+    background-color: rgb(195, 195, 228);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    border-radius: 14%;
+    left: 59vw;
+    min-height: 1.3em;
+    min-width: 2.5em;
+    font-weight: 600;
+}
 
+.sign_up {
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(195, 195, 228);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    border-radius: 14%;
+    left: 45vw;
+    min-height: 1.3em;
+    min-width: 2.5em;
+    font-weight: 600;
 }
 
 .wrapper .nav_container .top_nav{
