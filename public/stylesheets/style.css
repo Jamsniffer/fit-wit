@@ -30,23 +30,88 @@ body {
 
 .title {
     min-width: 25ch;
+    padding-top: 1rem;
 }
 .exercise-display-box {
     display: grid;
     grid-template-columns: 10rem;
     grid-template-rows: 2rem;
     background-color: rgb(188, 186, 186);
-    width: 3rem;
-    height: 3rem;
-    padding: 3rem;
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
 }
 
 /* .exercise-container > *.exercise-container {
     flex: 1 1 30%;
 } */
 
+.heading-texts {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.title label {
+    padding-top: 1rem;
+}
+
+
+.marvel {
+    font-size: xx-large;
+}
+
+.marvel-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 23rem;
+    top: -19.3rem;
+}
+
+.marvel-heroes li {
+    width: 41vw;
+}
+
+.exercise-option {
+    float: right;
+}
+
+.exercise-choice-container {
+    display: grid;
+    grid-template-rows: 2rem;
+}
 
 .exercise-container {
+    /* grid-template-rows: 63px 303px; */
+    display: grid;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* min-height: calc(100vh - 50px); */
+    max-width: 80vw;
+    margin: auto;
+    padding: 1em 1em;
+    float: right;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.exercise-container2 {
     display: flex;
     flex-wrap: wrap;
     /* min-height: calc(100vh - 50px); */
@@ -57,9 +122,19 @@ body {
     flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
-    /* margin: auto; */
+    margin: auto;
     float: right;
     width: 70%;
+}
+
+.exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 3rem;
+    height: 3rem;
+    padding: 1em 1em;
 }
 
 
