@@ -18,18 +18,48 @@ body {
     margin:auto;
     float:right;
 } */
+/* .sidebar > *.sidebar {
+    flex: 1 1 70%;
+} */
+
+/* .box-choice-container {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+} */
+
+.title {
+    min-width: 25ch;
+}
+.exercise-display-box {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 3rem;
+    height: 3rem;
+    padding: 3rem;
+}
+
+/* .exercise-container > *.exercise-container {
+    flex: 1 1 30%;
+} */
+
 
 .exercise-container {
     display: flex;
-    min-height: calc(100vh - 50px);
+    flex-wrap: wrap;
+    /* min-height: calc(100vh - 50px); */
     max-width: 80vw;
     margin:auto;
+    padding: 0 1em;
     float:right;
     flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
     /* margin: auto; */
     float: right;
+    width: 70%;
 }
 
 
@@ -50,8 +80,15 @@ header a{
 header a:hover{
 	color: #a2ecff;
 } 
+
+.sidebar > * {
+    flex-basis: 100%;
+}
+
 .sidebar {
     display: flex;
+    flex-wrap: wrap;
+    margin: auto;
     background: rgb(7, 105, 185);
     position: fixed;
     top: 0;
@@ -62,7 +99,10 @@ header a:hover{
     padding: 20px 0;
     transition: all 0.5s ease;
     float:left;
+    width: 30%;
+    min-width: 25ch; /*sets to number of characters based on font size*/
 }
+
 .sidebar .home {
     margin-bottom: 28px;
     text-align: center;
