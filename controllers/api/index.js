@@ -6,6 +6,7 @@ const crossfitRoutes = require('./crossfitRoutes');
 const powerLiftingRoutes = require('./powerLiftingRoutes');
 const weightLiftingRoutes = require('./weightLiftingRoutes');
 
+
 router.use('/bodybuilding', bodybuildingRoutes);
 router.use('/calisthenics', calisthenicsRoutes);
 router.use('/cardio', cardioRoutes);
