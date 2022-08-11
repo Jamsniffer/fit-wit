@@ -1,0 +1,23 @@
+.infoDiv {
+    border: 2px solid white;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+    display: flex;
+}
+
+.title {
+    color: white;
+}
+
+.info {
+    color: white;
+    font-size: 100%;
+    padding: 0%;
+}
+
+.backArrow {
+    width: 7%;
+    cursor: pointer;
+    filter: invert(1);
+}

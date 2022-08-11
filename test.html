@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
+    <link rel="stylesheet" href="./public/stylesheets/workout-list.css">
+    <link rel="stylesheet" href="./public/stylesheets/chosen-exercise.css">
     <title>Document</title>
 </head>
 
@@ -16,12 +17,10 @@
     </div>
 
     <div class="modal">
-
         <div class="finishWorkoutDiv">
             <span class="close">&times;</span>
             <h1 class="finishWorkoutH1"></h1>
         </div>
-
     </div>
 
     <!-- {{!-- this button should take the user back to the page where you can choose workouts and keep the workouts the user
@@ -31,7 +30,6 @@
         <img class="plusBtn" src="./assets/images/plus-sign-button.svg">
         <button class="addBtn">Add an exercise</button>
     </section>
-
 
     <!-- {{!-- multiple of these sections below will be generated depending on how many exercises user chooses --}}
     {{!-- all info related to workout will also be generated depending on user input --}} -->
@@ -57,12 +55,12 @@
         </div>
     </section>
 
-
     <div class="finishWorkout">
         <button class="finishBtn">Finish Workout</button>
     </div>
 
     <script src="./public/javascript/full-workout-list.js"></script>
+    <script src="./public/javascript/chosen-exercise.js"></script>
 </body>
 
 </html>
