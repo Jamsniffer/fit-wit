@@ -1,4 +1,4 @@
-const { Cardio } = require("../models");
+const { Cardio } = require("../models/Cardio");
 
 const cardioData = [
   {

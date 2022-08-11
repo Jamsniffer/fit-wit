@@ -1,4 +1,4 @@
-const { Powerlifting } = require("../models/PowerLifting");
+const PowerLifting = require("../models/PowerLifting");
 
 const powerLiftingData = [
   {
@@ -23,6 +23,6 @@ const powerLiftingData = [
   },
 ];
 
-const seedPowerlifting = () => Powerlifting.bulkCreate(powerLiftingData);
+const seedPowerlifting = () => PowerLifting.bulkCreate(powerLiftingData);
 
 module.exports = seedPowerlifting;
