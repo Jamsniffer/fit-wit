@@ -37,9 +37,20 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     margin: 1em;
 }
 
-/* .exercise-container > *.exercise-container {
-    flex: 1 1 30%;
-} */
+.exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
+}
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
 .heading-texts {
     padding: 1em 3em;
@@ -73,7 +84,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 23rem;
+    left: 22rem;
     top: -19.3rem;
 }
 
@@ -136,8 +147,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 23rem;
-    /* top: 1.4rem; */
+    left: 22rem;
+    top: -19rem;
 }
 
 .dc-heroes li {
@@ -180,20 +191,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font-weight: 700;
     margin: auto;
 }
-.exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    /* margin: 1em; */
-}
 
-/* harley quinn margot robbie when hover
-https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
-harley quinn comic 
-https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
 
  header{
