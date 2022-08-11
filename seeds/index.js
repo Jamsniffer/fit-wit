@@ -2,7 +2,7 @@
 // const seedCalisthenics = require("./calisthenicsSeed");
 // const seedCardio = require("./cardioSeed");
 // const seedCrossfit = require("./crossfitSeed");
-const seedPowerlifting = require("./powerliftingSeed");
+const seedPowerlifting = require("./powerLiftingSeed");
 // const seedWeightlifting = require("./weightLiftingSeed");
 
 const sequelize = require("../config/connection");

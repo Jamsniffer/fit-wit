@@ -1,6 +1,6 @@
-const { Model, DataTypes } = require('sequelize');
-const bcrypt = require('bcrypt');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const bcrypt = require("bcrypt");
+const sequelize = require("../config/connection");
 
 class User extends Model {
   checkPassword(loginPw) {
@@ -35,6 +35,27 @@ User.init(
         len: [20],
       },
     },
+    workouts: [
+      {
+        name:DataTypes.STRING,
+        exercises: [
+          {
+            name: DataTypes.STRING,
+            reps: 3,
+            weight: {
+              type: DataTypes.INTEGER,
+              allowNull: true,
+            },
+            time: {
+              type: DataTypes.TIME,
+              allowNull: true,
+            },
+          },
+        ],
+        allowNull: true
+      },
+    ],
+    allowNull: true
   },
   {
     hooks: {
@@ -47,7 +68,7 @@ User.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'user',
+    modelName: "user",
   }
 );
 

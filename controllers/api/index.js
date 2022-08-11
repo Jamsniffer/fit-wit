@@ -6,11 +6,12 @@ const crossfitRoutes = require('./crossfitRoutes');
 const powerLiftingRoutes = require('./powerLiftingRoutes');
 const weightLiftingRoutes = require('./weightLiftingRoutes');
 
+
 router.use('/bodybuilding', bodybuildingRoutes);
 router.use('/calisthenics', calisthenicsRoutes);
 router.use('/cardio', cardioRoutes);
 router.use('/crossfit', crossfitRoutes);
-router.use('/powerLifting', powerLiftingRoutes);
-router.use('/weightLifting', weightLiftingRoutes);
+router.use('/powerlifting', powerLiftingRoutes);
+router.use('/weightlifting', weightLiftingRoutes);
 
 module.exports = router
