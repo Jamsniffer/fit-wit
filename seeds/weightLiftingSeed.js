@@ -1,4 +1,4 @@
-const { Weightlifting } = require("../models/WeightLifting");
+const Weightlifting = require("../models/WeightLifting");
 
 const weightLiftingData = [
   {
@@ -6,7 +6,7 @@ const weightLiftingData = [
     description: "Chest Press Description",
   },
   {
-    exercise_name: "DeAdlift",
+    exercise_name: "Deadlift",
     description: "Deadlift Description",
   },
   {

@@ -1,18 +1,28 @@
 //import model here 
 const router = require('express').Router();
-const { Bodybuilding } = require('../../models/Bodybuilding');
+const Bodybuilding = require('../../models/Bodybuilding');
 
 router.get('/', async (req, res) => {
     //find all
-    Bodybuilding.findAll().then((BodybuildingData) => {
+    Bodybuilding.findAll()
+    .then((BodybuildingData) => {
         res.json(BodybuildingData);
     })
+    .catch(err => {
+        console.log('error/ bodybuilding:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Bodybuilding.findByPk(req.params.id).then((BodybuildingData) => {
+    Bodybuilding.findByPk(req.params.id)
+    .then((BodybuildingData) => {
         res.json(BodybuildingData);
+    })
+    .catch(err => {
+        console.log('error/ bodybuilding:', err)
+        res.status(500).json(err);
     });
 });
 
@@ -47,7 +57,7 @@ router.put('/:id', (req, res) => {
         .catch((err) => {
             console.log(err);
             res.json(err);
-        })
+        });
 });
 
 router.delete('/:id', (req, res) => {

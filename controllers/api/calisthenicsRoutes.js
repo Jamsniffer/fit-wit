@@ -1,18 +1,28 @@
 //import model here 
 const router = require('express').Router();
-const { Calisthenics } = require('../../models/Calisthenics');
+const  Calisthenics = require('../../models/Calisthenics');
 
 router.get('/', async (req, res) => {
     //find all
-    Calisthenics.findAll().then((calisthenicsData) => {
+    Calisthenics.findAll()
+    .then((calisthenicsData) => {
         res.json(calisthenicsData);
     })
+    .catch(err => {
+        console.log('error/ calisthenics:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Calisthenics.findByPk(req.params.id).then((calisthenicsData) => {
+    Calisthenics.findByPk(req.params.id)
+    .then((calisthenicsData) => {
         res.json(calisthenicsData);
+    })
+    .catch(err => {
+        console.log('error/ calisthenics:', err)
+        res.status(500).json(err);
     });
 });
 
@@ -47,7 +57,7 @@ router.put('/:id', (req, res) => {
         .catch((err) => {
             console.log(err);
             res.json(err);
-        })
+        });
 });
 
 router.delete('/:id', (req, res) => {

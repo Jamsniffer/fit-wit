@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class PowerLifting extends Model {}
+class PowerLifting extends Model { }
 
 PowerLifting.init(
   {
@@ -18,6 +18,18 @@ PowerLifting.init(
     description: {
       type: DataTypes.STRING,
     },
+    sets: {
+      type: DataTypes.INTEGER,
+      defaultValue: 3
+    },
+    reps: {
+      type: DataTypes.INTEGER,
+      defaultValue: 10
+    },
+    weight: {
+      type: DataTypes.INTEGER,
+      defaultValue: 30
+    }
   },
   {
     sequelize,

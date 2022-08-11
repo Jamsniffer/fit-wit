@@ -1,18 +1,28 @@
 //import model here 
 const router = require('express').Router();
-const { Crossfit } = require('../../models/Crossfit');
+const Crossfit = require('../../models/Crossfit');
 
 router.get('/', async (req, res) => {
     //find all
-    Crossfit.findAll().then((crossfitData) => {
+    Crossfit.findAll()
+    .then((crossfitData) => {
         res.json(crossfitData);
     })
+    .catch(err => {
+        console.log('error/ crossfit:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Crossfit.findByPk(req.params.id).then((crossfitData) => {
+    Crossfit.findByPk(req.params.id)
+    .then((crossfitData) => {
         res.json(crossfitData);
+    })
+    .catch(err => {
+        console.log('error/ crossfit:', err)
+        res.status(500).json(err);
     });
 });
 
