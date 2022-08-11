@@ -17,19 +17,19 @@ PowerLifting.init(
     },
     description: {
       type: DataTypes.STRING,
-    },
-    sets: {
-      type: DataTypes.INTEGER,
-      defaultValue: 3
-    },
-    reps: {
-      type: DataTypes.INTEGER,
-      defaultValue: 10
-    },
-    weight: {
-      type: DataTypes.INTEGER,
-      defaultValue: 30
     }
+    // sets: {
+    //   type: DataTypes.INTEGER,
+    //   defaultValue: 3
+    // },
+    // reps: {
+    //   type: DataTypes.INTEGER,
+    //   defaultValue: 10
+    // },
+    // weight: {
+    //   type: DataTypes.INTEGER,
+    //   defaultValue: 30
+    // }
   },
   {
     sequelize,
