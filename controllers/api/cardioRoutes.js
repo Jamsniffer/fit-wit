@@ -1,18 +1,28 @@
 //import model here 
 const router = require('express').Router();
-const { Cardio } = require('../../models/Cardio');
+const Cardio = require('../../models/Cardio');
 
 router.get('/', async (req, res) => {
     //find all
-    Cardio.findAll().then((cardioData) => {
+    Cardio.findAll()
+    .then((cardioData) => {
         res.json(cardioData);
     })
+    .catch(err => {
+        console.log('error/ cardio:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Cardio.findByPk(req.params.id).then((cardioData) => {
+    Cardio.findByPk(req.params.id)
+    .then((cardioData) => {
         res.json(cardioData);
+    })
+    .catch(err => {
+        console.log('error/ cardio:', err)
+        res.status(500).json(err);
     });
 });
 
@@ -47,7 +57,7 @@ router.put('/:id', (req, res) => {
         .catch((err) => {
             console.log(err);
             res.json(err);
-        })
+        });
 });
 
 router.delete('/:id', (req, res) => {

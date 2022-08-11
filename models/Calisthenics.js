@@ -12,10 +12,23 @@ Calisthenics.init(
             autoIncrement: true
         },
         exercise_name: {
-            type: DataTypes.STRING
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         description: {
             type: DataTypes.STRING
+        },
+        sets: {
+            type: DataTypes.INTEGER,
+            defaultValue: 3
+        },
+        reps: {
+            type: DataTypes.INTEGER,
+            defaultValue: 10
+        },
+        weight: {
+            type: DataTypes.INTEGER,
+            defaultValue: 30
         }
     },
     {

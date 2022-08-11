@@ -4,15 +4,25 @@ const WeightLifting = require('../../models/WeightLifting');
 
 router.get('/', async (req, res) => {
     //find all
-    WeightLifting.findAll().then((weightLiftingData) => {
+    WeightLifting.findAll()
+    .then((weightLiftingData) => {
         res.json(weightLiftingData);
     })
+    .catch(err => {
+        console.log('error/ weightLifting:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    WeightLifting.findByPk(req.params.id).then((weightLiftingData) => {
+    WeightLifting.findByPk(req.params.id)
+    .then((weightLiftingData) => {
         res.json(weightLiftingData);
+    })
+    .catch(err => {
+        console.log('error/ weightLifting:', err)
+        res.status(500).json(err);
     });
 });
 

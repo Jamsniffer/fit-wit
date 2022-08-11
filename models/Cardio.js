@@ -1,7 +1,7 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Cardio extends Model {}
+class Cardio extends Model { }
 
 Cardio.init(
   {
@@ -18,6 +18,18 @@ Cardio.init(
     description: {
       type: DataTypes.STRING,
     },
+    sets: {
+      type: DataTypes.INTEGER,
+      defaultValue: 3
+    },
+    reps: {
+      type: DataTypes.INTEGER,
+      defaultValue: 10
+    },
+    weight: {
+      type: DataTypes.INTEGER,
+      defaultValue: 30
+  }
   },
   {
     sequelize,

@@ -1,24 +1,29 @@
-//import model here
-const router = require("express").Router();
-const PowerLifting = require("../../models/PowerLifting");
+//import model here 
+const router = require('express').Router();
+const PowerLifting  = require('../../models/PowerLifting');
 
-router.get("/", async (req, res) => {
-  //find all
+router.get('/', async (req, res) => {
+    //find all
     PowerLifting.findAll()
-      .then((powerLiftingData) => {
-        res.json(powerLiftingData);
-      })
-    //     .catch((err) => {
-    //       console.log("error /powerlifting:", err)
-    //     res.status(500).json(err);
-    //   });
+    .then((powerLiftingData) => {
+        res.json(powerLiftingData)
+    })
+    .catch(err => {
+        console.log('error/ powerLifting:', err)
+        res.status(500).json(err);
+    })
 });
 
-router.get("/:id", (req, res) => {
-  //find by id
-  PowerLifting.findByPk(req.params.id).then((powerLiftingData) => {
-    res.json(powerLiftingData);
-  });
+router.get('/:id', (req, res) => {
+    //find by id
+    PowerLifting.findByPk(req.params.id)
+    .then((powerLiftingData) => {
+        res.json(powerLiftingData)
+    })
+    .catch(err => {
+        console.log('error/ powerLifting:', err)
+        res.status(500).json(err);
+    });
 });
 
 router.post("/", (req, res) => {
