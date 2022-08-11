@@ -111,31 +111,87 @@ body {
     margin: auto;
 }
 
+.heading-texts2 {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+.title2 label {
+    padding-top: 1rem;
+}
+
+.dc {
+    font-size: xx-large;
+}
+
+.dc-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 23rem;
+    /* top: 1.4rem; */
+}
+
+.dc-heroes li {
+    width: 41vw;
+}
+
+.exercise-option2 {
+    float: right;
+}
+
+.exercise-choice-container2 {
+    display: grid;
+    grid-template-rows: 2rem;
+}
+
+
 .exercise-container2 {
-    display: flex;
+    /* grid-template-rows: 63px 303px; */
+    display: grid;
+    /* display: flex; */
     flex-wrap: wrap;
     /* min-height: calc(100vh - 50px); */
     max-width: 80vw;
-    margin:auto;
-    padding: 0 1em;
-    float:right;
+    margin: auto;
+    padding: 1em 1em;
+    float: right;
     flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
     margin: auto;
-    float: right;
-    width: 70%;
 }
-
 .exercise-display-box2 {
     display: grid;
     grid-template-columns: 10rem;
     grid-template-rows: 2rem;
     background-color: rgb(188, 186, 186);
-    width: 3rem;
-    height: 3rem;
-    padding: 1em 1em;
+    width: 20rem;
+    height: 19rem;
+    /* margin: 1em; */
 }
+/* .exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1rem; */
+/* } */
 
 
  header{
@@ -155,6 +211,33 @@ header a{
 header a:hover{
 	color: #a2ecff;
 } 
+
+.login {
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(195, 195, 228);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    border-radius: 14%;
+    left: 59vw;
+    height: 2rem;
+    width: 5rem;
+    font-weight: 600;
+}
+
+.sign_up {
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(195, 195, 228);
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    border-radius: 14%;
+    left: 45vw;
+    height: 2rem;
+    width: 5rem;    
+    font-weight: 600;
+}
+
 
 .sidebar > * {
     flex-basis: 100%;
@@ -251,32 +334,6 @@ header{
 	transition: all 0.5s ease;
     min-width: 100vw;
     margin: auto;
-}
-
-.login {
-    position: relative;
-    font-family: sans-serif;
-    background-color: rgb(195, 195, 228);
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    border-radius: 14%;
-    left: 59vw;
-    min-height: 1.3em;
-    width: 2.5em;
-    font-weight: 600;
-}
-
-.sign_up {
-    position: relative;
-    font-family: sans-serif;
-    background-color: rgb(195, 195, 228);
-    font-size: 1em;
-    color: rgb(0, 0, 0);
-    border-radius: 14%;
-    left: 45vw;
-    min-height: 1.3em;
-    width: 2.5em;
-    font-weight: 600;
 }
 
 @media only screen and (max-width: 992px) {
