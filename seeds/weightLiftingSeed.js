@@ -1,4 +1,4 @@
-const Weightlifting = require("../models/WeightLifting");
+const Weightlifting = require("../models");
 
 const weightLiftingData = [
   {
