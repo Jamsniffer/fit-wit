@@ -18,5 +18,5 @@ module.exports = {
     Crossfit,
     PowerLifting,
     WeightLifting,
-    User,
+    User
 }

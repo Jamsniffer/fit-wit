@@ -1,4 +1,4 @@
-const Calisthenics = require("../models");
+const {Calisthenics} = require("../models");
 
 const calisthenicsData = [
   {

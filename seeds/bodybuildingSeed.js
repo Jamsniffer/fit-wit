@@ -1,4 +1,4 @@
-const Bodybuilding = require("../models");
+const {Bodybuilding} = require("../models");
 
 const bodyBuildData = [
   {

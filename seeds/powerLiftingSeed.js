@@ -1,4 +1,4 @@
-const PowerLifting = require("../models");
+const {PowerLifting} = require("../models");
 
 const powerLiftingData = [
   {

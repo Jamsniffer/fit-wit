@@ -1,4 +1,4 @@
-const Crossfit = require("../models");
+const {Crossfit} = require("../models");
 
 const crossfitData = [
   {
