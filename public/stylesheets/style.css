@@ -404,6 +404,23 @@ header{
 } */
 
 
+.exercise-choices {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19.3rem;
+}
+
 .powerlifting {
     font-size: xx-large;
 }
