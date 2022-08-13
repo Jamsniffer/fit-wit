@@ -1,7 +1,2 @@
-DROP DATABASE IF EXISTS dataBase_db;
-
-CREATE DATABASE dataBase_db;
-
-DROP DATABASE IF EXISTS dataBase_db;
-
-CREATE DATABASE dataBase_db;
+DROP DATABASE IF EXISTS fitwit_db;
+CREATE DATABASE fitwit_db;

@@ -1,8 +1,22 @@
 const router = require('express').Router();
-const templateRoutes = require('./template');
-// const postRoutes = 
-// const el_html = template(context);
 
-router.use('/template', templateRoutes);
+const userRoutes = require("./userRoutes");
+
+const bodybuildingRoutes = require('./bodybuildingRoutes');
+const calisthenicsRoutes = require('./calisthenicsRoutes');
+const cardioRoutes = require('./cardioRoutes');
+const crossfitRoutes = require('./crossfitRoutes');
+const powerLiftingRoutes = require('./powerLiftingRoutes');
+const weightLiftingRoutes = require('./weightLiftingRoutes');
+
+
+router.use("/user", userRoutes);
+router.use('/bodybuilding', bodybuildingRoutes);
+router.use('/calisthenics', calisthenicsRoutes);
+router.use('/cardio', cardioRoutes);
+router.use('/crossfit', crossfitRoutes);
+router.use('/powerlifting', powerLiftingRoutes);
+router.use('/weightlifting', weightLiftingRoutes);
+
 
 module.exports = router
