@@ -11,27 +11,22 @@ body {
     min-height: 100vh;
 }
 
-/* .ultra-container {
-    display: flex;
-    min-height: calc(100vh - 50px);
-    min-width: 100vw;
-    margin:auto;
-    float:right;
-} */
-/* .sidebar > *.sidebar {
-    flex: 1 1 70%;
-} */
-
-/* .box-choice-container {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-} */
-
 .title {
     min-width: 25ch;
     padding-top: 1rem;
 }
+
+/* deadpool comic not activated
+https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
+deadpool ryan reynolds when hover
+https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-0601-454c-ac85-b544065e3594 */
+
+/* .material-icons.md-18 { font-size: 3rem; } */
+
+.material-icons {
+    font: 3rem;
+}
+
 .exercise-display-box {
     display: grid;
     grid-template-columns: 10rem;
@@ -42,9 +37,20 @@ body {
     margin: 1em;
 }
 
-/* .exercise-container > *.exercise-container {
-    flex: 1 1 30%;
-} */
+.exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
+}
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
 .heading-texts {
     padding: 1em 3em;
@@ -78,7 +84,7 @@ body {
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 23rem;
+    left: 22rem;
     top: -19.3rem;
 }
 
@@ -141,16 +147,27 @@ body {
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 23rem;
-    /* top: 1.4rem; */
+    left: 22rem;
+    top: -19rem;
 }
 
 .dc-heroes li {
     width: 41vw;
 }
 
-.exercise-option2 {
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 {
     float: right;
+}
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 :hover {
+    cursor: pointer;
 }
 
 .exercise-choice-container2 {
@@ -174,24 +191,7 @@ body {
     font-weight: 700;
     margin: auto;
 }
-.exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    /* margin: 1em; */
-}
-/* .exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1rem; */
-/* } */
+
 
 
  header{
@@ -215,27 +215,31 @@ header a:hover{
 .login {
     position: relative;
     font-family: sans-serif;
-    background-color: rgb(195, 195, 228);
+    background-color: rgb(7, 105, 185);
     font-size: 1em;
-    color: rgb(0, 0, 0);
-    border-radius: 14%;
+    /* border: 1px solid white; */
     left: 59vw;
-    height: 2rem;
-    width: 5rem;
     font-weight: 600;
+}
+
+.login :hover{
+    cursor: pointer;
+    color: #a2ecff;
 }
 
 .sign_up {
     position: relative;
     font-family: sans-serif;
-    background-color: rgb(195, 195, 228);
+    background-color: rgb(7, 105, 185);
     font-size: 1em;
-    color: rgb(0, 0, 0);
-    border-radius: 14%;
-    left: 45vw;
-    height: 2rem;
-    width: 5rem;    
+    /* border: 1px solid white; */
+    left: 49vw;
     font-weight: 600;
+}
+
+.sign_up :hover{
+    cursor: pointer;
+    color: #a2ecff;
 }
 
 
@@ -264,10 +268,16 @@ header a:hover{
 .sidebar .home {
     margin-bottom: 28px;
     text-align: center;
-   
+   }
+.home {
+   top: 2vh;
+   position: relative;
+   justify-content: center;
+   height: 3rem;
+   align-self: baseline;
+   float: top;
 }
-
-.sidebar .profile img {
+/* .sidebar .profile img {
     display: block;
     max-width: 100px;
     max-height: 100px;
@@ -276,29 +286,45 @@ header a:hover{
     border-radius: 50%;
     margin: 0 auto;
    
-}
+} */
 
-.profile img {
-    margin: 0 auto;
-    display: block;
+.profile-pic {
+    justify-content: center;
+    display: flex;
+    margin: 1em;
+    /* display: block; */
     border-radius: 50%;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    min-height: 100px;
-    padding-top: 38px;
+    max-width: 11rem;
+    min-width: 4rem;
+    align-self: center;
+    position: relative;
+    top: -18vh;
+    left: 0vw;
+    margin: auto;
 }
 
 
-.sidebar .profile h4 {
-    text-align: center;
+.sidebar .profile h1 {
     color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
     margin: 10px 0 5px;
+    position: relative;
+    top: -11rem;
 
 }
 
 .sidebar ul li {
-    color:rgb(157, 212, 244)
+    color: rgb(157, 212, 244);
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    top: -31vh;
+    margin: auto;
+    left: 2vw;
 }
 
 .sidebar .profile p {
@@ -329,7 +355,7 @@ padding: 0;
 }
 
 header{
-	width: calc(100% - 225px);
+	height: 6rem;
 	margin-left: 225px;
 	transition: all 0.5s ease;
     min-width: 100vw;
