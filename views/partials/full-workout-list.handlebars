@@ -15,6 +15,12 @@
         <h1 class="time"></h1>
     </div>
 
+    <div class="modal">
+        <div class="finishWorkoutDiv">
+            <span class="close">&times;</span>
+            <h1 class="finishWorkoutH1"></h1>
+        </div>
+    </div>
 
     {{!-- this button should take the user back to the page where you can choose workouts and keep the workouts the user
     has
@@ -23,7 +29,6 @@
         <img class="plusBtn" src="./assets/images/plus-sign-button.svg">
         <button class="addBtn">Add an exercise</button>
     </section>
-
 
     {{!-- multiple of these sections below will be generated depending on how many exercises user chooses --}}
     {{!-- all info related to workout will also be generated depending on user input --}}
@@ -49,13 +54,12 @@
         </div>
     </section>
 
-
     <div class="finishWorkout">
         <button class="finishBtn">Finish Workout</button>
     </div>
 
-    <script src="/javascript/full-workout-list.js"></script>
-    <script src="/public/javascript/workout.js"></script>
+    <script src="./public/javascript/full-workout-list.js"></script>
+    <script src="./public/javascript/chosen-exercise.js"></script>
 </body>
 
 </html>
