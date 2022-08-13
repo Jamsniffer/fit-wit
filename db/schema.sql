@@ -1,0 +1,2 @@
+DROP DATABASE IF EXISTS fitwit_db;
+CREATE DATABASE fitwit_db;
