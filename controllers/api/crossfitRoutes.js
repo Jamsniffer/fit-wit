@@ -1,6 +1,6 @@
 //import model here 
 const router = require('express').Router();
-const Crossfit = require('../../models/Crossfit');
+const {Crossfit} = require('../../models');
 
 router.get('/', async (req, res) => {
     //find all

@@ -1,33 +1,34 @@
-//import model here 
-const router = require('express').Router();
-const PowerLifting  = require('../../models/PowerLifting');
+//import model here
+const router = require("express").Router();
+const { PowerLifting } = require("../../models");
 
-router.get('/', async (req, res) => {
-    //find all
-    PowerLifting.findAll()
+router.get("/", async (req, res) => {
+  //find all
+  PowerLifting.findAll()
     .then((powerLiftingData) => {
-        res.json(powerLiftingData)
+      res.json(powerLiftingData);
     })
-    .catch(err => {
-        console.log('error/ powerLifting:', err)
-        res.status(500).json(err);
-    })
+    .catch((err) => {
+      console.log("error/ powerLifting:", err);
+      res.status(500).json(err);
+    });
 });
 
-router.get('/:id', (req, res) => {
-    //find by id
-    PowerLifting.findByPk(req.params.id)
+router.get("/:id", (req, res) => {
+  //find by id
+  PowerLifting.findByPk(req.params.id)
     .then((powerLiftingData) => {
-        res.json(powerLiftingData)
+      res.json(powerLiftingData);
     })
-    .catch(err => {
-        console.log('error/ powerLifting:', err)
-        res.status(500).json(err);
+    .catch((err) => {
+      console.log("error/ powerLifting:", err);
+      res.status(500).json(err);
     });
 });
 
 router.post("/", (req, res) => {
   //add to api
+  console.log(req.body);
   PowerLifting.create(req.body)
     .then((newPowerLifting) => {
       res.json(newPowerLifting);
@@ -42,7 +43,7 @@ router.put("/:id", (req, res) => {
   PowerLifting.update(
     {
       // All the fields you can update and the data attached to the request body.
-      name: req.body.name,
+      exercise_name: req.body.exercise_name,
       description: req.body.description,
     },
     {

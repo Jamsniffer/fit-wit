@@ -14,48 +14,48 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true,
+      autoIncrement: true
     },
     username: {
       type: DataTypes.STRING,
-      allowNull: false,
+      allowNull: false
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true,
+        isEmail: true
       },
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8,20],
+        len: [8, 20]
       },
     },
-    workouts: [
-      {
-        name:DataTypes.STRING,
-        exercises: [
-          {
-            name: DataTypes.STRING,
-            reps: 3,
-            weight: {
-              type: DataTypes.INTEGER,
-              allowNull: true,
-            },
-            time: {
-              type: DataTypes.TIME,
-              allowNull: true,
-            },
-          },
-        ],
-        allowNull: true
-      },
-    ],
-    allowNull: true
+    // workouts: [
+    //   {
+    //     name:DataTypes.STRING,
+    //     exercises: [
+    //       {
+    //         name: DataTypes.STRING,
+    //         reps: 3,
+    //         weight: {
+    //           type: DataTypes.INTEGER,
+    //           allowNull: true,
+    //         },
+    //         time: {
+    //           type: DataTypes.TIME,
+    //           allowNull: true,
+    //         },
+    //       },
+    //     ],
+    //     allowNull: true
+    //   },
+    // ],
+    // allowNull: true
   },
   {
     hooks: {

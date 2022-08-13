@@ -1,4 +1,4 @@
-const Weightlifting = require("../models/WeightLifting");
+const { WeightLifting } = require("../models");
 
 const weightLiftingData = [
   {
@@ -23,6 +23,6 @@ const weightLiftingData = [
   },
 ];
 
-const seedWeightlifting = () => Weightlifting.bulkCreate(weightLiftingData);
+const seedWeightlifting = () => WeightLifting.bulkCreate(weightLiftingData);
 
 module.exports = seedWeightlifting;
