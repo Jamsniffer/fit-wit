@@ -11,193 +11,73 @@ body {
     min-height: 100vh;
 }
 
-.title {
-    min-width: 25ch;
-    padding-top: 1rem;
-}
-
-/* deadpool comic not activated
-https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
-deadpool ryan reynolds when hover
-https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-0601-454c-ac85-b544065e3594 */
-
-/* .material-icons.md-18 { font-size: 3rem; } */
-
-.material-icons {
-    font: 3rem;
-}
-
-.exercise-display-box {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em;
-}
-
-
-
-/* harley quinn margot robbie when hover
-https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
-harley quinn comic 
-https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
-
-.exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em;
-}
-
-.heading-texts {
-    padding: 1em 3em;
+.profile-pic {
     justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-}
-
-.title label {
-    padding-top: 1rem;
-}
-
-
-.marvel {
-    font-size: xx-large;
-}
-
-.marvel-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
+    display: flex;
+    margin: 1em;
+    /* display: block; */
+    border-radius: 50%;
+    max-width: 8rem;
+    min-width: 3rem;
+    align-self: center;
     position: relative;
-    left: 22rem;
-    top: -19.3rem;
-}
-
-.marvel-heroes li {
-    width: 41vw;
-    justify-content: space-around;
-}
-
-.exercise-option {
-    float: right;
-}
-
-.exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-}
-
-.exercise-container {
-    /* grid-template-rows: 63px 303px; */
-    display: grid;
-    /* display: flex; */
-    flex-wrap: wrap;
-    /* min-height: calc(100vh - 50px); */
-    max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
+    top: -18vh;
+    left: 0vw;
     margin: auto;
 }
 
-.heading-texts2 {
-    padding: 1em 3em;
+
+.sidebar .profile h1 {
+    color: #ffffff;
     justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
     text-align: center;
-}
-.title2 label {
-    padding-top: 1rem;
-}
-
-.dc {
-    font-size: xx-large;
-}
-
-.dc-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
+    display: flex;
+    margin: 10px 0 5px;
     position: relative;
-    left: 22rem;
-    top: -19rem;
+    top: -8rem;
+
 }
 
-.dc-heroes li {
-    width: 41vw;
-}
-
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 {
-    float: right;
-}
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 :hover {
-    cursor: pointer;
-}
-
-.exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-}
-
-
-.exercise-container {
-    /* grid-template-rows: 63px 303px; */
-    display: grid;
-    /* display: flex; */
-    flex-wrap: wrap;
-    /* min-height: calc(100vh - 50px); */
-    max-width: 80vw;
+.sidebar ul li {
+    color: rgb(157, 212, 244);
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    top: -31vh;
     margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
+    left: 2vw;
 }
 
+.sidebar .profile p {
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
 
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    color: rgb(206, 240, 253);
+    font-family: sans-serif;
+    
+    border-right: 2px solid rgb(157, 212, 244);
+}
 
- header{
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon{
+    color: #a7dcf5;
+    margin: 0;
+padding: 0;
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
+    display: block;
+    margin: 0;
+padding: 0;
+}
+
+header{
 	background: rgb(7, 105, 185);
 	height: 50px;
 	display: flex;
@@ -280,82 +160,6 @@ header a:hover{
    align-self: baseline;
    float: top;
 }
-/* .sidebar .profile img {
-    display: block;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-   
-} */
-
-.profile-pic {
-    justify-content: center;
-    display: flex;
-    margin: 1em;
-    /* display: block; */
-    border-radius: 50%;
-    max-width: 11rem;
-    min-width: 4rem;
-    align-self: center;
-    position: relative;
-    top: -18vh;
-    left: 0vw;
-    margin: auto;
-}
-
-
-.sidebar .profile h1 {
-    color: #ffffff;
-    justify-content: center;
-    text-align: center;
-    display: flex;
-    margin: 10px 0 5px;
-    position: relative;
-    top: -11rem;
-
-}
-
-.sidebar ul li {
-    color: rgb(157, 212, 244);
-    justify-content: space-between;
-    font-family: sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
-    position: relative;
-    top: -31vh;
-    margin: auto;
-    left: 2vw;
-}
-
-.sidebar .profile p {
-    color: rgb(206, 240, 253);
-    font-size: 14px;
-}
-
-.sidebar ul li a:hover,
-.sidebar ul li a.active{
-    color: rgb(206, 240, 253);
-    font-family: sans-serif;
-    
-    border-right: 2px solid rgb(157, 212, 244);
-}
-
-.sidebar ul li a:hover .icon,
-.sidebar ul li a.active .icon{
-    color: #a7dcf5;
-    margin: 0;
-padding: 0;
-}
-
-.sidebar ul li a:hover:before,
-.sidebar ul li a.active:before{
-    display: block;
-    margin: 0;
-padding: 0;
-}
 
 header{
 	height: 6rem;
@@ -376,6 +180,234 @@ header{
    }
 
 }
+
+.title {
+    min-width: 25ch;
+    padding-top: 1rem;
+}
+
+.title label {
+    padding-top: 1rem;
+}
+
+/* deadpool comic not activated
+https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
+deadpool ryan reynolds when hover
+https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-0601-454c-ac85-b544065e3594 */
+
+/* .material-icons.md-18 { font-size: 3rem; } */
+
+.material-icons {
+    font: 3rem;
+}
+
+.exercise-container {
+     /* grid-template-rows: 63px 303px; */
+     display: grid;
+     /* display: flex; */
+     flex-wrap: wrap;
+     /* min-height: calc(100vh - 50px); */
+     /* max-width: 80vw; */
+     margin: 0 auto;
+     padding: 1em 1em;
+     float: right;
+     flex-grow: 1;
+     font-size: 24px;
+     font-weight: 700;
+     /* margin: auto; */
+     min-width: 77vw;
+}
+
+.exercise-display-box {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
+}
+
+.heading-texts {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.exercise-choice-container {
+    display: grid;
+    grid-template-rows: 2rem;
+}
+
+.exercise-choices {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19.3rem;
+}
+
+.exercise-choices li {
+    width: 41vw;
+}
+
+.exercise-section {
+    font-size: xx-large;
+}
+
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 {
+    float: right;
+}
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 :hover {
+    cursor: pointer;
+}
+
+
+
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
+
+/* .exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em; */
+/* } */
+
+
+
+
+.marvel {
+    font-size: xx-large;
+}
+
+.marvel-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19.3rem;
+}
+
+.marvel-heroes li {
+    width: 41vw;
+    justify-content: space-around;
+}
+
+
+
+
+/* 
+.exercise-container {
+    /* grid-template-rows: 63px 303px; */
+    /* display: grid; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* min-height: calc(100vh - 50px); */
+    /* max-width: 80vw;
+    margin: auto;
+    padding: 1em 1em;
+    float: right;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+} */ 
+
+/* .heading-texts2 {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center; */
+/* } */
+/* .title2 label {
+    padding-top: 1rem;
+} */
+
+/* .dc {
+    font-size: xx-large;
+}
+
+.dc-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    /* grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19rem;
+} */
+
+/* .dc-heroes li {
+    width: 41vw;
+}  */
+
+
+
+
+
+
+
+
+
+/* .sidebar .profile img {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+   
+} */
+
+
 
 /*weightlifting start*/
 
@@ -404,47 +436,36 @@ header{
 } */
 
 
-.exercise-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19.3rem;
+
+
+/* .powerlifting-choices li {
+    width: 41vw;
 }
 
 .powerlifting {
     font-size: xx-large;
-}
+} */
 
-.powerlifting-choices {
+/* .powerlifting-choices {
     font-weight: 457;
     font-size: 2rem;
     letter-spacing: 1px;
     padding: 0 1em;
     justify-content: left;
-    align-items: center;
+    align-items: center; */
     /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
+    /* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
     left: 22rem;
     top: -19.3rem;
-}
+} */
 
-.powerlifting-choices li {
+/* .powerlifting-choices li {
     width: 41vw;
-}
+} */
 
 /* .exercise-option {
     float: right;
@@ -484,7 +505,7 @@ header{
     padding-top: 1rem;
 } */
 
-.bodybuilding {
+/* .bodybuilding {
     font-size: xx-large;
 }
 
@@ -496,18 +517,18 @@ header{
     justify-content: left;
     align-items: center;
     /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
+    /* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
     left: 22rem;
     top: -19rem;
-}
+} */
 
-.bodybuilding-choices li {
+/* .bodybuilding-choices li {
     width: 41vw;
-}
+}  */
 
 
 /* .exercise-choice-container {
@@ -532,7 +553,7 @@ header{
     margin: auto;
 } */
 
-.crossfit  {
+/* .crossfit  {
     font-size: xx-large;
 }
 
@@ -542,9 +563,9 @@ header{
     letter-spacing: 1px;
     padding: 0 1em;
     justify-content: left;
-    align-items: center;
+    align-items: center; */
     /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
+    /* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -555,4 +576,4 @@ header{
 
 .crossfit-choices li {
     width: 41vw;
-}
+} */
