@@ -2,7 +2,7 @@ const {Bodybuilding} = require("../models");
 
 const bodyBuildData = [
   {
-    exercise_name: "",
+    exercise_name: "" ,
     description: "",
   },
   {

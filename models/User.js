@@ -35,27 +35,27 @@ User.init(
         len: [8, 20]
       },
     },
-    workouts: [
-      {
-        name:DataTypes.STRING,
-        exercises: [
-          {
-            name: DataTypes.STRING,
-            reps: 3,
-            weight: {
-              type: DataTypes.INTEGER,
-              allowNull: true,
-            },
-            time: {
-              type: DataTypes.TIME,
-              allowNull: true,
-            },
-          },
-        ],
-        allowNull: true
-      },
-    ],
-    allowNull: true
+    // workouts: [
+    //   {
+    //     name:DataTypes.STRING,
+    //     exercises: [
+    //       {
+    //         name: DataTypes.STRING,
+    //         reps: 3,
+    //         weight: {
+    //           type: DataTypes.INTEGER,
+    //           allowNull: true,
+    //         },
+    //         time: {
+    //           type: DataTypes.TIME,
+    //           allowNull: true,
+    //         },
+    //       },
+    //     ],
+    //     allowNull: true
+    //   },
+    // ],
+    // allowNull: true
   },
   {
     hooks: {
