@@ -17,32 +17,53 @@
     <header>
         <nav>  
             <span>
-                <a href="#">
-                    <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
-               
-                <a href="#">
-                    <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
-      
-        </nav>
-    </header>
-    
- 
-    <div class="container">
-         <nav>
-             <div class="sidebar">
                 <div class="home">
                     <a href="#">
                     <span class="material-icons">cottage</span>
                     <a href="/home"></a>
                 </div>
+
+
+                <div class="hide-sidebar">
+                    <a href="#">
+                        <span class="material-icons" style="font-size:4rem">menu_open</span></button></a>
+                </div>
+
+
+                <a href="#">
+                    <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
+               
+                <a href="#">
+                    <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
+                
+                <a href="#">
+                    <button type="submit" class="log-out"> <span class="material-icons">logout</span></button></a>
+                
+        </nav>
+    </header>
+    
+ 
+    <div class="home">
+        <a href="#">
+        <span class="material-icons">cottage</span>
+        <a href="/home"></a>
+    </div>
+
+    <div class="container">
+         <nav>
+             <div class="sidebar">
+               
     
                 <div class="profile">
                         <a href="#">
                         <img class="profile-pic" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
                              <h1>Username</h1>
                         <a href="/user-profile"></a>
-                </div>
                 
+
+                <button type="button" class="mab__button mab__button--menu">
+                <span class="material-icons-outlined">menu_open</span>
+                </button>
                 <ul>              
                     <li>
                         <a href="#">
@@ -70,6 +91,7 @@
                     </li>
     
                 </ul>
+            </div>
     </nav>
 
 <br> 
@@ -87,12 +109,24 @@
                     <div class="exercise-display-box"></div>
                         <div class="exercise-choice-container">
                             <ol class="exercise-choices">
+                                <div class="mab">
+                                    <button type="button" class="mab__button mab__button--primary">
+                                   
+                                    </button>
+                                </div>
                 
                                 <li>
                                     
                                     Spiderman                   
                                     <a href="#">
-                                        <button type="button" class="exercise-option1"><span class="material-icons md-38">add_task</span></button></a>                   
+                                        <button type="button" class="mab__button">
+                                            <span class="material-icons mab__icon">add_task</span>
+                                            <span class="mab--text">Add Workout</span>
+                                            <span class="material-icons mab__icon">remove_circle_outline</span>
+                                            <span class="mab--text">Remove Workout</span>
+                                            <span class="material-icons">bookmark_border</span>
+                                            <span class="mab--text">Favorite Workout</span>
+                                        </button></a>                   
                                 </li>
                                 <li>
                                     Deadpool                
@@ -139,7 +173,7 @@
                             
                             Superman                   
                             <a href="#">
-                                <button type="button" class="exercise-option1"><span class="material-icons md-38">add_task</span></button></a>                   
+                                <button type="button" class="mab__button"><span class="material-icons">add_task</span></button></a>  exercise-option1                 
                         </li>
                         <li>
                             Catwoman                
@@ -166,6 +200,12 @@
         </article>
 </section>
 
+<script>
+    var hideSidebar = document.querySelector(".hide-sidebar");
+ hideSidebar.addEventListener("click", function(){
+     document.querySelector("body").classList.toggle("active");
+ })
+</script>
 
 </body>
 </html>
