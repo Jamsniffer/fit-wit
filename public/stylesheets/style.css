@@ -107,52 +107,65 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     /* display: flex; */
     flex-wrap: wrap;
     /* min-height: calc(100vh - 50px); */
-    max-width: 80vw;
-    margin: auto;
+    /* max-width: 80vw; */
+    margin: 0 auto;
     padding: 1em 1em;
     float: right;
     flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
-    margin: auto;
+    /* margin: auto; */
+    min-width: 77vw;
 }
 
-.heading-texts2 {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-}
-.title2 label {
-    padding-top: 1rem;
+.exercise-display-box {
+   display: grid;
+   grid-template-columns: 10rem;
+   grid-template-rows: 2rem;
+   background-color: rgb(188, 186, 186);
+   width: 20rem;
+   height: 19rem;
+   margin: 1em;
 }
 
-.dc {
-    font-size: xx-large;
+.heading-texts {
+   padding: 1em 3em;
+   justify-content: center;
+   display: grid;
+   grid-template-rows: 5rem 3rem;
+   align-items: center;
+   row-gap: 1rem;
+   text-align: center;
 }
 
-.dc-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
+.exercise-choice-container {
+   display: grid;
+   grid-template-rows: 2rem;
 }
 
-.dc-heroes li {
-    width: 41vw;
+.exercise-choices {
+   font-weight: 457;
+   font-size: 2rem;
+   letter-spacing: 1px;
+   padding: 0 1em;
+   justify-content: left;
+   align-items: center;
+   /* grid-template-columns: 13rem 25rem; */
+   grid-template-rows: repeat(5, 2.3rem);
+   display: grid;
+   width: 65vw;
+   row-gap: 0.5em;
+   position: relative;
+   left: 22rem;
+   top: -19.3rem;
+}
+
+.exercise-choices li {
+   width: 41vw;
+}
+
+.exercise-section {
+   font-size: xx-large;
 }
 
 .exercise-option1, .exercise-option2, 
@@ -160,20 +173,20 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
 .exercise-option5, .exercise-option6, 
 .exercise-option7, .exercise-option8, 
 .exercise-option9, .exercise-option10 {
-    float: right;
+   float: right;
 }
 .exercise-option1, .exercise-option2, 
 .exercise-option3, .exercise-option4, 
 .exercise-option5, .exercise-option6, 
 .exercise-option7, .exercise-option8, 
 .exercise-option9, .exercise-option10 :hover {
-    cursor: pointer;
+   cursor: pointer;
 }
 
-.exercise-choice-container2 {
+/* .exercise-choice-container2 {
     display: grid;
     grid-template-rows: 2rem;
-}
+} */
 
 
 .exercise-container2 {
