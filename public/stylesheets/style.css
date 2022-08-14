@@ -89,6 +89,17 @@ body .section{
     font-size: 14px;
 }
 
+.sidebar .profile h1 {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 10px 0 5px;
+    /* position: relative; */
+    top: -8rem;
+    
+}
+
 .sidebar ul li a:hover,
 .sidebar ul li a.active{
     color: rgb(206, 240, 253);
@@ -217,7 +228,7 @@ header nav a {
     /* align-self: center; */
     position: fixed;
     top: 2rem;
-    /* max-width: 20vw;
+    max-width: 20vw;
 }
 
 header{
