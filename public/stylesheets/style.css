@@ -1,0 +1,375 @@
+* {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+} 
+
+body {
+    min-height: 100vh;
+}
+
+.title {
+    min-width: 25ch;
+    padding-top: 1rem;
+}
+
+/* deadpool comic not activated
+https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
+deadpool ryan reynolds when hover
+https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-0601-454c-ac85-b544065e3594 */
+
+/* .material-icons.md-18 { font-size: 3rem; } */
+
+.material-icons {
+    font: 3rem;
+}
+
+.exercise-display-box {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
+}
+
+.exercise-display-box2 {
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 2rem;
+    background-color: rgb(188, 186, 186);
+    width: 20rem;
+    height: 19rem;
+    margin: 1em;
+}
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
+
+.heading-texts {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+
+.title label {
+    padding-top: 1rem;
+}
+
+
+.marvel {
+    font-size: xx-large;
+}
+
+.marvel-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19.3rem;
+}
+
+.marvel-heroes li {
+    width: 41vw;
+}
+
+.exercise-option {
+    float: right;
+}
+
+.exercise-choice-container {
+    display: grid;
+    grid-template-rows: 2rem;
+}
+
+.exercise-container {
+    /* grid-template-rows: 63px 303px; */
+    display: grid;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* min-height: calc(100vh - 50px); */
+    max-width: 80vw;
+    margin: auto;
+    padding: 1em 1em;
+    float: right;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+}
+
+.heading-texts2 {
+    padding: 1em 3em;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
+    text-align: center;
+}
+.title2 label {
+    padding-top: 1rem;
+}
+
+.dc {
+    font-size: xx-large;
+}
+
+.dc-heroes {
+    font-weight: 457;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    padding: 0 1em;
+    justify-content: left;
+    align-items: center;
+    /* grid-template-columns: 13rem 25rem; */
+    grid-template-rows: repeat(5, 2.3rem);
+    display: grid;
+    width: 65vw;
+    row-gap: 0.5em;
+    position: relative;
+    left: 22rem;
+    top: -19rem;
+}
+
+.dc-heroes li {
+    width: 41vw;
+}
+
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 {
+    float: right;
+}
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 :hover {
+    cursor: pointer;
+}
+
+.exercise-choice-container2 {
+    display: grid;
+    grid-template-rows: 2rem;
+}
+
+
+.exercise-container2 {
+    /* grid-template-rows: 63px 303px; */
+    display: grid;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* min-height: calc(100vh - 50px); */
+    max-width: 80vw;
+    margin: auto;
+    padding: 1em 1em;
+    float: right;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin: auto;
+}
+
+
+
+ header{
+	background: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+}
+
+header a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+header a:hover{
+	color: #a2ecff;
+} 
+
+.login {
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(7, 105, 185);
+    font-size: 1em;
+    /* border: 1px solid white; */
+    left: 59vw;
+    font-weight: 600;
+}
+
+.login :hover{
+    cursor: pointer;
+    color: #a2ecff;
+}
+
+.sign_up {
+    position: relative;
+    font-family: sans-serif;
+    background-color: rgb(7, 105, 185);
+    font-size: 1em;
+    /* border: 1px solid white; */
+    left: 49vw;
+    font-weight: 600;
+}
+
+.sign_up :hover{
+    cursor: pointer;
+    color: #a2ecff;
+}
+
+
+.sidebar > * {
+    flex-basis: 100%;
+}
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    background: rgb(7, 105, 185);
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 170px;
+    max-width: 20vw;
+    height: 100vh;
+    padding: 20px 0;
+    transition: all 0.5s ease;
+    float:left;
+    width: 30%;
+    min-width: 25ch; /*sets to number of characters based on font size*/
+}
+
+.sidebar .home {
+    margin-bottom: 28px;
+    text-align: center;
+   }
+.home {
+   top: 2vh;
+   position: relative;
+   justify-content: center;
+   height: 3rem;
+   align-self: baseline;
+   float: top;
+}
+/* .sidebar .profile img {
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+    width: 100px;
+    min-height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+   
+} */
+
+.profile-pic {
+    justify-content: center;
+    display: flex;
+    margin: 1em;
+    /* display: block; */
+    border-radius: 50%;
+    max-width: 11rem;
+    min-width: 4rem;
+    align-self: center;
+    position: relative;
+    top: -18vh;
+    left: 0vw;
+    margin: auto;
+}
+
+
+.sidebar .profile h1 {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 10px 0 5px;
+    position: relative;
+    top: -11rem;
+
+}
+
+.sidebar ul li {
+    color: rgb(157, 212, 244);
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    position: relative;
+    top: -31vh;
+    margin: auto;
+    left: 2vw;
+}
+
+.sidebar .profile p {
+    color: rgb(206, 240, 253);
+    font-size: 14px;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active{
+    color: rgb(206, 240, 253);
+    font-family: sans-serif;
+    
+    border-right: 2px solid rgb(157, 212, 244);
+}
+
+.sidebar ul li a:hover .icon,
+.sidebar ul li a.active .icon{
+    color: #a7dcf5;
+    margin: 0;
+padding: 0;
+}
+
+.sidebar ul li a:hover:before,
+.sidebar ul li a.active:before{
+    display: block;
+    margin: 0;
+padding: 0;
+}
+
+header{
+	height: 6rem;
+	margin-left: 225px;
+	transition: all 0.5s ease;
+    min-width: 100vw;
+    margin: auto;
+}
+
+@media only screen and (max-width: 992px) {
+
+    .ultra-container {
+       flex-direction: column-reverse;        
+   }
+
+   .sidebar {
+       height: 100vh;
+   }
+
+}
