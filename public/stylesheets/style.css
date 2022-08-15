@@ -285,7 +285,7 @@ header nav a {
 }
 
 .nav-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .nav-link {
@@ -456,14 +456,20 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option3, .exercise-option4, 
 .exercise-option5, .exercise-option6, 
 .exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 {
+.exercise-option9, .exercise-option10,
+.exercise-option11, .exercise-option12
+.exercise-option13, .exercise-option14, 
+.exercise-option15 {
     float: right;
 }
 .exercise-option1, .exercise-option2, 
 .exercise-option3, .exercise-option4, 
 .exercise-option5, .exercise-option6, 
 .exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 :hover {
+.exercise-option9, .exercise-option10
+.exercise-option11, .exercise-option12,
+.exercise-option13, .exercise-option14, 
+.exercise-option15 :hover {
     cursor: pointer;
 }
 
