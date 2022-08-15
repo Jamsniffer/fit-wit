@@ -36,7 +36,8 @@ body .section{
 .profile {
     display: grid;
     height: 14rem;
-    align-items: end;
+    align-items: center;
+    max-width: 15rem;
 }
 
 
@@ -130,11 +131,12 @@ padding: 0;
 }
 
 header{
-	background: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
+    position: fixed;
+    height: 5rem;
+    /* margin-left: 225px; */
+    transition: all 0.5s ease;
+    min-width: 100vw;
+    margin: auto;
  
 }
 
@@ -151,6 +153,109 @@ header nav a {
     color: #a7dcf5;
 }
 
+
+
+/* header{
+	bac kground: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+} */
+
+/* header a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+header a:hover{
+	color: #a2ecff;
+} 
+
+header nav a {
+    color: #a7dcf5;
+} */
+
+
+.nav-bar {
+    background: rgb(7, 105, 185);
+	min-height: 3em;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+    justify-content: space-between;
+}
+
+
+.nav-menu {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+.nav-title {
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    transition: 0.6s ease;
+}
+
+.nav-link:hover {
+    color:#f4fbff ;
+}
+
+.nav-item {
+ 
+    width: 9rem;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    height: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.bar {
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #ff984c;
+}
+
+.nav-branding {
+    display: flex;
+    /* float: right; */
+    /* justify-content: space-between; */
+    /* gap: 3rem; */
+    /* margin: 0 3rem; */
+    position: relative;
+    left: 52rem;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #a7dcf5;   
+}
+
+.nav-bar a:hover{
+	color: #a2ecff;
+} 
 .login {
     position: relative;
     font-family: sans-serif;
@@ -183,56 +288,60 @@ header nav a {
     color:aquamarine
 }
 
-/* header{
-	bac kground: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
-} */
+@media(max-width: 1024px) {
+    .hamburger {
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
-/* header a{
-	font-size: 28px;
-	color: #f4fbff;
-}
+    .nav-menu {
+        background: rgb(7, 105, 185);
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 0.5rem;
+        /* position: fixed;
+    }
+    
+    .nav-item {
+        margin: 15px 0;
+        width: 21rem;
+        width: 21rem;
+        font-size: 1.3rem;
+    }
 
-header a:hover{
-	color: #a2ecff;
+    .nav-menu.active {
+        left: 0;
+    }
+
 } 
 
-header nav a {
-    color: #a7dcf5;
-} */
-
-
-.nav-bar {
-    background: rgb(7, 105, 185);
-	min-height: 5em;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
-}
-
-.nav-bar li {
-    list-style: none;
-}
-
-.nav-bar a {
-    color: #a7dcf5;   
-}
-
-.nav-bar a:hover{
-	color: #a2ecff;
-} 
-
-.container {
+.top-nav-container {
     height: 100vh;
     display: grid;
     grid-template-rows: 20rem;
     float: left;
     width: 20%;
+    position: fixed;
+}*/
+
+.side-nav-container {
+    height: 100vh;
+    display: grid;
+    /* grid-template-rows: 5rem 2rem; */
+    float: left;
+    width: 15rem;
 }
+
 
 .sidebar * {
     flex-basis: 100%;
@@ -248,22 +357,22 @@ header nav a {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 170px;
-    max-width: 20vw;
+    /* min-width: 170px; */
+    width: 20%;
     height: 100vh;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     transition: all 0.5s ease;
     float: left;
-    width: 20%;
-    min-width: 25ch;
+    max-width: 15rem;
+    /* min-width: 25ch; */
     position: fixed;
     top: 5rem;
     display: grid;
-    grid-template-rows: 13rem 21rem;
-}
+     /* grid-template-rows: 14rem 18rem; */
+ } 
 
 
-.sidebar-nav {
+/* .sidebar-nav {
     justify-content: space-around;
     background: rgb(7, 105, 185);
     width: 20vw;
@@ -273,48 +382,8 @@ header nav a {
     padding: 0 2rem;
     align-self: end;
     grid-template-rows: 5rem 5rem 5rem 5rem;
-}
+} */
 
-.nav-menu {
-    /* background: rgb(7, 105, 185); */
-    width: 20vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nav-title {
-    font-size: 1.6rem;
-}
-
-.nav-link {
-    transition: 0.6s ease;
-}
-
-.nav-link:hover {
-    color:#f4fbff ;
-}
-
-.nav-item {
- 
-    width: 9rem;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    height: 0.3rem;
-    width: 2rem;
-    display: block;
-    margin: 0.5rem auto;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    background-color: white;
-}
 
 .sidebar ul  {
     color: #a2ecff;
@@ -346,13 +415,8 @@ header{
     min-width: 100vw;
     margin: auto;
 }
-/* 
-@media(max-width:769px) {
-    .hamburger {
-        display: block;
-    }
-}
 
+/* 
 @media only screen and (max-width: 992px) {
 
     container {
@@ -363,7 +427,7 @@ header{
        height: 100vh;
    }
 
-}
+} */
 
 .title {
     min-width: 25ch;
