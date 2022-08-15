@@ -1,36 +1,35 @@
-//import model here 
 const router = require('express').Router();
-const {Crossfit} = require('../../models');
+const {Weighttraining} = require('../../models');
 
 router.get('/', async (req, res) => {
     //find all
-    Crossfit.findAll()
-    .then((crossfitData) => {
-        res.json(crossfitData);
+    Weighttraining.findAll()
+    .then((weighttrainingData) => {
+        res.json(weighttrainingData);
     })
     .catch(err => {
-        console.log('error/ crossfit:', err)
+        console.log('error/ weighttraining:', err)
         res.status(500).json(err);
     });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Crossfit.findByPk(req.params.id)
-    .then((crossfitData) => {
-        res.json(crossfitData);
+    Weighttraining.findByPk(req.params.id)
+    .then((weighttrainingData) => {
+        res.json(weighttrainingData);
     })
     .catch(err => {
-        console.log('error/ crossfit:', err)
+        console.log('error/ weighttraining:', err)
         res.status(500).json(err);
     });
 });
 
 router.post('/', (req, res) => {
     //add to api
-    Crossfit.create(req.body)
-        .then((newCrossfit) => {
-            res.json(newCrossfit);
+    Weighttraining.create(req.body)
+        .then((newWeighttraining) => {
+            res.json(newWeighttraining);
         })
         .catch((err) => {
             res.json(err);
@@ -39,7 +38,7 @@ router.post('/', (req, res) => {
 
 router.put('/:id', (req, res) => {
     //update by id
-    Crossfit.update(
+    Weighttraining.update(
         {
             // All the fields you can update and the data attached to the request body.
             name: req.body.name,
@@ -47,29 +46,29 @@ router.put('/:id', (req, res) => {
         },
         {
             where: {
-                crossfit_id: req.params.crossfit_id,
+                Weighttraining_id: req.params.Weighttraining_id,
             },
         }
     )
-        .then((updatedCrossfit) => {
-            res.json(updatedCrossfit);
+        .then((updatedWeighttraining) => {
+            res.json(updatedWeighttraining);
         })
         .catch((err) => {
             console.log(err);
             res.json(err);
-        })
+        });
 });
 
 router.delete('/:id', (req, res) => {
     //delete by id
     res.send('made it to delete')
-    Crossfit.destroy({
+    Weighttraining.destroy({
         where: {
-            crossfit_id: req.params.crossfit_id,
+            Weighttraining_id: req.params.Weighttraining_id,
         },
     })
-        .then((deletedCrossfit) => {
-            res.json(deletedCrossfit);
+        .then((deletedWeighttraining) => {
+            res.json(deletedWeighttraining);
         })
         .catch((err) => {
             res.json(err);

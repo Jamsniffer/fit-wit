@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require("sequelize");
 const sequelize = require("../config/connection");
 
-class Cardio extends Model { }
+class Superhero extends Model {}
 
-Cardio.init(
+Superhero.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -11,33 +11,26 @@ Cardio.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    exercise_name: {
+    hero_name: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    description: {
-      type: DataTypes.STRING,
-    },
-    sets: {
+    user_id: {
       type: DataTypes.INTEGER,
-      defaultValue: 3
+      references: {
+        model: "user",
+        key: "id",
+      },
+      allowNull: true,
     },
-    reps: {
-      type: DataTypes.INTEGER,
-      defaultValue: 10
-    },
-    weight: {
-      type: DataTypes.INTEGER,
-      defaultValue: 30
-  }
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "cardio",
+    modelName: "superhero",
   }
 );
 
-module.exports = Cardio;
+module.exports = Superhero;

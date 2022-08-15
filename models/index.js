@@ -1,22 +1,26 @@
-const Bodybuilding = require("./Bodybuilding")
+const Weighttraining = require("./Weighttraining")
 const Calisthenics = require('./Calisthenics')
-const Cardio = require('./Cardio')
-const Crossfit = require('./Crossfit')
-const PowerLifting = require('./PowerLifting')
-const WeightLifting = require('./WeightLifting')
+const Superhero = require('./Superhero')
+
 
 const User = require('./User')
 
-// TO DO: Table associations
+// Table associations
+User.belongsTo(Weighttraining, {
+    foreignKey: 'weighttraining_id'
+})
 
+User.belongsTo(Calisthenics, {
+  foreignKey: "calisthenics_id",
+});
 
+User.belongsTo(Superhero, {
+    foreignKey: "hero_id",
+});
 
 module.exports = {
-    Bodybuilding,
+    Weighttraining,
     Calisthenics,
-    Cardio,
-    Crossfit,
-    PowerLifting,
-    WeightLifting,
-    User
+    User,
+    Superhero
 }
