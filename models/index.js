@@ -4,12 +4,22 @@ const Cardio = require('./Cardio')
 const Crossfit = require('./Crossfit')
 const PowerLifting = require('./PowerLifting')
 const WeightLifting = require('./WeightLifting')
+const Superhero = require('./Superhero')
 
 const User = require('./User')
 
-// TO DO: Table associations
+// Table associations
+User.belongsTo(Bodybuilding, {
+    foreignKey: 'bodybuilding_id'
+})
 
+User.belongsTo(Calisthenics, {
+  foreignKey: "calisthenics_id",
+});
 
+User.belongsTo(Superhero, {
+    foreignKey: "hero_id",
+});
 
 module.exports = {
     Bodybuilding,
@@ -18,5 +28,6 @@ module.exports = {
     Crossfit,
     PowerLifting,
     WeightLifting,
-    User
+    User,
+    Superhero
 }

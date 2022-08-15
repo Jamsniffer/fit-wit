@@ -4,8 +4,9 @@ const seedCardio = require("./cardioSeed");
 const seedCrossfit = require("./crossfitSeed");
 const seedPowerlifting = require("./powerLiftingSeed");
 const seedWeightlifting = require("./weightLiftingSeed");
+const seedSuperhero = require("./superheroSeed");
 
-const seedUser = require('./userSeed');
+const seedUser = require("./userSeed");
 
 const sequelize = require("../config/connection");
 
@@ -34,6 +35,8 @@ const seedAll = async () => {
   await seedUser();
   console.log("\n----- USER TABLE SEEDED -----\n");
 
+  await seedSuperhero();
+  console.log("\n----- SUPERHERO TABLE SEEDED -----\n");
 
   process.exit(0);
 };

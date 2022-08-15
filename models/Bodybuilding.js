@@ -29,6 +29,14 @@ Bodybuilding.init(
         weight: {
             type: DataTypes.INTEGER,
             defaultValue: 30
+        },
+        user_id: {
+            type: DataTypes.INTEGER,
+            references: {
+                model: 'user',
+                key: 'id',
+            },
+            allowNull: true
         }
     },
     {
