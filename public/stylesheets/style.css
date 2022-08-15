@@ -35,8 +35,10 @@ body .section{
 
 .profile {
     display: grid;
-    height: 17vh;
+    height: 14rem;
+    align-items: end;
 }
+
 
 .profile-pic {
     justify-content: center;
@@ -87,6 +89,17 @@ body .section{
 .sidebar .profile p {
     color: rgb(206, 240, 253);
     font-size: 14px;
+}
+
+.sidebar .profile h1 {
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 10px 0 5px;
+    /* position: relative; */
+    top: -8rem;
+    
 }
 
 .sidebar ul li a:hover,
@@ -170,15 +183,65 @@ header nav a {
     color:aquamarine
 }
 
+/* header{
+	bac kground: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+} */
 
-.sidebar > * {
+/* header a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+header a:hover{
+	color: #a2ecff;
+} 
+
+header nav a {
+    color: #a7dcf5;
+} */
+
+
+.nav-bar {
+    background: rgb(7, 105, 185);
+	min-height: 5em;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #a7dcf5;   
+}
+
+.nav-bar a:hover{
+	color: #a2ecff;
+} 
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20rem;
+    float: left;
+    width: 20%;
+}
+
+.sidebar * {
     flex-basis: 100%;
 }
 
 .sidebar {
     align-items: end;
     background-blend-mode: center;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     margin: auto;
     background: rgb(7, 105, 185);
@@ -191,10 +254,66 @@ header nav a {
     padding: 20px 0;
     transition: all 0.5s ease;
     float: left;
-    width: 30%;
+    width: 20%;
     min-width: 25ch;
     position: fixed;
-    top: 7rem;
+    top: 5rem;
+    display: grid;
+    grid-template-rows: 13rem 21rem;
+}
+
+
+.sidebar-nav {
+    justify-content: space-around;
+    background: rgb(7, 105, 185);
+    width: 20vw;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    align-self: end;
+    grid-template-rows: 5rem 5rem 5rem 5rem;
+}
+
+.nav-menu {
+    /* background: rgb(7, 105, 185); */
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-title {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.6s ease;
+}
+
+.nav-link:hover {
+    color:#f4fbff ;
+}
+
+.nav-item {
+ 
+    width: 9rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 0.3rem;
+    width: 2rem;
+    display: block;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
 }
 
 .sidebar ul  {
@@ -217,7 +336,7 @@ header nav a {
     /* align-self: center; */
     position: fixed;
     top: 2rem;
-    /* max-width: 20vw;
+    max-width: 20vw;
 }
 
 header{
@@ -227,10 +346,16 @@ header{
     min-width: 100vw;
     margin: auto;
 }
+/* 
+@media(max-width:769px) {
+    .hamburger {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
-    .ultra-container {
+    container {
        flex-direction: column-reverse;        
    }
 
@@ -247,7 +372,7 @@ header{
 
 .title label {
     padding-top: 1rem;
-}
+} */
 
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
@@ -260,6 +385,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font: 3rem;
 }
 
+
+/* 
 .exercise-container {
      /* grid-template-rows: 63px 303px; */
      display: grid;
@@ -310,7 +437,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     justify-content: left;
     align-items: center;
     /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
+    /* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -333,14 +460,27 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option7, .exercise-option8, 
 .exercise-option9, .exercise-option10 {
     float: right;
+} */
+=======
+    display: flex;
+    margin: 10px 0 5px;
+    /* position: relative; */
+    top: -8rem;
+    
 }
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 :hover {
-    cursor: pointer;
+
+.sidebar ul li {
+    color: rgb(157, 212, 244);
+    justify-content: space-between;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    /* position: relative; */
+    top: -31vh;
+    margin: auto;
+    left: 2vw;
 }
+>>>>>>> fe58585e19d85b6a045ecff93e63d13f3a670136
 
 
 
@@ -487,6 +627,10 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     grid-template-rows: 5rem 3rem;
     align-items: center;
     row-gap: 1rem;
+    display: grid;
+    grid-template-rows: 5rem 3rem;
+    align-items: center;
+    row-gap: 1rem;
     text-align: center;
 } */
 
@@ -497,6 +641,8 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
 
 
 
+/* .powerlifting-choices li {
+    width: 41vw;
 /* .powerlifting-choices li {
     width: 41vw;
 }
