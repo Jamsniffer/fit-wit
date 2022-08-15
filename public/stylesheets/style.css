@@ -385,8 +385,6 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font: 3rem;
 }
 
-
-/* 
 .exercise-container {
      /* grid-template-rows: 63px 303px; */
      display: grid;
@@ -437,7 +435,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     justify-content: left;
     align-items: center;
     /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
+    grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -460,27 +458,14 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option7, .exercise-option8, 
 .exercise-option9, .exercise-option10 {
     float: right;
-} */
-=======
-    display: flex;
-    margin: 10px 0 5px;
-    /* position: relative; */
-    top: -8rem;
-    
 }
-
-.sidebar ul li {
-    color: rgb(157, 212, 244);
-    justify-content: space-between;
-    font-family: sans-serif;
-    font-size: 1.3rem;
-    font-weight: 400;
-    /* position: relative; */
-    top: -31vh;
-    margin: auto;
-    left: 2vw;
+.exercise-option1, .exercise-option2, 
+.exercise-option3, .exercise-option4, 
+.exercise-option5, .exercise-option6, 
+.exercise-option7, .exercise-option8, 
+.exercise-option9, .exercise-option10 :hover {
+    cursor: pointer;
 }
->>>>>>> fe58585e19d85b6a045ecff93e63d13f3a670136
 
 
 
@@ -627,10 +612,6 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     grid-template-rows: 5rem 3rem;
     align-items: center;
     row-gap: 1rem;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
     text-align: center;
 } */
 
@@ -641,8 +622,6 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
 
 
 
-/* .powerlifting-choices li {
-    width: 41vw;
 /* .powerlifting-choices li {
     width: 41vw;
 }
