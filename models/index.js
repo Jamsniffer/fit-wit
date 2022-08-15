@@ -8,11 +8,7 @@ const Superhero = require('./Superhero')
 
 const User = require('./User')
 
-// TO DO: Table associations
-Bodybuilding.belongsTo(User, {
-    foreignKey: 'user_id'
-})
-
+// Table associations
 User.belongsTo(Bodybuilding, {
     foreignKey: 'bodybuilding_id'
 })
