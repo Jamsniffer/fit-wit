@@ -1,12 +1,13 @@
-const Bodybuilding = require("./Weighttraining")
+const Weighttraining = require("./Weighttraining")
 const Calisthenics = require('./Calisthenics')
 const Superhero = require('./Superhero')
+
 
 const User = require('./User')
 
 // Table associations
-User.belongsTo(Bodybuilding, {
-    foreignKey: 'bodybuilding_id'
+User.belongsTo(Weighttraining, {
+    foreignKey: 'weighttraining_id'
 })
 
 User.belongsTo(Calisthenics, {
@@ -18,12 +19,8 @@ User.belongsTo(Superhero, {
 });
 
 module.exports = {
-    Bodybuilding,
+    Weighttraining,
     Calisthenics,
-    Cardio,
-    Crossfit,
-    PowerLifting,
-    WeightLifting,
     User,
     Superhero
 }

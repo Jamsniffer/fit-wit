@@ -8,10 +8,9 @@ const superheroRoutes = require('./superheroRoutes');
 
 
 router.use("/user", userRoutes);
-router.use('/bodybuilding', bodybuildingRoutes);
+router.use("/weighttraining", weighttrainingRoutes);
 router.use('/calisthenics', calisthenicsRoutes);
 router.use("/superhero", superheroRoutes);
-router.use("/weighttraining", weighttrainingRoutes);
 
 
 
