@@ -8,6 +8,7 @@ const cardioRoutes = require('./cardioRoutes');
 const crossfitRoutes = require('./crossfitRoutes');
 const powerLiftingRoutes = require('./powerLiftingRoutes');
 const weightLiftingRoutes = require('./weightLiftingRoutes');
+const superheroRoutes = require('./superheroRoutes');
 
 
 router.use("/user", userRoutes);
@@ -17,6 +18,8 @@ router.use('/cardio', cardioRoutes);
 router.use('/crossfit', crossfitRoutes);
 router.use('/powerlifting', powerLiftingRoutes);
 router.use('/weightlifting', weightLiftingRoutes);
+router.use("/superhero", superheroRoutes);
+
 
 
 module.exports = router

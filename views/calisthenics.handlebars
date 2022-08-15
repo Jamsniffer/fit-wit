@@ -1,0 +1,188 @@
+
+
+
+<section>
+<div class="wrapper">
+{{!-- <div class="wrapper">
+    <div class="top_navbar">
+        <nav>
+            {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">Logout</button>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}       
+        </nav>       
+     </div> --}}
+     
+
+  
+    <nav>
+    
+    <div class="sidebar">
+        {{!-- profile image and text --}}
+        <!--menu items-->
+         <div class="home">
+            <a href="/homepage"><h1>Home</h1></a>           
+        </div>
+                {{#if loggedIn}}
+                <div class="profile">
+                    <img src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png">
+                    <h4>Username</h4>
+                </div>
+                {{/if}}
+                <a href="#" class="active"></a>
+                   <span class="material-symbols-outlined">home</span>                               
+                
+                <ul>
+                {{!-- <li>
+                    <a href="#" class="active">
+                        <span class="icon"><i class="fas fa-home"></i></span>
+                        <span class="item">Home</span>
+                    </a>
+                </li> --}}
+        
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-user-friends"></i></span>
+                        <a href="/user-dashboard">Number of Exercises</a>       
+                  
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-tachometer-alt"></i></span>
+                    <a href="/user-dashboard">Finsh Up</a>  
+                        
+                        {{!-- <span class="item">Finish Selection</span> --}}
+                    </a>
+                </li>
+                  <li>
+                    <a href="#">
+                       <span class="icon"><i class="fas fa-desktop"></i></span>
+                       <a href="/user-dashboard">Go to Dashboard</a>  
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fas fa-chart-line"></i></span>
+                       <a href="/safety">Tips for Safety</a>  
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        </div>
+    </div>
+    </div>
+</nav>
+    <h2>Choose which type of Calisthenics you'd like to use</h2>
+
+    <article class="calisthenics">
+        <div class="title">
+            <label for="calisthenics-title">Calisthenics Options</label>
+        </div>
+        <div>
+
+            <ol class="calisthenics-choices">
+
+                <li>
+                    option1test
+                    <button type="button" class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option2test
+                  <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option3test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option4test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option5test
+                    <button class="exercise-option">Add</button>
+                </li>
+            
+            </ol>
+        </div>
+    </article>
+
+<br>
+
+ <h2>Choose which type of Plyometrics you'd like to use</h2>
+
+    <article class="plyometrics">
+        <div class="title">
+            <label for="plyometrics-title">Calisthenics Options</label>
+        </div>
+        <div>
+
+            <ol class="plyometrics-choices">
+
+                <li>
+                    option1test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option2test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option3test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option4test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option5test
+                    <button class="exercise-option">Add</button>
+                </li>
+            
+            </ol>
+        </div>
+    </article>
+
+<br>
+
+
+ <h2>Choose which type of Isometrics you'd like to use</h2>
+
+    <article class="isometrics">
+        <div class="title">
+            <label for="isometrics-title">Calisthenics Options</label>
+        </div>
+        <div>
+
+            <ol class="isomentrics-choices">
+
+                <li>
+                    option1test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option2test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option3test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option4test
+                    <button class="exercise-option">Add</button>
+                </li>
+                <li>
+                    option5test
+                    <button class="exercise-option">Add</button>
+                </li>
+            
+            </ol>
+        </div>
+        
+    </article>
+
+</section>
