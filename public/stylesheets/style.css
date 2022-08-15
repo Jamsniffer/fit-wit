@@ -35,8 +35,10 @@ body .section{
 
 .profile {
     display: grid;
-    height: 17vh;
+    height: 14rem;
+    align-items: end;
 }
+
 
 .profile-pic {
     justify-content: center;
@@ -181,15 +183,65 @@ header nav a {
     color:aquamarine
 }
 
+/* header{
+	bac kground: rgb(7, 105, 185);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+ 
+} */
 
-.sidebar > * {
+/* header a{
+	font-size: 28px;
+	color: #f4fbff;
+}
+
+header a:hover{
+	color: #a2ecff;
+} 
+
+header nav a {
+    color: #a7dcf5;
+} */
+
+
+.nav-bar {
+    background: rgb(7, 105, 185);
+	min-height: 5em;
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #a7dcf5;   
+}
+
+.nav-bar a:hover{
+	color: #a2ecff;
+} 
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20rem;
+    float: left;
+    width: 20%;
+}
+
+.sidebar * {
     flex-basis: 100%;
 }
 
 .sidebar {
     align-items: end;
     background-blend-mode: center;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
     margin: auto;
     background: rgb(7, 105, 185);
@@ -202,10 +254,66 @@ header nav a {
     padding: 20px 0;
     transition: all 0.5s ease;
     float: left;
-    width: 30%;
+    width: 20%;
     min-width: 25ch;
     position: fixed;
-    top: 7rem;
+    top: 5rem;
+    display: grid;
+    grid-template-rows: 13rem 21rem;
+}
+
+
+.sidebar-nav {
+    justify-content: space-around;
+    background: rgb(7, 105, 185);
+    width: 20vw;
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    align-self: end;
+    grid-template-rows: 5rem 5rem 5rem 5rem;
+}
+
+.nav-menu {
+    /* background: rgb(7, 105, 185); */
+    width: 20vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-title {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.6s ease;
+}
+
+.nav-link:hover {
+    color:#f4fbff ;
+}
+
+.nav-item {
+ 
+    width: 9rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    height: 0.3rem;
+    width: 2rem;
+    display: block;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: white;
 }
 
 .sidebar ul  {
@@ -238,10 +346,16 @@ header{
     min-width: 100vw;
     margin: auto;
 }
+/* 
+@media(max-width:769px) {
+    .hamburger {
+        display: block;
+    }
+}
 
 @media only screen and (max-width: 992px) {
 
-    .ultra-container {
+    container {
        flex-direction: column-reverse;        
    }
 
@@ -258,7 +372,7 @@ header{
 
 .title label {
     padding-top: 1rem;
-}
+} */
 
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
