@@ -1,3 +1,2 @@
 DROP DATABASE IF EXISTS fitwit_db;
-<<<<<<< HEAD
 CREATE DATABASE fitwit_db;

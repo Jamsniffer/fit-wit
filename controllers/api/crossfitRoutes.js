@@ -1,4 +1,3 @@
-//import model here 
 const router = require('express').Router();
 const {Crossfit} = require('../../models');
 

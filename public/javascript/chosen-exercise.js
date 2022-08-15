@@ -24,9 +24,23 @@ for (let i = 0; i < workoutList.length; i++) {
         const titleDiv = document.createElement('div');
 
         const titleH1 = document.createElement('h1');
-        const setsH2 = document.createElement('h2');
-        const repsH2 = document.createElement('h2');
-        const weightH2 = document.createElement('h2');
+
+        const setsH2 = document.createElement('input');
+        setsH2.setAttribute('type', 'number');
+        setsH2.setAttribute('min', 1);
+        setsH2.setAttribute('max', 10);
+        setsH2.setAttribute('placeholder', 3);
+
+
+        const repsH2 = document.createElement('input');
+        repsH2.setAttribute('type', 'number');
+        repsH2.setAttribute('min', 1);
+        repsH2.setAttribute('placeholder', 10);
+
+        const weightH2 = document.createElement('input');
+        weightH2.setAttribute('type', 'number');
+        weightH2.setAttribute('min', 1);
+        weightH2.setAttribute('placeholder', '0lbs');
 
         titleDiv.classList = 'titleDiv';
         infoDiv.classList = 'infoDiv';
