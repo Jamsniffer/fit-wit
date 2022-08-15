@@ -1,79 +1,78 @@
-//import model here 
 const router = require('express').Router();
-const {Bodybuilding} = require('../../models');
+const {Superhero} = require('../../models');
 
 router.get('/', async (req, res) => {
     //find all
-    Bodybuilding.findAll()
-    .then((BodybuildingData) => {
-        res.json(BodybuildingData);
-    })
-    .catch(err => {
-        console.log('error/ bodybuilding:', err)
+    Superhero.findAll()
+      .then((SuperheroData) => {
+        res.json(SuperheroData);
+      })
+      .catch((err) => {
+        console.log("error/ superhero:", err);
         res.status(500).json(err);
-    });
+      });
 });
 
 router.get('/:id', (req, res) => {
     //find by id
-    Bodybuilding.findByPk(req.params.id)
-    .then((BodybuildingData) => {
-        res.json(BodybuildingData);
-    })
-    .catch(err => {
-        console.log('error/ bodybuilding:', err)
+    Superhero.findByPk(req.params.id)
+      .then((SuperheroData) => {
+        res.json(SuperheroData);
+      })
+      .catch((err) => {
+        console.log("error/ bodybuilding:", err);
         res.status(500).json(err);
-    });
+      });
 });
 
-router.post('/', (req, res) => {
-    //add to api
-    Bodybuilding.create(req.body)
-        .then((newBodybuilding) => {
-            res.json(newBodybuilding);
-        })
-        .catch((err) => {
-            res.json(err);
-        });
-});
+// router.post('/', (req, res) => {
+//     //add to api
+//     Superhero.create(req.body)
+//       .then((newSuperhero) => {
+//         res.json(newSuperhero);
+//       })
+//       .catch((err) => {
+//         res.json(err);
+//       });
+// });
 
-router.put('/:id', (req, res) => {
-    //update by id
-    Bodybuilding.update(
-        {
-            // All the fields you can update and the data attached to the request body.
-            name: req.body.name,
-            description: req.body.description
-        },
-        {
-            where: {
-                bodybuilding_id: req.params.bodybuilding_id,
-            },
-        }
-    )
-        .then((updatedBodybuilding) => {
-            res.json(updatedBodybuilding);
-        })
-        .catch((err) => {
-            console.log(err);
-            res.json(err);
-        });
-});
+// router.put('/:id', (req, res) => {
+//     //update by id
+//     Superhero.update(
+//       {
+//         // All the fields you can update and the data attached to the request body.
+//         name: req.body.name,
+//         description: req.body.description,
+//       },
+//       {
+//         where: {
+//           superhero_id: req.params.superhero_id,
+//         },
+//       }
+//     )
+//       .then((updatedSuperhero) => {
+//         res.json(updatedSuperhero);
+//       })
+//       .catch((err) => {
+//         console.log(err);
+//         res.json(err);
+//       });
+// });
 
-router.delete('/:id', (req, res) => {
-    //delete by id
-    res.send('made it to delete')
-    Bodybuilding.destroy({
-        where: {
-            bodybuilding_id: req.params.bodybuilding_id,
-        },
-    })
-        .then((deletedBodybuilding) => {
-            res.json(deletedBodybuilding);
-        })
-        .catch((err) => {
-            res.json(err);
-        });
-});
+// router.delete('/:id', (req, res) => {
+//     //delete by id
+//     res.send('made it to delete')
+//     Superhero.destroy({
+//       where: {
+//         superhero_id: req.params.superhero_id,
+//       },
+//     })
+//       .then((deletedSuperhero) => {
+//         res.json(deletedSuperhero);
+//       })
+//       .catch((err) => {
+//         res.json(err);
+//       });
+// });
 
 module.exports = router
