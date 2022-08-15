@@ -225,7 +225,7 @@ header nav a {
     border: none;
 }
 
-.bar {
+/* .bar {
     height: 0.2rem;
     width: 2rem;
     display: block;
@@ -233,7 +233,25 @@ header nav a {
     -webkit-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
     background-color: #ff984c;
+} */
+
+.hamburger .bar, .hamburger:after, .hamburger:before {
+    width: 100%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.3sec;
 }
+
+.hamburger.isactive:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+.hamburger.isactive:after {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+
+
+
 
 .nav-branding {
     display: flex;
@@ -309,7 +327,7 @@ header nav a {
         justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
-        /* position: fixed;
+        /* position: fixed;*/
     }
     
     .nav-item {
