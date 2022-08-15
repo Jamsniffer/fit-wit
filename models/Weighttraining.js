@@ -44,7 +44,7 @@ Weighttraining.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "bodybuilding",
+    modelName: "weighttraining",
   }
 );
 
