@@ -1,9 +1,7 @@
 const seedBodyBuilding = require("./bodybuildingSeed");
 const seedCalisthenics = require("./calisthenicsSeed");
-const seedCardio = require("./cardioSeed");
-const seedCrossfit = require("./crossfitSeed");
 const seedPowerlifting = require("./powerLiftingSeed");
-const seedWeightlifting = require("./weightLiftingSeed");
+const seedWeighttraining = require("./weighttrainingSeed");
 const seedSuperhero = require("./superheroSeed");
 
 const seedUser = require("./userSeed");
@@ -29,8 +27,8 @@ const seedAll = async () => {
   await seedPowerlifting();
   console.log("\n----- POWERLIFTING EXERCISES SEEDED -----\n");
 
-  await seedWeightlifting();
-  console.log("\n----- WEIGHTLIFTING EXERCISES SEEDED -----\n");
+  await seedWeighttraining();
+  console.log("\n----- WEIGHTTRAINING EXERCISES SEEDED -----\n");
 
   await seedUser();
   console.log("\n----- USER TABLE SEEDED -----\n");

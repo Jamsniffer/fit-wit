@@ -1,4 +1,4 @@
-const Bodybuilding = require("./Bodybuilding")
+const Bodybuilding = require("./Weighttraining")
 const Calisthenics = require('./Calisthenics')
 const Superhero = require('./Superhero')
 
