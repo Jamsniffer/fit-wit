@@ -1,9 +1,5 @@
 const Bodybuilding = require("./Bodybuilding")
 const Calisthenics = require('./Calisthenics')
-const Cardio = require('./Cardio')
-const Crossfit = require('./Crossfit')
-const PowerLifting = require('./PowerLifting')
-const WeightLifting = require('./WeightLifting')
 const Superhero = require('./Superhero')
 
 const User = require('./User')
