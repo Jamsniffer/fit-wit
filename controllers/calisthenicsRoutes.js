@@ -9,7 +9,7 @@ router
       const workout = dbCalisthenicsData.map((workout) =>
         workout.get({ plain: true })
       );
-      res.render("full-workout-list", { workout });
+      res.render("calisthenics", { workout });
     });
   })
 

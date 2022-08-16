@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
             const weighttraining = dbCalisthenicsData.map((weighttraining) =>
                 weighttraining.get({ plain: true })
             );
-            res.render("full-workout-list", { workout });
+            res.render("full-workout-list", { weighttraining, calisthenics });
         });
     });
 });
