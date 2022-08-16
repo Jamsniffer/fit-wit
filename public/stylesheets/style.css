@@ -5,19 +5,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-} 
+}
 
 body {
     min-height: 100vh;
 }
 
-body.active .sidebar{
-	left: -50em;
+body.active .sidebar {
+    left: -50em;
 }
 
-body .section{
-	margin-left: 0;
-	width: 100%;
+body .section {
+    margin-left: 0;
+    width: 100%;
 }
 
 .hide-sidebar {
@@ -72,7 +72,7 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li {
@@ -100,54 +100,54 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li a:hover,
-.sidebar ul li a.active{
+.sidebar ul li a.active {
     color: rgb(206, 240, 253);
     font-family: sans-serif;
-    
+
     border-right: 2px solid rgb(157, 212, 244);
 }
 
 .sidebar ul li a:hover .icon,
-.sidebar ul li a.active .icon{
+.sidebar ul li a.active .icon {
     color: #a7dcf5;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .sidebar ul li a:hover:before,
-.sidebar ul li a.active:before{
+.sidebar ul li a.active:before {
     display: block;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .hide-sidebar a {
     font-size: 3rem;
-    color:#a7dcf5
+    color: #a7dcf5
 }
 
-header{
+header {
     position: fixed;
     height: 5rem;
     /* margin-left: 225px; */
     transition: all 0.5s ease;
     min-width: 100vw;
     margin: auto;
- 
+
 }
 
-header a{
-	font-size: 28px;
-	color: #f4fbff;
+header a {
+    font-size: 28px;
+    color: #f4fbff;
 }
 
-header a:hover{
-	color: #a2ecff;
-} 
+header a:hover {
+    color: #a2ecff;
+}
 
 header nav a {
     color: #a7dcf5;
@@ -155,35 +155,35 @@ header nav a {
 
 
 
-/* header{
-	bac kground: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
-} */
+header {
+    background: rgb(7, 105, 185);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
 
-/* header a{
-	font-size: 28px;
-	color: #f4fbff;
 }
 
-header a:hover{
-	color: #a2ecff;
-} 
+header a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+header a:hover {
+    color: #a2ecff;
+}
 
 header nav a {
     color: #a7dcf5;
-} */
+}
 
 
 .nav-bar {
     background: rgb(7, 105, 185);
-	min-height: 3em;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
+    min-height: 3em;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
     justify-content: space-between;
 }
 
@@ -194,7 +194,7 @@ header nav a {
     justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
-    
+
 }
 
 .nav-title {
@@ -206,11 +206,11 @@ header nav a {
 }
 
 .nav-link:hover {
-    color:#f4fbff ;
+    color: #f4fbff;
 }
 
 .nav-item {
- 
+
     width: 9rem;
 }
 
@@ -235,7 +235,9 @@ header nav a {
     background-color: #ff984c;
 } */
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
+.hamburger .bar,
+.hamburger:after,
+.hamburger:before {
     width: 100%;
     height: 5px;
     background-color: white;
@@ -246,6 +248,7 @@ header nav a {
 .hamburger.isactive:before {
     transform: rotate(-45deg) translate(-8px, 6px);
 }
+
 .hamburger.isactive:after {
     transform: rotate(45deg) translate(-9px, -8px);
 }
@@ -268,12 +271,13 @@ header nav a {
 }
 
 .nav-bar a {
-    color: #a7dcf5;   
+    color: #a7dcf5;
 }
 
-.nav-bar a:hover{
-	color: #a2ecff;
-} 
+.nav-bar a:hover {
+    color: #a2ecff;
+}
+
 .login {
     position: relative;
     font-family: sans-serif;
@@ -285,7 +289,7 @@ header nav a {
     top: -1rem;
 }
 
-.login :hover{
+.login :hover {
     cursor: pointer;
     color: #a2ecff;
 }
@@ -301,21 +305,24 @@ header nav a {
     /* font-weight: 600; */
 }
 
-.sign_up :hover{
+.sign_up :hover {
     cursor: pointer;
-    color:aquamarine
+    color: aquamarine
 }
 
 @media(max-width: 1024px) {
     .hamburger {
         display: block;
     }
+
     .hamburger.active .bar:nth-child(2) {
         opacity: 0;
     }
+
     .hamburger.active .bar:nth-child(1) {
         transform: translateY(8px) rotate(45deg);
     }
+
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
@@ -329,7 +336,7 @@ header nav a {
         gap: 0.5rem;
         /* position: fixed;*/
     }
-    
+
     .nav-item {
         margin: 15px 0;
         width: 21rem;
@@ -341,7 +348,7 @@ header nav a {
         left: 0;
     }
 
-} 
+}
 
 .top-nav-container {
     height: 100vh;
@@ -350,9 +357,9 @@ header nav a {
     float: left;
     width: 20%;
     position: fixed;
-}*/
+}
 
-.side-nav-container {
+*/ .side-nav-container {
     height: 100vh;
     display: grid;
     /* grid-template-rows: 5rem 2rem; */
@@ -371,7 +378,7 @@ header nav a {
     /* display: flex; */
     flex-wrap: wrap;
     margin: auto;
-    background: rgb(7, 105, 185);
+    background: #0769b9;
     position: fixed;
     top: 0;
     left: 0;
@@ -386,8 +393,8 @@ header nav a {
     position: fixed;
     top: 5rem;
     display: grid;
-     /* grid-template-rows: 14rem 18rem; */
- } 
+    /* grid-template-rows: 14rem 18rem; */
+}
 
 
 /* .sidebar-nav {
@@ -403,11 +410,12 @@ header nav a {
 } */
 
 
-.sidebar ul  {
+.sidebar ul {
     color: #a2ecff;
 }
+
 .sidebar ul li p:hover {
-    color:aquamarine
+    color: aquamarine
 }
 
 /* .sidebar .home {
@@ -426,10 +434,10 @@ header nav a {
     max-width: 20vw;
 }
 
-header{
-	height: 5rem;
-	margin-left: 225px;
-	transition: all 0.5s ease;
+header {
+    height: 5rem;
+    margin-left: 225px;
+    transition: all 0.5s ease;
     min-width: 100vw;
     margin: auto;
 }
@@ -454,8 +462,9 @@ header{
 
 .title label {
     padding-top: 1rem;
-} */
+}
 
+*/
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
 deadpool ryan reynolds when hover
@@ -468,20 +477,20 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .exercise-container {
-     /* grid-template-rows: 63px 303px; */
-     display: grid;
-     /* display: flex; */
-     flex-wrap: wrap;
-     /* min-height: calc(100vh - 50px); */
-     /* max-width: 80vw; */
-     margin: 0 auto;
-     padding: 1em 1em;
-     float: right;
-     flex-grow: 1;
-     font-size: 24px;
-     font-weight: 700;
-     /* margin: auto; */
-     min-width: 77vw;
+    /* grid-template-rows: 63px 303px; */
+    display: grid;
+    /* display: flex; */
+    flex-wrap: wrap;
+    /* min-height: calc(100vh - 50px); */
+    /* max-width: 80vw; */
+    margin: 0 auto;
+    padding: 1em 1em;
+    float: right;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    /* margin: auto; */
+    min-width: 77vw;
 }
 
 .exercise-display-box {
@@ -534,23 +543,36 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font-size: xx-large;
 }
 
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10,
-.exercise-option11, .exercise-option12
-.exercise-option13, .exercise-option14, 
+.exercise-option1,
+.exercise-option2,
+.exercise-option3,
+.exercise-option4,
+.exercise-option5,
+.exercise-option6,
+.exercise-option7,
+.exercise-option8,
+.exercise-option9,
+.exercise-option10,
+.exercise-option11,
+.exercise-option12 .exercise-option13,
+.exercise-option14,
 .exercise-option15 {
     float: right;
 }
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10
-.exercise-option11, .exercise-option12,
-.exercise-option13, .exercise-option14, 
+
+.exercise-option1,
+.exercise-option2,
+.exercise-option3,
+.exercise-option4,
+.exercise-option5,
+.exercise-option6,
+.exercise-option7,
+.exercise-option8,
+.exercise-option9,
+.exercise-option10 .exercise-option11,
+.exercise-option12,
+.exercise-option13,
+.exercise-option14,
 .exercise-option15 :hover {
     cursor: pointer;
 }
@@ -608,11 +630,11 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
 /* 
 .exercise-container {
     /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
+/* display: grid; */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* min-height: calc(100vh - 50px); */
+/* max-width: 80vw;
     margin: auto;
     padding: 1em 1em;
     float: right;
@@ -620,7 +642,7 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     font-size: 24px;
     font-weight: 700;
     margin: auto;
-} */ 
+} */
 
 /* .heading-texts2 {
     padding: 1em 3em;
@@ -647,7 +669,7 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     justify-content: left;
     align-items: center;
     /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
+/* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -725,8 +747,8 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     padding: 0 1em;
     justify-content: left;
     align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
+/* grid-template-columns: 13rem 25rem; */
+/* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -789,7 +811,7 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     justify-content: left;
     align-items: center;
     /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
+/* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
@@ -810,12 +832,12 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
 
 
 /* .exercise-container3 { */
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
+/* grid-template-rows: 63px 303px; */
+/* display: grid; */
+/* display: flex; */
+/* flex-wrap: wrap; */
+/* min-height: calc(100vh - 50px); */
+/* max-width: 80vw;
     margin: auto;
     padding: 1em 1em;
     float: right;
@@ -836,8 +858,8 @@ https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93
     padding: 0 1em;
     justify-content: left;
     align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
+/* grid-template-columns: 13rem 25rem; */
+/* grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
