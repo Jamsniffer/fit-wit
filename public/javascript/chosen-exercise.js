@@ -5,7 +5,7 @@ const clickDiv = document.querySelector('.click');
 // creating back arrow element
 const backArrow = document.createElement('img');
 backArrow.classList = 'backArrow';
-backArrow.src = '../../assets/images/arrow-back-8.png';
+backArrow.src = '../images/arrow-back-8.png';
 
 for (let i = 0; i < workoutList.length; i++) {
     workoutList[i].addEventListener('click', function (event) {
