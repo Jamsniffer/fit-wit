@@ -1,4 +1,10 @@
-header {
+:root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+}
+
+.homepage header {
     padding: 0 8vw 3vw 8vw;
     display: flex;
     justify-content: space-between;
@@ -6,4 +12,15 @@ header {
     position: sticky;
     position: -webkit-sticky;
     z-index: 9999;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
 }
+
+
+/* Don't change color of clicked links */
+
+.homepage a:visited {
+    color: var(--tertiary-color);
+}
+
+/*  ----------------------------------- */
