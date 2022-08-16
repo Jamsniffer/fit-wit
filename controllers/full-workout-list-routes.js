@@ -1,8 +1,8 @@
 const router = require("express").Router();
-const sequelize = require("../config/connection");
 const models = require("../models");
 const withAuth = require("../utils/auth");
-const {Calisthenics, Weighttraining} = models;
+
+const { Calisthenics, Weighttraining, User } = models;
 router.get("/", (req, res) => {
     Calisthenics.findAll().then((dbCalisthenicsData) => {
         const calisthenics = dbCalisthenicsData.map((calisthenics) =>

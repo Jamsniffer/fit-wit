@@ -28,11 +28,17 @@ User.init(
         isEmail: true,
       },
     },
-    // fullWorkoutList:
-    // {
-    //   type: DataTypes.ARRAY(DataTypes.JSON),
-    //   allowNull: true,
-    // },
+    fullWorkoutListArray:
+    {
+      type: DataTypes.STRING,
+      get: function () {
+        return JSON.parse(this.getDataValue("fullWorkoutListArray"));
+      },
+      set: function (val) {
+        return this.setDataValue("fullWorkoutListArray", JSON.stringify(val));
+      },
+      allowNull:true,
+    },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -47,7 +53,7 @@ User.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
-      //Make usre updatedUserData has password
+      //Make sure updatedUserData has password
       async beforeUpdate(updatedUserData) {
         updatedUserData.password = await bcrypt.hash(
           updatedUserData.password,
