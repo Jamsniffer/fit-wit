@@ -8,8 +8,8 @@ router.get("/", (req, res) => {
         const calisthenics = dbCalisthenicsData.map((calisthenics) =>
             calisthenics.get({ plain: true })
         );
-        Weighttraining.findAll().then((dbCalisthenicsData) => {
-            const weighttraining = dbCalisthenicsData.map((weighttraining) =>
+        Weighttraining.findAll().then((dbWeighttrainingData) => {
+            const weighttraining = dbWeighttrainingData.map((weighttraining) =>
                 weighttraining.get({ plain: true })
             );
             res.render("full-workout-list", { weighttraining, calisthenics });
