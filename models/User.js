@@ -28,8 +28,14 @@ User.init(
         isEmail: true,
       },
     },
-    fullWorkoutListArray:
-    {
+    password: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        len: [8, 20],
+      },
+    },
+    fullWorkoutListArray: {
       type: DataTypes.STRING,
       get: function () {
         return JSON.parse(this.getDataValue("fullWorkoutListArray"));
@@ -37,14 +43,7 @@ User.init(
       set: function (val) {
         return this.setDataValue("fullWorkoutListArray", JSON.stringify(val));
       },
-      allowNull:true,
-    },
-    password: {
-      type: DataTypes.STRING,
-      allowNull: false,
-      validate: {
-        len: [8, 20],
-      },
+      allowNull: true,
     },
   },
   {
