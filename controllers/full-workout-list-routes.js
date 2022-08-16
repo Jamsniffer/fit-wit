@@ -1,8 +1,8 @@
 const router = require("express").Router();
 const sequelize = require("../config/connection");
-const { User, Calisthenics, Weighttraining } = require("../models");
+const models = require("../models");
 const withAuth = require("../utils/auth");
-
+const {Calisthenics, Weighttraining} = models;
 router.get("/", (req, res) => {
     Calisthenics.findAll().then((dbCalisthenicsData) => {
         const calisthenics = dbCalisthenicsData.map((calisthenics) =>
@@ -12,9 +12,11 @@ router.get("/", (req, res) => {
             const weighttraining = dbWeighttrainingData.map((weighttraining) =>
                 weighttraining.get({ plain: true })
             );
+            // TODO add users workouts. 
             res.render("full-workout-list", { weighttraining, calisthenics });
         });
     });
 });
+
 
 module.exports = router;

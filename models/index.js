@@ -7,19 +7,13 @@ const User = require('./User')
 
 // Table associations
 Weighttraining.hasOne(User);
-User.belongsTo(Weighttraining, {
-    foreignKey: 'weighttraining_id'
-});
+User.belongsTo(Weighttraining);
 
 Calisthenics.hasOne(User);
-User.belongsTo(Calisthenics, {
-  foreignKey: "calisthenics_id",
-});
+User.belongsTo(Calisthenics);
 
 Superhero.hasOne(User);
-User.belongsTo(Superhero, {
-    foreignKey: "hero_id",
-});
+User.belongsTo(Superhero);
 
 module.exports = {
     Weighttraining,

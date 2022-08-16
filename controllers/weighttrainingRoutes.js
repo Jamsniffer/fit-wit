@@ -8,7 +8,7 @@ router.get("/", (req, res) => {
         const weighttraining = dbWeighttrainingData.map((weighttraining) =>
             weighttraining.get({ plain: true })
         );
-        res.render("full-workout-list", { weighttraining });
+        res.render("weighttraining", { weighttraining });
     });
 })
 
