@@ -3,39 +3,43 @@ const { Weighttraining } = require("../models");
 const weighttrainingData = [
   {
     exercise_name: "Chest Press",
-    description: "Chest Press Description",
+    description:
+      "Start with your arms at chest level at your sides, elbows bent and pointing out. Slowly exhale and lift your arms above your chest. Inhale and slowly lower your arms to your sides to the starting position. Continue to press up.",
   },
   {
     exercise_name: "Deadlift",
-    description: "Deadlift Description",
+    description:
+      "A movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout.",
   },
   {
     exercise_name: "Squat",
-    description: "Squat Description",
+    description:
+      "Lowers your hips from a standing position and then stand back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; the hip and knee joints extend and the ankle joint plantarflexes when standing up.",
   },
   {
     exercise_name: "Leg Press",
-    description: "Leg Press Description",
+    description:
+      "In a seated position. Your legs repeatedly press against weights, which can be adjusted. This targets your quads, glutes, hamstrings, hips, and calves. The seated position of leg presses helps keep your upper body and torso still.",
   },
   {
     exercise_name: "Biceps Arm Curl",
-    description: "Biceps Arm Curl Description",
+    description:
+      "Hold barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows. Slowly lower the weight to return to the starting position.",
   },
   {
     exercise_name: "Pause Squat",
-    description: "Pause Squat Description",
+    description:
+      "Pause squats are exactly what they sound like. They're a regular squat, except you'll add a pause at the bottom of the squat. (You can also pause halfway between the top and parallel of the squat, though pausing at the bottom is more common.)",
   },
   {
     exercise_name: "Good Morning",
-    description: "Good Morning Description",
+    description:
+      "Perform good morning exercises by standing with your feet shoulder-width apart. Unrack a weighted barbell and rest it on your upper back using a similar bar position as a back squat.",
   },
   {
     exercise_name: "Bulgarian Split Squat",
-    description: "Bulgarian Split Squat Description",
-  },
-  {
-    exercise_name: "Close-Grip Bench Press",
-    description: "Close-Grip Bench Press Descriptions",
+    description:
+      "The Bulgarian split squat is a version of a single-leg squat where the back leg is elevated on a bench or a sturdy chair. As a single-leg, unilateral squat, the exercise focuses more on the quadriceps than other, similar lower-body compound movements.",
   },
 ];
 
