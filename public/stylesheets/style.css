@@ -1,3 +1,45 @@
+/* :root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+} */
+
+/* :root {
+    --primary-color: #0c0e0c;
+    --secondary-color: #d8323c;
+    --tertiary-color: #eaebea;
+} */
+
+/* :root {
+    --primary-color: #ff1700;
+    --secondary-color: #ffa600;
+    --tertiary-color: #4d6910;
+} */
+
+/* :root {
+    --primary-color: #a0fefb;
+    --secondary-color: #494fc1;
+    --tertiary-color: #fd084a;
+} */
+
+/* :root {
+    --primary-color: #e8c599;
+    --secondary-color: #bc6022;
+    --tertiary-color: #b72818;
+} */
+
+/* :root {
+    --primary-color: #fde4e3;
+    --secondary-color: #f282b4;
+    --tertiary-color: #ef415e;
+} */
+
+/* :root {
+    --primary-color: #e8c599;
+    --secondary-color: #bc6022;
+    --tertiary-color: #b72818;
+} */
+
 * {
     list-style: none;
     text-decoration: none;
@@ -19,6 +61,8 @@ body .section{
 	margin-left: 0;
 	width: 100%;
 }
+
+
 
 .hide-sidebar {
     display: flex;
@@ -155,43 +199,22 @@ header nav a {
 
 
 
-/* header{
-	bac kground: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
-} */
-
-/* header a{
-	font-size: 28px;
-	color: #f4fbff;
-}
-
-header a:hover{
-	color: #a2ecff;
-} 
-
-header nav a {
-    color: #a7dcf5;
-} */
-
-
 .nav-bar {
+    float: right;
+    width: 100%;
     background: rgb(7, 105, 185);
-	min-height: 3em;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
     justify-content: space-between;
 }
 
 
 .nav-menu {
-    width: 90%;
+    width: 51%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 0.5rem;
     
@@ -236,7 +259,7 @@ header nav a {
 } */
 
 .hamburger .bar, .hamburger:after, .hamburger:before {
-    width: 100%;
+    width: 30%;
     height: 5px;
     background-color: white;
     margin: 6px 0px;
@@ -250,18 +273,43 @@ header nav a {
     transform: rotate(45deg) translate(-9px, -8px);
 }
 
+.mobile-navigation {
+    left: 100%;
+    background-color: darkblue;
+    padding-top: 115px;
+    position: fixed;
+    display: block;
+    width: 30%;  
+    min-height: 100vh;
+    left: 0;
+    top: 0;
+    transition: 0.4s; 
+    z-index: 98;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    padding: 13px 15px;
+    background-color: rgb(27, 27, 187);
+    max-width: 200px;
+    width: 12rem;
+    color: white;
+}
+
+.mobile-navigation a:hover {
+    background-color: rgb(37, 37, 204);
+}
 
 
-
-.nav-branding {
+/* .nav-branding {
     display: flex;
-    /* float: right; */
-    /* justify-content: space-between; */
-    /* gap: 3rem; */
-    /* margin: 0 3rem; */
     position: relative;
     left: 52rem;
-}
+} */
 
 .nav-bar li {
     list-style: none;
@@ -292,72 +340,47 @@ header nav a {
 
 
 .sign_up {
+    left: -6rem;
     position: relative;
     font-family: sans-serif;
-    /* background-color: rgb(7, 105, 185); */
-    /* font-size: 1em; */
-    /* border: 1px solid white; */
-    left: 49vw;
-    /* font-weight: 600; */
 }
 
 .sign_up :hover{
     cursor: pointer;
     color:aquamarine
+    
 }
 
-@media(max-width: 1024px) {
+@media(min-width: 768px) {
+    .mobile-navigation {
+        display: none;
+    }
+
     .hamburger {
-        display: block;
-    }
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-    .hamburger.active .bar:nth-child(1) {
-        transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3) {
-        transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-menu {
-        background: rgb(7, 105, 185);
-        width: 90%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 0.5rem;
-        /* position: fixed;*/
-    }
-    
-    .nav-item {
-        margin: 15px 0;
-        width: 21rem;
-        width: 21rem;
-        font-size: 1.3rem;
-    }
-
-    .nav-menu.active {
-        left: 0;
+        display: none;
     }
 
 } 
 
+
 .top-nav-container {
+    background: rgb(7, 105, 185);
+    height: 6rem;
+    display: grid;
+    grid-template-rows: 20rem;
+    float: left;
+    width: 100%;
+    position: fixed;
+}
+
+.side-nav-container {
+    background: rgb(7, 105, 185);
     height: 100vh;
     display: grid;
     grid-template-rows: 20rem;
     float: left;
-    width: 20%;
+    width: 18%;
     position: fixed;
-}*/
-
-.side-nav-container {
-    height: 100vh;
-    display: grid;
-    /* grid-template-rows: 5rem 2rem; */
-    float: left;
-    width: 15rem;
 }
 
 
@@ -366,7 +389,7 @@ header nav a {
 }
 
 .sidebar {
-    align-items: end;
+    align-items: center;
     background-blend-mode: center;
     /* display: flex; */
     flex-wrap: wrap;
@@ -376,32 +399,20 @@ header nav a {
     top: 0;
     left: 0;
     /* min-width: 170px; */
-    width: 20%;
-    height: 100vh;
+    /* width: 20%; */
+    /* height: 100vh; */
     /* padding: 20px 0; */
     transition: all 0.5s ease;
     float: left;
-    max-width: 15rem;
+    /* max-width: 20%; */
     /* min-width: 25ch; */
     position: fixed;
     top: 5rem;
     display: grid;
-     /* grid-template-rows: 14rem 18rem; */
+    grid-template-rows: 16rem 18rem;
+    grid-template-columns: 14rem;
+    width: 18%;
  } 
-
-
-/* .sidebar-nav {
-    justify-content: space-around;
-    background: rgb(7, 105, 185);
-    width: 20vw;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    align-self: end;
-    grid-template-rows: 5rem 5rem 5rem 5rem;
-} */
-
 
 .sidebar ul  {
     color: #a2ecff;
@@ -428,10 +439,11 @@ header nav a {
 
 header{
 	height: 5rem;
-	margin-left: 225px;
-	transition: all 0.5s ease;
+    margin-left: 225px;
+    transition: all 0.5s ease;
     min-width: 100vw;
     margin: auto;
+    background: rgb(7, 105, 185);
 }
 
 /* 
@@ -556,296 +568,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 
-
-
 /* harley quinn margot robbie when hover
 https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
 harley quinn comic 
 https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
-/* .exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em; */
-/* } */
-
-
-
-
-.marvel {
-    font-size: xx-large;
-}
-
-.marvel-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19.3rem;
-}
-
-.marvel-heroes li {
-    width: 41vw;
-    justify-content: space-around;
-}
-
-
-
-
-/* 
-.exercise-container {
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */ 
-
-/* .heading-texts2 {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center; */
-/* } */
-/* .title2 label {
-    padding-top: 1rem;
-} */
-
-/* .dc {
-    font-size: xx-large;
-}
-
-.dc-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-} */
-
-/* .dc-heroes li {
-    width: 41vw;
-}  */
-
-
-
-
-
-
-
-
-
-/* .sidebar .profile img {
-    display: block;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-   
-} */
-
-
-
-/*weightlifting start*/
-
-/* .exercise-display-box3 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em;
-} */
-
-/* .heading-texts {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-} */
-
-/* .title label {
-    padding-top: 1rem;
-} */
-
-
-
-
-/* .powerlifting-choices li {
-    width: 41vw;
-}
-
-.powerlifting {
-    font-size: xx-large;
-} */
-
-/* .powerlifting-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19.3rem;
-} */
-
-/* .powerlifting-choices li {
-    width: 41vw;
-} */
-
-/* .exercise-option {
-    float: right;
-} */
-
-/* .exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-} */
-
-/* .exercise-container {
-    
-    display: grid;
- 
-    flex-wrap: wrap;
-
-    max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */
-
-/* .heading-texts {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-} */
-/* .title3 label {
-    padding-top: 1rem;
-} */
-
-/* .bodybuilding {
-    font-size: xx-large;
-}
-
-.bodybuilding-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-} */
-
-/* .bodybuilding-choices li {
-    width: 41vw;
-}  */
-
-
-/* .exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-} */
-
-
-/* .exercise-container3 { */
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */
-
-/* .crossfit  {
-    font-size: xx-large;
-}
-
-.crossfit-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-}
-
-.crossfit-choices li {
-    width: 41vw;
-} */
