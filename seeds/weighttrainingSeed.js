@@ -9,22 +9,22 @@ const weighttrainingData = [
   {
     exercise_name: "Deadlift",
     description:
-      "The deadlift is a movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout the movement. Some benefits of performing deadlifts include strengthening and gaining more definition in your upper and lower back, glutes, and hamstrings.",
+      "A movement in which your hips hinge backward to lower down and pick up a weighted barbell or kettlebell from the floor. Your back is flat throughout.",
   },
   {
     exercise_name: "Squat",
     description:
-      "A squat is a strength exercise in which the trainee lowers their hips from a standing position and then stands back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; conversely the hip and knee joints extend and the ankle joint plantarflexes when standing up.",
+      "Lowers your hips from a standing position and then stand back up. During the descent of a squat, the hip and knee joints flex while the ankle joint dorsiflexes; the hip and knee joints extend and the ankle joint plantarflexes when standing up.",
   },
   {
     exercise_name: "Leg Press",
     description:
-      "Leg presses are done in a seated position. Your legs repeatedly press against weights, which can be adjusted according to your fitness level. This targets your quads, glutes, hamstrings, hips, and calves. The seated position of leg presses helps keep your upper body and torso still.",
+      "In a seated position. Your legs repeatedly press against weights, which can be adjusted. This targets your quads, glutes, hamstrings, hips, and calves. The seated position of leg presses helps keep your upper body and torso still.",
   },
   {
     exercise_name: "Biceps Arm Curl",
     description:
-      "Hold the barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. Slowly lower the weight to return to the starting position.",
+      "Hold barbell with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift the barbell toward the shoulders while bending the elbows. Slowly lower the weight to return to the starting position.",
   },
   {
     exercise_name: "Pause Squat",
