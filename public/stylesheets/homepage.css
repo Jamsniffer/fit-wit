@@ -4,17 +4,41 @@
     --tertiary-color: #FFFFFF;
 }
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .homepage header {
-    padding: 0 8vw 3vw 8vw;
+    padding: 0.5vw 4vw 0.5vw 4vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 9999;
     background-color: var(--primary-color);
     color: var(--tertiary-color);
+    align-items: center;
 }
+
+.homepage header h1 a {
+    display: flex;
+    font-weight: bold;
+    font-size: 3vw;
+    align-items: center;
+}
+
+.homepage nav ul li {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    display: inline-block;
+    font-size: 1vw;
+}
+
 
 
 /* Don't change color of clicked links */
