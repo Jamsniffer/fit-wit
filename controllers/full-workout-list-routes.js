@@ -8,14 +8,14 @@ router.get("/", (req, res) => {
     const calisthenics = dbCalisthenicsData.map((calisthenics) =>
       calisthenics.get({ plain: true })
     );
-    Weighttraining.findAll().then((dbWeighttrainingData) => {
-      const weighttraining = dbWeighttrainingData.map((weighttraining) =>
-        weighttraining.get({ plain: true })
-      );
+    // Weighttraining.findAll().then((dbWeighttrainingData) => {
+    //   const weighttraining = dbWeighttrainingData.map((weighttraining) =>
+    //     weighttraining.get({ plain: true })
+    //   );
       // TODO add users workouts.
       res.render("full-workout-list", { calisthenics, weighttraining });
     });
   });
-});
+// });
 
 module.exports = router;
