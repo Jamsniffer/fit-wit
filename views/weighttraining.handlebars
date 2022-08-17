@@ -84,7 +84,8 @@
         <div class="exercise-choice-container">
             <ol class="exercise-choices">
 
-                <li>
+                {{> mab}}
+                {{!-- <li>
 
                     <!-- <div class="dropdown-choices">
                         <button onclick="myFunction()" class="dropbtn">Add Exercise</button>
@@ -118,7 +119,7 @@
 
                         </div> 
                     </div>               
-                </li>
+                </li> --}}
                 <!-- <div class="favflex"> -->
                 <!-- <span class="fav_btn" href="" class="favme material-icons turned_in"></span>
                     </div> -->
@@ -319,6 +320,6 @@
     </section>
     {{/each}}
 </div>
-
+<script src="/views/layouts/partials/mab-partial.handlebars"></script>
 <script src="/javascript/weighttraining.js"></script>
 <script src="/javascript/multiactionbutton.js"></script>
