@@ -604,7 +604,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .mab__list--visible {
-    display: initial;
+    display: block;
 }
 
 .exercise-choices {
