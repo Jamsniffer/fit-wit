@@ -450,6 +450,7 @@ header nav a {
  } 
 
 .sidebar ul  {
+    min-height: 33vh;
     color: #a2ecff;
     min-width: 14rem;
     max-width: 30vw;
@@ -514,7 +515,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
      flex-wrap: wrap;
      margin: 0 auto;
      padding: 1em 1em;
-     float: right;
+     padding-top: 4rem;
      flex-grow: 1;
      font-size: 24px;
      font-weight: 700;
@@ -568,6 +569,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     position: relative;
     background: white;
     display: inline-flex;
+    float: right;
 } 
 
 .mab__button {
@@ -604,7 +606,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .mab__list--visible {
-    display: initial;
+    display: block;
 }
 
 .exercise-choices {
@@ -643,7 +645,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option9,
 .exercise-option10,
 .exercise-option11,
-.exercise-option12 .exercise-option13,
+.exercise-option12, 
+.exercise-option13,
 .exercise-option14,
 .exercise-option15 {
     float: right;
@@ -658,11 +661,13 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option7,
 .exercise-option8,
 .exercise-option9,
-.exercise-option10 .exercise-option11,
+.exercise-option10, 
+.exercise-option11,
 .exercise-option12,
 .exercise-option13,
 .exercise-option14,
 .exercise-option15 :hover {
+    float: right;
     cursor: pointer;
 }
 
