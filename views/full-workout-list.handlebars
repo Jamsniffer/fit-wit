@@ -10,41 +10,24 @@
   </div>
 </div>
 
-{{! this button should take the user back to the page where you can choose workouts and keep the workouts the user
-    has
-    already picked }}
-<section class="addExercise">
-  <img class="plusBtn" src="/images/plus-sign-button.svg" />
-  <button class="addBtn">Add an exercise</button>
-</section>
+<div class="click">
+  <h2 class="miscText">Click to edit!</h2>
+</div>
 
-{{! multiple of these sections below will be generated depending on how many exercises user chooses }}
-{{! all info related to workout will also be generated depending on user input }}
+{{#each calisthenics as |workout|}}
 <section class="workoutList">
-  {{! I would like this img below to show what body part the exercise is working next to all the info }}
-  {{! <img src="/"> }}
-  <h1 class="workoutTitle">Leg Press</h1>
+  <h1 class="workoutTitle">{{workout.exercise_name}}</h1>
   <div class="info">
-    <h2 class="sets">3 sets</h2>
-    <h2 class="reps">15 reps</h2>
-    <h2 class="weight">300lbs</h2>
+    <h2 class="sets">{{workout.sets}}</h2>
+    <h2 class="reps">{{workout.reps}}</h2>
+    <h2 class="weight">{{workout.weight}}</h2>
   </div>
 </section>
-
-<section class="workoutList">
-  {{! I would like this img below to show what body part the exercise is working next to all the info }}
-  {{! <img src="/"> }}
-  <h1 class="workoutTitle">Lat Pulldowns</h1>
-  <div class="info">
-    <h2 class="sets">3 sets</h2>
-    <h2 class="reps">15 reps</h2>
-    <h2 class="weight">90lbs</h2>
-  </div>
-</section>
+{{/each}}
 
 <div class="finishWorkout">
   <button class="finishBtn">Finish Workout</button>
 </div>
 
-<script src="./public/javascript/full-workout-list.js"></script>
-<script src="./public/javascript/chosen-exercise.js"></script>
+<script src="/javascript/full-workout-list.js"></script>
+<script src="/javascript/chosen-exercise.js"></script>
