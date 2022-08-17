@@ -15,6 +15,17 @@
     background-color: var(--primary-color);
 }
 
+.logoutBTN {
+    background: var(--secondary-color);
+    padding: 20%;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.logoutBTN:hover {
+    background-color: #035292;
+}
+
 /* Header and Nav items START */
 
 .homepage .wrapper header {
@@ -59,7 +70,7 @@
     margin: 0 auto;
 }
 
-.homepage .hero .hero-main h2{
+.homepage .hero .hero-main h2 {
     font-size: 2.5vw;
     padding: 1vw 0 1vw 2vw;
     border-bottom: solid var(--secondary-color);

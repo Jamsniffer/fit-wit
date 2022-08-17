@@ -10,6 +10,6 @@ router.get("/", (req, res) => {
         );
         res.render("weighttraining", { weighttraining });
     });
-})
+});
 
 module.exports = router;

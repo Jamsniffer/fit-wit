@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="/stylesheets/workout-list.css" />
   <link rel="stylesheet" href="/stylesheets/chosen-exercise.css" />
+  <link rel="stylesheet" href="/stylesheets/login-page.css" />
   <link rel="stylesheet" href="/stylesheets/style.css" />
   <link rel="stylesheet" href="/stylesheets/homepage.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-  <title>Document</title>
+  <title>Fit-Wit</title>
 
 </head>
 
@@ -26,11 +27,11 @@
         <nav>
           <ul>
             <li>
-              <a href="/full-workout-list">Workouts</a>
+              <a href="/full-workout-list">Start Workout</a>
             </li>
             <li>
               {{#if loggedIn}}
-              <button id="logout" class="btn-no-style">logout</button>
+              <button id="logout" class="logoutBTN">logout</button>
               {{else}}
               <a href="/login">Sign Up / Login</a>
               {{/if}}
@@ -38,13 +39,13 @@
           </ul>
         </nav>
       </header>
-    <main>
-      {{{body}}}
-    </main>
-    <footer>
-      Thanks for visiting!
-    </footer>
-  </div>
+      <main>
+        {{{body}}}
+      </main>
+      <footer>
+        Thanks for visiting!
+      </footer>
+    </div>
   </div>
 
   {{#if loggedIn}}
