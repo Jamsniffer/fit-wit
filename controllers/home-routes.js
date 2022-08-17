@@ -14,17 +14,17 @@ router.get("/login", (req, res) => {
   res.render("login");
 });
 
-router.get("/calisthenics", (req, res) => {
-  res.render("calisthenics");
-});
+// router.get("/calisthenics", (req, res) => {
+//   res.render("calisthenics");
+// });
 
-router.get("/weighttraining", (req, res) => {
-  res.render("weighttraining");
-});
+// router.get("/weighttraining", (req, res) => {
+//   res.render("weighttraining");
+// });
 
-router.get("/full-workout-list", (req, res) => {
-  res.render("full-workout-list");
-});
+// router.get("/full-workout-list", (req, res) => {
+//   res.render("full-workout-list");
+// });
 
 router.get("/chosen-exercise", (req, res) => {
   res.render("chosen-exercise");

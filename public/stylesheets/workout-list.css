@@ -144,14 +144,33 @@ body {
     width: 80%;
 }
 
-@media screen and (max-width: 850px) {
-    .plusBtn {
-        width: 3%;
-    }
+.choicesDiv {
+    border: 2px solid var(--tertiary-color);
+    position: relative;
+    padding: 2%;
+    left: 15%;
+    margin: 2%;
+    margin-top: 1%;
+    width: 82%;
 }
 
-@media screen and (max-width: 400px) {
-    .plusBtn {
-        width: 5%;
-    }
+.trash {
+    width: 2%;
+    filter: invert(100%);
+}
+
+.choicesH1 {
+    display: block;
+    width: 100%;
+    color: var(--tertiary-color);
+    font-size: 100%;
+    margin-bottom: .5%;
+}
+
+.choicesinfo {
+    display: flex;
+    width: 80%;
+    color: #7e8087;
+    justify-content: flex-start;
+    font-size: 50%;
 }
