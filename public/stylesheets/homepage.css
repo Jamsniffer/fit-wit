@@ -4,19 +4,76 @@
     --tertiary-color: #FFFFFF;
 }
 
-.homepage header {
-    padding: 0 8vw 3vw 8vw;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+/* Header and Nav items START */
+
+.homepage .wrapper header {
+    padding: 0.5vw 4vw 0.5vw 4vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 9999;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--secondary-color);
     background-color: var(--primary-color);
-    color: var(--tertiary-color);
 }
 
+.homepage .wrapper header h1 a {
+    display: flex;
+    font-weight: bold;
+    font-size: 3vw;
+    align-items: center;
+    padding: 0 0 0 2vw;
+}
 
+.homepage .wrapper header nav ul li {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    display: inline-block;
+    font-size: 1vw;
+    padding: 0 .3vw 0 .3vw;
+}
+
+/* Header and Nav items END */
+
+/* Hero section START */
+.homepage .hero .hero-main {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.homepage .hero .hero-main h2{
+    font-size: 2.5vw;
+    padding: 1vw 0 1vw 2vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .hero .hero-cta {
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2vw;
+}
 /* Don't change color of clicked links */
 
 .homepage a:visited {

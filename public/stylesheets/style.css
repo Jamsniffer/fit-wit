@@ -175,7 +175,7 @@ body .section {
 }
 
 header {
-    position: fixed;
+    position: sticky;
     height: 5rem;
     /* margin-left: 225px; */
     transition: all 0.5s ease;
