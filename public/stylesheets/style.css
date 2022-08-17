@@ -47,19 +47,19 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-} 
+}
 
 body {
     min-height: 100vh;
 }
 
-body.active .sidebar{
-	left: -50em;
+body.active .sidebar {
+    left: -50em;
 }
 
-body .section{
-	margin-left: 0;
-	width: 100%;
+body .section {
+    margin-left: 0;
+    width: 100%;
 }
 
 
@@ -116,7 +116,7 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li {
@@ -144,34 +144,34 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li a:hover,
-.sidebar ul li a.active{
+.sidebar ul li a.active {
     color: rgb(206, 240, 253);
     font-family: sans-serif;
-    
+
     border-right: 2px solid rgb(157, 212, 244);
 }
 
 .sidebar ul li a:hover .icon,
-.sidebar ul li a.active .icon{
+.sidebar ul li a.active .icon {
     color: #a7dcf5;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .sidebar ul li a:hover:before,
-.sidebar ul li a.active:before{
+.sidebar ul li a.active:before {
     display: block;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .hide-sidebar a {
     font-size: 3rem;
-    color:#a7dcf5
+    color: #a7dcf5
 }
 
 header {
@@ -184,14 +184,14 @@ header {
 
 }
 
-header a{
-	font-size: 28px;
-	color: #f4fbff;
+header a {
+    font-size: 28px;
+    color: #f4fbff;
 }
 
-header a:hover{
-	color: #a2ecff;
-} 
+header a:hover {
+    color: #a2ecff;
+}
 
 header nav a {
     color: #a7dcf5;
@@ -273,13 +273,14 @@ header nav a {
     border: none;
 } */
 
-/* header{
-	bac kground: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
+/* .bar {
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #ff984c;
 } */
 
 /* .hamburger .bar, .hamburger:after, .hamburger:before {
@@ -290,9 +291,9 @@ header nav a {
     transition: 0.3sec;
 }
 
-header a:hover{
-	color: #a2ecff;
-} 
+.hamburger.isactive:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
 
 .hamburger.isactive:after {
     transform: rotate(45deg) translate(-9px, -8px);
@@ -352,7 +353,7 @@ header a:hover{
 }
 
 .nav-bar a {
-    color: #a7dcf5;   
+    color: #a7dcf5;
 }
 
 .nav-bar a:hover {
@@ -422,6 +423,7 @@ header a:hover{
     top: -1vh;
 }
 
+
 .sidebar * {
     flex-basis: 100%;
 }
@@ -431,7 +433,7 @@ header a:hover{
     background-blend-mode: center;
     flex-wrap: wrap;
     margin: auto;
-    background: rgb(7, 105, 185);
+    background: #0769b9;
     position: fixed;
     top: 0;
     left: 0;
@@ -448,12 +450,14 @@ header a:hover{
  } 
 
 .sidebar ul  {
+    min-height: 33vh;
     color: #a2ecff;
     min-width: 14rem;
     max-width: 30vw;
 }
+
 .sidebar ul li p:hover {
-    color:aquamarine
+    color: aquamarine
 }
 
 /* .sidebar .home {
@@ -494,6 +498,7 @@ header{
     font-size: clamp(1.5rem, 2.8vw, 3rem);
 } 
 
+*/
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
 deadpool ryan reynolds when hover
@@ -510,7 +515,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
      flex-wrap: wrap;
      margin: 0 auto;
      padding: 1em 1em;
-     float: right;
+     padding-top: 4rem;
      flex-grow: 1;
      font-size: 24px;
      font-weight: 700;
@@ -564,6 +569,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     position: relative;
     background: white;
     display: inline-flex;
+    float: right;
 } 
 
 .mab__button {
@@ -600,7 +606,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .mab__list--visible {
-    display: initial;
+    display: block;
 }
 
 .exercise-choices {
@@ -620,45 +626,11 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     top: -19.3rem;
 }
 
-.marvel-heroes li {
+.exercise-choices li {
     width: 41vw;
-    justify-content: space-around;
 }
 
-
-
-
-/* 
-.exercise-container {
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */ 
-
-/* .heading-texts2 {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center; */
-/* } */
-/* .title2 label {
-    padding-top: 1rem;
-} */
-
-/* .dc {
+.exercise-section {
     font-size: xx-large;
 }
 
@@ -673,73 +645,35 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 .exercise-option9,
 .exercise-option10,
 .exercise-option11,
-.exercise-option12 .exercise-option13,
+.exercise-option12, 
+.exercise-option13,
 .exercise-option14,
 .exercise-option15 {
     float: right;
 }
 
-.bodybuilding-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-} */
-
-/* .bodybuilding-choices li {
-    width: 41vw;
-}  */
-
-
-/* .exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-} */
-
-
-/* .exercise-container3 { */
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
+.exercise-option1,
+.exercise-option2,
+.exercise-option3,
+.exercise-option4,
+.exercise-option5,
+.exercise-option6,
+.exercise-option7,
+.exercise-option8,
+.exercise-option9,
+.exercise-option10, 
+.exercise-option11,
+.exercise-option12,
+.exercise-option13,
+.exercise-option14,
+.exercise-option15 :hover {
     float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */
-
-/* .crossfit  {
-    font-size: xx-large;
+    cursor: pointer;
 }
 
-.crossfit-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-}
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
+

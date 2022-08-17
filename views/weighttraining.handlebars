@@ -1,16 +1,4 @@
-{{!-- <header>
-    <nav class="nav-bar">
-        <span>
-            <a href="#">
-                <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
-
-            <a href="#">
-                <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
-
-    </nav>
-</header> --}}
-
-    <div class="hamburger-container">
+<div class="hamburger-container">
         <div class="top-section">
             <div class="top-nav">
                 <button class="hamburger">
@@ -108,23 +96,23 @@
                       </div> -->
                     ExerciseNamePlaceholder                   
                     <!-- <a href="#"> -->
-                   
-                        <div class="mab">
+                      
+                        <div class="mab" data-value="1">
                         <button type="button" class="mab__button mab__button--primary">
                         <span class="material-icons md-38 mab__icon">add_task</span>
                         <span class="mab__text">Add Exercise</span>
                         </button>
 
-                        <button type="button" class="mab__button mab__button--menu">
+                        <button id="mab__button mab__button--primary" class="exercise-option1">
                             <span class="material-icons mab__icon">expand_more</span>
                         </button>
 
-                        <div class="mab__list">
+                        <div class="mab__list" id="list1">
                             <button type="button" class="mab__button mab__button--secondary">
                                 <span class="mab__text">Bookmark Exercise</span>
                             </button>
 
-                            <button type="button" class="mab__button mab__button--secondary">
+                            <button type="button" id="mab__button mab__button--primary" class="exercise-option1">
                                 <span class="mab__text">Remove Exercise</span>
                             </button>
 
@@ -269,7 +257,7 @@
         </div>
 
         <nav class="sidebar-nav">
-            <a href="#" class="nav-title">Activate</a>
+            <a href="#" class="nav-title"></a>
 
             <ul class="nav-menu">
                 <li class="nav-item">
@@ -282,13 +270,13 @@
                     <a href="#" class="nav-link">Dashboard</a>
                 </li>
             </ul>
-            <div class="hamburger">
+            {{!-- <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </div> --}}
 </section>
-<!-- <ul>              
+ <ul>              
                         <li>
                             <a href="#">
                                 <span class="material-icons">numbers</span>
@@ -314,22 +302,10 @@
                             </a>
                         </li>
         
-                    </ul> -->
+                    </ul> 
 </nav>
 
 <br>
 
-<div class="allWeighttraining">
-    {{#each weighttraining as |workout|}}
-    <section class="workoutList">
-        <h1 class="workoutTitle">{{workout.exercise_name}}</h1>
-        <div class="info">
-            <h2 class="description">{{workout.description}}</h2>
-            <button id={{workout.id}} type="button" class="exercise-option1"><span id={{workout.id}}
-                    class="material-icons md-38">add_task</span></button>
-        </div>
-    </section>
-    {{/each}}
-</div>
-
 <script src="/javascript/weighttraining.js"></script>
+<script src="/javascript/multiactionbutton.js"></script>
