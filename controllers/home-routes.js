@@ -1,7 +1,9 @@
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
-  res.render("homepage");
+  res.render("homepage", {
+    loggedIn: req.session.loggedIn
+  });
 });
 
 router.get("/login", (req, res) => {
@@ -26,6 +28,10 @@ router.get("/full-workout-list", (req, res) => {
 
 router.get("/chosen-exercise", (req, res) => {
   res.render("chosen-exercise");
+});
+
+router.get("/super-hero", (req, res) => {
+  res.render("super-hero");
 });
 
 module.exports = router;
