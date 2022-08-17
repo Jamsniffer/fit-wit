@@ -45,8 +45,8 @@
     flex-direction: row;
     align-items: center;
     display: inline-block;
-    font-size: 1vw;
-    padding: 0 .3vw 0 .3vw;
+    font-size: 1.5vw;
+    padding: 0 .3vw 0 2vw;
 }
 
 /* Header and Nav items END */
@@ -74,7 +74,69 @@
     margin: 0 auto;
     line-height: 1.2vw;
 }
-/* Don't change color of clicked links */
+
+.homepage .hero .hero-cta p {
+    text-align: left;
+    text-indent: 2vw;
+}
+
+/* Hero section END */
+
+/* Workouts section START */
+
+.homepage .workouts-title h2 {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    padding: 1vw 0 1vw 2vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .workouts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.homepage .workouts .workout {
+    margin: 2vw;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.homepage .workouts .workout img {
+    width: 20vw;
+    height: 25vw;
+    border: solid var(--secondary-color);
+}
+
+.homepage .workouts .workout .workout-name h3 {
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .workouts .workout .workout-description p {
+    width: 20vw;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    margin: 1vw auto;
+    text-align: left;
+    text-indent: 2vw;
+}
+
+/* Workouts section END */
+
+/* Sign up section START */
+
+
+
+/* This makes it so that links don't change color after they have been clicked */
 
 .homepage a:visited {
     color: var(--tertiary-color);

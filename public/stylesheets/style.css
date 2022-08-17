@@ -174,28 +174,28 @@ body .section {
     color: #a7dcf5
 }
 
-header {
+ /* header {
     position: sticky;
     height: 5rem;
-    /* margin-left: 225px; */
+    /* margin-left: 225px; 
     transition: all 0.5s ease;
-    min-width: 100vw;
+     min-width: 100vw;
     margin: auto;
 
-}
+}*/
 
-header a {
+/* header a {
     font-size: 28px;
     color: #f4fbff;
-}
+} */
 
-header a:hover {
+/* header a:hover {
     color: #a2ecff;
 }
 
 header nav a {
     color: #a7dcf5;
-}
+} */ 
 
 
 
@@ -464,7 +464,7 @@ header nav a {
     text-align: center;
    } */
 
-
+/* 
 header{
 	height: 5rem;
     margin-left: 225px;
@@ -472,7 +472,7 @@ header{
     min-width: 100vw;
     margin: auto;
     background: rgb(7, 105, 185);
-}
+} */
 
 /* 
 @media only screen and (max-width: 992px) {
