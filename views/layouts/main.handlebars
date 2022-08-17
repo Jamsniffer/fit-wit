@@ -16,26 +16,35 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <h1>
-        <a href="/">Pump you up</a>
-      </h1>
-      <nav>
-        <a href="/full-workout-list">Workouts</a>
-        {{#if loggedIn}}
-        <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
-        <a href="/login">login</a>
-        {{/if}}
-      </nav>
-    </header>
+  <div class="homepage">
+    <a name="top"></a>
+    <div class="wrapper">
+      <header>
+        <h1>
+          <a href="/">Fit-Wit</a>
+        </h1>
+        <nav>
+          <ul>
+            <li>
+              <a href="/full-workout-list">Workouts</a>
+            </li>
+            <li>
+              {{#if loggedIn}}
+              <button id="logout" class="btn-no-style">logout</button>
+              {{else}}
+              <a href="/login">Sign Up / Login</a>
+              {{/if}}
+            </li>
+          </ul>
+        </nav>
+      </header>
     <main>
       {{{body}}}
     </main>
     <footer>
       Thanks for visiting!
     </footer>
+  </div>
   </div>
 
   {{#if loggedIn}}
