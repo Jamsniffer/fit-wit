@@ -1,21 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/stylesheets/style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+{{!-- <header>
+    <nav class="nav-bar">
+        <span>
+            <a href="#">
+                <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
 
+            <a href="#">
+                <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
 
-    <title>Document</title>
-    <script></script>
+    </nav>
+</header> --}}
 
-</head>
-
-<body>   
-    
     <div class="hamburger-container">
         <div class="top-section">
             <div class="top-nav">
@@ -260,9 +254,82 @@
         </article>
 </section>
 
-    <script type="text/javascript" src="/public/javascripthamburger-menu.js"></script>
-<script src="/public/javascript/multiactionbutton.js"></script>
+<section class="container">
+
+    <div class="sidebar">
 
 
-</body>
-</html>
+
+        <div class="profile">
+            <a href="#">
+                <img class="profile-pic"
+                    src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
+            <h1>Username</h1>
+            <a href="/user-profile"></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-title">Activate</a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Number of Exercises</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Finish Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dashboard</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+</section>
+<!-- <ul>              
+                        <li>
+                            <a href="#">
+                                <span class="material-icons">numbers</span>
+                                <a href="/user-dashboard">Number of Exercises</a>       
+                          
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons">task_alt</span>
+                                <a href="/user-dashboard">Finish Up</a>       
+                          
+                        </li>
+                          <li>
+                            <a href="#">
+                                <span class="material-icons">person_pin_circle</span>
+                               <a href="/user-dashboard">Go to Dashboard</a>  
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="material-icons">tips_and_updates</span>
+                               <a href="/safety">Tips for Safety</a>  
+                            </a>
+                        </li>
+        
+                    </ul> -->
+</nav>
+
+<br>
+
+<div class="allWeighttraining">
+    {{#each weighttraining as |workout|}}
+    <section class="workoutList">
+        <h1 class="workoutTitle">{{workout.exercise_name}}</h1>
+        <div class="info">
+            <h2 class="description">{{workout.description}}</h2>
+            <button id={{workout.id}} type="button" class="exercise-option1"><span id={{workout.id}}
+                    class="material-icons md-38">add_task</span></button>
+        </div>
+    </section>
+    {{/each}}
+</div>
+
+<script src="/javascript/weighttraining.js"></script>

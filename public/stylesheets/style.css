@@ -1,3 +1,45 @@
+/* :root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+} */
+
+/* :root {
+    --primary-color: #0c0e0c;
+    --secondary-color: #d8323c;
+    --tertiary-color: #eaebea;
+} */
+
+/* :root {
+    --primary-color: #ff1700;
+    --secondary-color: #ffa600;
+    --tertiary-color: #4d6910;
+} */
+
+/* :root {
+    --primary-color: #a0fefb;
+    --secondary-color: #494fc1;
+    --tertiary-color: #fd084a;
+} */
+
+/* :root {
+    --primary-color: #e8c599;
+    --secondary-color: #bc6022;
+    --tertiary-color: #b72818;
+} */
+
+/* :root {
+    --primary-color: #fde4e3;
+    --secondary-color: #f282b4;
+    --tertiary-color: #ef415e;
+} */
+
+/* :root {
+    --primary-color: #e8c599;
+    --secondary-color: #bc6022;
+    --tertiary-color: #b72818;
+} */
+
 * {
     list-style: none;
     text-decoration: none;
@@ -5,20 +47,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-} 
+}
 
 body {
     min-height: 100vh;
 }
 
-body.active .sidebar{
-	left: -50em;
+body.active .sidebar {
+    left: -50em;
 }
 
-body .section{
-	margin-left: 0;
-	width: 100%;
+body .section {
+    margin-left: 0;
+    width: 100%;
 }
+
+
 
 .hide-sidebar {
     display: flex;
@@ -36,7 +80,8 @@ body .section{
 .profile {
     display: grid;
     height: 14rem;
-    align-items: end;
+    align-items: center;
+    max-width: 15rem;
 }
 
 
@@ -60,7 +105,7 @@ body .section{
     justify-content: center;
     align-items: top;
     align-self: start;
-    grid-template-rows: 3rem 3rem 3rem 3rem;
+    grid-template-rows: 5rem 5rem 5rem 5rem;
 }
 
 .sidebar .profile h1 {
@@ -71,7 +116,7 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li {
@@ -99,56 +144,220 @@ body .section{
     margin: 10px 0 5px;
     /* position: relative; */
     top: -8rem;
-    
+
 }
 
 .sidebar ul li a:hover,
-.sidebar ul li a.active{
+.sidebar ul li a.active {
     color: rgb(206, 240, 253);
     font-family: sans-serif;
-    
+
     border-right: 2px solid rgb(157, 212, 244);
 }
 
 .sidebar ul li a:hover .icon,
-.sidebar ul li a.active .icon{
+.sidebar ul li a.active .icon {
     color: #a7dcf5;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .sidebar ul li a:hover:before,
-.sidebar ul li a.active:before{
+.sidebar ul li a.active:before {
     display: block;
     margin: 0;
-padding: 0;
+    padding: 0;
 }
 
 .hide-sidebar a {
     font-size: 3rem;
-    color:#a7dcf5
+    color: #a7dcf5
 }
 
-header{
-	background: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
+header {
+    position: sticky;
+    height: 5rem;
+    /* margin-left: 225px; */
+    transition: all 0.5s ease;
+    min-width: 100vw;
+    margin: auto;
+
 }
 
-header a{
-	font-size: 28px;
-	color: #f4fbff;
+header a {
+    font-size: 28px;
+    color: #f4fbff;
 }
 
-header a:hover{
-	color: #a2ecff;
-} 
+header a:hover {
+    color: #a2ecff;
+}
 
 header nav a {
     color: #a7dcf5;
+}
+
+
+
+/* .nav-bar {
+    float: right;
+    width: 100%;
+    background: rgb(7, 105, 185);
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+} */
+
+
+.nav-menu {
+    position: relative;
+    justify-content: center;
+    align-items: top;
+    /* align-self: start; */
+    grid-template-rows: 6rem 5rem 5rem 3rem;
+    /* float: right; */
+    /* width: 30vw; */
+    background: rgb(7, 105, 185);
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    top: 19vh;
+}
+    
+
+.nav-title {
+    font-size: 1.6rem;
+}
+
+.nav-link {
+    transition: 0.6s ease;
+}
+
+.nav-link:hover {
+    color: #a7dcf5;
+    max-width: 19rem;
+}
+
+.nav-item {
+    display: flex;
+    color: rgb(157, 212, 244);
+    justify-content: space-around;
+    font-family: sans-serif;
+    font-size: 1.3rem;
+    font-weight: 400;
+    /* position: relative; */
+    top: -31vh;
+    margin: auto;
+    left: 2vw;
+    /* gap: 8rem; */
+}
+
+.hamburger {
+    position: fixed;
+    left: 17vw;
+    top: 0.2vw;
+}
+
+/* .hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    height: 35px;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+} */
+
+/* .bar {
+    height: 0.2rem;
+    width: 2rem;
+    display: block;
+    margin: 0.5rem auto;
+    -webkit-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+    background-color: #ff984c;
+} */
+
+/* .hamburger .bar, .hamburger:after, .hamburger:before {
+    width: 30%;
+    height: 5px;
+    background-color: white;
+    margin: 6px 0px;
+    transition: 0.3sec;
+}
+
+.hamburger.isactive:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.isactive:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+} */
+
+.mobile-navigation {
+    left: 100%;
+    background-color: darkblue;
+    padding-top: 115px;
+    position: fixed;
+    display: block;
+    min-width: 14rem;
+    max-width: 30vw;
+    left: 0;
+    top: 0;
+    transition: 0.4s; 
+    z-index: 98;
+}
+
+.mobile-navigation a {
+    text-decoration: none;
+    margin: 0 auto 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    display: block;
+    padding: 13px 15px;
+    background-color: rgb(27, 27, 187);
+    max-width: 30vw;
+    min-width: 14rem;
+    width: 12rem;
+    color: white;
+}
+
+.mobile-navigation a:hover {
+    background-color: rgb(37, 37, 204);
+}
+
+
+.nav-bar {
+          /* float: right; */
+    width: 100%;
+    background: rgb(7, 105, 185);
+    max-height: 15rem;
+    display: grid;
+    align-items: stretch;
+    padding: 0 30px;
+    justify-content: space-evenly;
+    align-content: end;
+    position: relative;
+    top: 4rem;
+    grid-template-rows: 5rem 5rem 5rem;
+    row-gap: 1rem;
+}
+
+.nav-bar li {
+    list-style: none;
+}
+
+.nav-bar a {
+    color: #a7dcf5;
+}
+
+.nav-bar a:hover {
+    color: #a2ecff;
 }
 
 .login {
@@ -162,197 +371,110 @@ header nav a {
     top: -1rem;
 }
 
-.login :hover{
+.login :hover {
     cursor: pointer;
     color: #a2ecff;
 }
 
 
 .sign_up {
+    left: -6rem;
     position: relative;
     font-family: sans-serif;
-    /* background-color: rgb(7, 105, 185); */
-    /* font-size: 1em; */
-    /* border: 1px solid white; */
-    left: 49vw;
-    /* font-weight: 600; */
 }
 
-.sign_up :hover{
+.sign_up :hover {
     cursor: pointer;
     color:aquamarine
+    
 }
 
-/* header{
-	bac kground: rgb(7, 105, 185);
-	height: 50px;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
- 
-} */
+/* @media(min-width: 768px) {
+    .mobile-navigation {
+        display: none;
+    }
 
-/* header a{
-	font-size: 28px;
-	color: #f4fbff;
-}
+    .hamburger {
+        display: none;
+    }
 
-header a:hover{
-	color: #a2ecff;
-} 
-
-header nav a {
-    color: #a7dcf5;
-} */
+}  */
 
 
-.nav-bar {
+.top-nav-container {
     background: rgb(7, 105, 185);
-	min-height: 5em;
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
-}
-
-.nav-bar li {
-    list-style: none;
-}
-
-.nav-bar a {
-    color: #a7dcf5;   
-}
-
-.nav-bar a:hover{
-	color: #a2ecff;
-} 
-
-.container {
-    height: 100vh;
+    height: 6rem;
     display: grid;
     grid-template-rows: 20rem;
     float: left;
-    width: 20%;
+    width: 100%;
+    position: fixed;
 }
+
+*/ .side-nav-container {
+    background: rgb(7, 105, 185);
+    min-width: 14rem;
+    max-width: 30vw;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 20rem;
+    float: left;
+    position: fixed;
+    top: -1vh;
+}
+
 
 .sidebar * {
     flex-basis: 100%;
 }
 
 .sidebar {
-    align-items: end;
+    align-items: center;
     background-blend-mode: center;
-    /* display: flex; */
     flex-wrap: wrap;
     margin: auto;
-    background: rgb(7, 105, 185);
+    background: #0769b9;
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 170px;
-    max-width: 20vw;
-    height: 100vh;
-    padding: 20px 0;
     transition: all 0.5s ease;
     float: left;
-    width: 20%;
-    min-width: 25ch;
     position: fixed;
     top: 5rem;
     display: grid;
-    grid-template-rows: 13rem 21rem;
-}
-
-
-.sidebar-nav {
-    justify-content: space-around;
-    background: rgb(7, 105, 185);
-    width: 20vw;
-    display: grid;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    align-self: end;
-    grid-template-rows: 5rem 5rem 5rem 5rem;
-}
-
-.nav-menu {
-    /* background: rgb(7, 105, 185); */
-    width: 20vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-.nav-title {
-    font-size: 2rem;
-}
-
-.nav-link {
-    transition: 0.6s ease;
-}
-
-.nav-link:hover {
-    color:#f4fbff ;
-}
-
-.nav-item {
- 
-    width: 9rem;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-}
-
-.bar {
-    height: 0.3rem;
-    width: 2rem;
-    display: block;
-    margin: 0.5rem auto;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    background-color: white;
-}
+    grid-template-rows: 16rem 0rem;
+    /* grid-template-columns: 20vw; */
+    min-width: 14rem;
+    max-width: 30vw;
+    min-height: 100%;
+ } 
 
 .sidebar ul  {
     color: #a2ecff;
+    min-width: 14rem;
+    max-width: 30vw;
 }
+
 .sidebar ul li p:hover {
-    color:aquamarine
+    color: aquamarine
 }
 
 /* .sidebar .home {
     margin-bottom: 28px;
     text-align: center;
    } */
-.home {
-    background: rgb(7, 105, 185);
-    width: 18%;
-    height: 5vh;
-    display: flex;
-    justify-content: center;
-    /* align-self: center; */
-    position: fixed;
-    top: 2rem;
-    max-width: 20vw;
-}
+
 
 header{
 	height: 5rem;
-	margin-left: 225px;
-	transition: all 0.5s ease;
+    margin-left: 225px;
+    transition: all 0.5s ease;
     min-width: 100vw;
     margin: auto;
-}
-/* 
-@media(max-width:769px) {
-    .hamburger {
-        display: block;
-    }
+    background: rgb(7, 105, 185);
 }
 
+/* 
 @media only screen and (max-width: 992px) {
 
     container {
@@ -363,7 +485,7 @@ header{
        height: 100vh;
    }
 
-}
+} */
 
 .title {
     min-width: 25ch;
@@ -372,8 +494,10 @@ header{
 
 .title label {
     padding-top: 1rem;
-} */
+    font-size: clamp(1.5rem, 2.8vw, 3rem);
+} 
 
+*/
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
 deadpool ryan reynolds when hover
@@ -386,12 +510,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .exercise-container {
-     /* grid-template-rows: 63px 303px; */
      display: grid;
-     /* display: flex; */
      flex-wrap: wrap;
-     /* min-height: calc(100vh - 50px); */
-     /* max-width: 80vw; */
      margin: 0 auto;
      padding: 1em 1em;
      float: right;
@@ -399,7 +519,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
      font-size: 24px;
      font-weight: 700;
      /* margin: auto; */
-     min-width: 77vw;
+     width: min(75ch, 50%);
 }
 
 .exercise-display-box {
@@ -413,6 +533,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .heading-texts {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     padding: 1em 3em;
     justify-content: center;
     display: grid;
@@ -422,14 +543,73 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     text-align: center;
 }
 
+.favflex {
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+}
+
+/* @keyframes favme-
+
 .exercise-choice-container {
     display: grid;
     grid-template-rows: 2rem;
+} */
+
+.mab {
+    position: relative;
+    background: white;
+    display: inline-flex;
+} 
+
+.mab__button {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    color: rgb(20, 19, 19);
+}
+
+.mab__button:not(.mab__button--menu) .mab__icon {
+    margin-right: 9px;
+}
+
+.mab__button--secondary {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.mab__text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mab__list {
+    display: none;
+    position: absolute;
+    top: 115%;
+    box-shadow: 0 0 3px black;
+    right: 0;
+    padding: 6px 0;
+    background: white;
+}
+
+.mab__list--visible {
+    display: initial;
 }
 
 .exercise-choices {
     font-weight: 457;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2.3vw, 2rem);
     letter-spacing: 1px;
     padding: 0 1em;
     justify-content: left;
@@ -452,22 +632,39 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font-size: xx-large;
 }
 
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 {
+.exercise-option1,
+.exercise-option2,
+.exercise-option3,
+.exercise-option4,
+.exercise-option5,
+.exercise-option6,
+.exercise-option7,
+.exercise-option8,
+.exercise-option9,
+.exercise-option10,
+.exercise-option11,
+.exercise-option12 .exercise-option13,
+.exercise-option14,
+.exercise-option15 {
     float: right;
 }
-.exercise-option1, .exercise-option2, 
-.exercise-option3, .exercise-option4, 
-.exercise-option5, .exercise-option6, 
-.exercise-option7, .exercise-option8, 
-.exercise-option9, .exercise-option10 :hover {
+
+.exercise-option1,
+.exercise-option2,
+.exercise-option3,
+.exercise-option4,
+.exercise-option5,
+.exercise-option6,
+.exercise-option7,
+.exercise-option8,
+.exercise-option9,
+.exercise-option10 .exercise-option11,
+.exercise-option12,
+.exercise-option13,
+.exercise-option14,
+.exercise-option15 :hover {
     cursor: pointer;
 }
-
-
 
 
 /* harley quinn margot robbie when hover
@@ -475,289 +672,3 @@ https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_g
 harley quinn comic 
 https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
-/* .exercise-display-box2 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em; */
-/* } */
-
-
-
-
-.marvel {
-    font-size: xx-large;
-}
-
-.marvel-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19.3rem;
-}
-
-.marvel-heroes li {
-    width: 41vw;
-    justify-content: space-around;
-}
-
-
-
-
-/* 
-.exercise-container {
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */ 
-
-/* .heading-texts2 {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center; */
-/* } */
-/* .title2 label {
-    padding-top: 1rem;
-} */
-
-/* .dc {
-    font-size: xx-large;
-}
-
-.dc-heroes {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-} */
-
-/* .dc-heroes li {
-    width: 41vw;
-}  */
-
-
-
-
-
-
-
-
-
-/* .sidebar .profile img {
-    display: block;
-    max-width: 100px;
-    max-height: 100px;
-    width: 100px;
-    min-height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-   
-} */
-
-
-
-/*weightlifting start*/
-
-/* .exercise-display-box3 {
-    display: grid;
-    grid-template-columns: 10rem;
-    grid-template-rows: 2rem;
-    background-color: rgb(188, 186, 186);
-    width: 20rem;
-    height: 19rem;
-    margin: 1em;
-} */
-
-/* .heading-texts {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-} */
-
-/* .title label {
-    padding-top: 1rem;
-} */
-
-
-
-
-/* .powerlifting-choices li {
-    width: 41vw;
-}
-
-.powerlifting {
-    font-size: xx-large;
-} */
-
-/* .powerlifting-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19.3rem;
-} */
-
-/* .powerlifting-choices li {
-    width: 41vw;
-} */
-
-/* .exercise-option {
-    float: right;
-} */
-
-/* .exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-} */
-
-/* .exercise-container {
-    
-    display: grid;
- 
-    flex-wrap: wrap;
-
-    max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */
-
-/* .heading-texts {
-    padding: 1em 3em;
-    justify-content: center;
-    display: grid;
-    grid-template-rows: 5rem 3rem;
-    align-items: center;
-    row-gap: 1rem;
-    text-align: center;
-} */
-/* .title3 label {
-    padding-top: 1rem;
-} */
-
-/* .bodybuilding {
-    font-size: xx-large;
-}
-
-.bodybuilding-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-} */
-
-/* .bodybuilding-choices li {
-    width: 41vw;
-}  */
-
-
-/* .exercise-choice-container {
-    display: grid;
-    grid-template-rows: 2rem;
-} */
-
-
-/* .exercise-container3 { */
-    /* grid-template-rows: 63px 303px; */
-    /* display: grid; */
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* min-height: calc(100vh - 50px); */
-    /* max-width: 80vw;
-    margin: auto;
-    padding: 1em 1em;
-    float: right;
-    flex-grow: 1;
-    font-size: 24px;
-    font-weight: 700;
-    margin: auto;
-} */
-
-/* .crossfit  {
-    font-size: xx-large;
-}
-
-.crossfit-choices {
-    font-weight: 457;
-    font-size: 2rem;
-    letter-spacing: 1px;
-    padding: 0 1em;
-    justify-content: left;
-    align-items: center; */
-    /* grid-template-columns: 13rem 25rem; */
-    /* grid-template-rows: repeat(5, 2.3rem);
-    display: grid;
-    width: 65vw;
-    row-gap: 0.5em;
-    position: relative;
-    left: 22rem;
-    top: -19rem;
-}
-
-.crossfit-choices li {
-    width: 41vw;
-} */

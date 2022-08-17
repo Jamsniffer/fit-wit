@@ -14,54 +14,52 @@ User.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       primaryKey: true,
-      autoIncrement: true
+      autoIncrement: true,
     },
     username: {
       type: DataTypes.STRING,
-      allowNull: false
+      allowNull: false,
     },
     email: {
       type: DataTypes.STRING,
       allowNull: false,
       unique: true,
       validate: {
-        isEmail: true
+        isEmail: true,
       },
     },
     password: {
       type: DataTypes.STRING,
       allowNull: false,
       validate: {
-        len: [8, 20]
+        len: [8, 20],
       },
     },
-    // workouts: [
-    //   {
-    //     name:DataTypes.STRING,
-    //     exercises: [
-    //       {
-    //         name: DataTypes.STRING,
-    //         reps: 3,
-    //         weight: {
-    //           type: DataTypes.INTEGER,
-    //           allowNull: true,
-    //         },
-    //         time: {
-    //           type: DataTypes.TIME,
-    //           allowNull: true,
-    //         },
-    //       },
-    //     ],
-    //     allowNull: true
+    // fullWorkoutListArray: {
+    //   type: DataTypes.STRING,
+    //   allowNull: true,
+    //   default: [],
+    //   get() {
+    //     return this.getDataValue("fullWorkoutListArray").split(";");
     //   },
-    // ],
-    // allowNull: true
+    //   set(val) {
+    //     this.setDataValue("fullWorkoutListArray", val.join(";"));
+    //   },
+    // },
   },
   {
     hooks: {
       async beforeCreate(newUserData) {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
+      },
+      //Make sure updatedUserData has password
+      async beforeUpdate(updatedUserData) {
+        updatedUserData.password = await bcrypt.hash(
+          updatedUserData.password,
+          10
+        );
+        return updatedUserData;
       },
     },
     sequelize,
