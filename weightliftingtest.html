@@ -7,14 +7,29 @@
     <link rel="stylesheet" href="./public/stylesheets/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
     rel="stylesheet">
-    <script type="text/javascript" src="/public/javascript/hamburger-menu.js"></script>
+
 
     <title>Document</title>
+    <script></script>
+
 </head>
 
 <body>   
     
-    
+    <div class="hamburger-container">
+        <div class="top-section">
+            <div class="top-nav">
+                <button class="hamburger">
+                    <a href="#">
+                        <span class="material-icons md-38 mab__icon">menu</menu></span>
+                    </a>
+                    <!-- <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div> -->
+                </button>
+            </div>
+        </div>
+    </div>
         <!-- <header> -->
           <!-- <section class="top-nav-container"> -->
        
@@ -22,12 +37,12 @@
 
         <!-- </header> -->
 
-        <nav class="mobile-navigation">
+        <!-- <nav class="mobile-navigation">
             <a href="#">Home</a>
             <a href="#">show # of exercise</a>
             <a href="#">Finish Up</a>
             <a href="#">Go to Dashboard</a>
-        </nav>
+        </nav> -->
         
      
         <section class="side-nav-container">
@@ -40,8 +55,8 @@
                                  <h1>Username</h1>
                             <a href="/user-profile"></a>
                     </div>
-
-                    <nav class="nav-bar">  
+                    <nav>
+                    <!-- <nav class="nav-bar">   -->
                         <!-- <a href="#" class="nav-branding">Activate</a> -->
                         <ul class="nav-menu">
                             <li class="nav-item">
@@ -54,11 +69,11 @@
                                 <a href="#" class-="nav-link">Dashboard</a>
                             </li>
                         </ul>
-                        <button class="hamburger">
+                        <!-- <button class="hamburger">
                             <div class="bar"></div>
                             <div class="bar"></div>
                             <div class="bar"></div>
-                        </button>
+                        </button> -->
                         <!-- <span> -->
                             <!-- <a href="#">
                                 <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
@@ -88,15 +103,47 @@
             <ol class="exercise-choices">
 
                 <li>
-                    
+
+                    <!-- <div class="dropdown-choices">
+                        <button onclick="myFunction()" class="dropbtn">Add Exercise</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="#">favorite</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div> -->
                     ExerciseNamePlaceholder                   
-                    <a href="#">
-                        <button type="button" class="exercise-option6"><span class="material-icons md-38">add_task</span></button></a>                   
+                    <!-- <a href="#"> -->
+                   
+                        <div class="mab">
+                        <button type="button" class="mab__button mab__button--primary">
+                        <span class="material-icons md-38 mab__icon">add_task</span>
+                        <span class="mab__text">Add Exercise</span>
+                        </button>
+
+                        <button type="button" class="mab__button mab__button--menu">
+                            <span class="material-icons mab__icon">expand_more</span>
+                        </button>
+
+                        <div class="mab__list">
+                            <button type="button" class="mab__button mab__button--secondary">
+                                <span class="mab__text">Bookmark Exercise</span>
+                            </button>
+
+                            <button type="button" class="mab__button mab__button--secondary">
+                                <span class="mab__text">Remove Exercise</span>
+                            </button>
+
+                        </div> 
+                    </div>               
                 </li>
+                <!-- <div class="favflex"> -->
+                <!-- <span class="fav_btn" href="" class="favme material-icons turned_in"></span>
+                    </div> -->
                 <li>
                     ExerciseNamePlaceholder                
                     <a href="#">
-                        <button type="button" class="exercise-option7"> <span class="material-icons">add_task</span></button></a>
+                        <button type="button" class="exercise-option2"> <span class="material-icons">add-task</span></button></a>
                 </li>
                 <li>
                     ExerciseNamePlaceholder                   
@@ -212,6 +259,9 @@
             </div>
         </article>
 </section>
+
+    <script type="text/javascript" src="/public/javascripthamburger-menu.js"></script>
+<script src="/public/javascript/multiactionbutton.js"></script>
 
 
 </body>

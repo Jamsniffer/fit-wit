@@ -105,7 +105,7 @@ body .section{
     justify-content: center;
     align-items: top;
     align-self: start;
-    grid-template-rows: 3rem 3rem 3rem 3rem;
+    grid-template-rows: 5rem 5rem 5rem 5rem;
 }
 
 .sidebar .profile h1 {
@@ -199,7 +199,7 @@ header nav a {
 
 
 
-.nav-bar {
+/* .nav-bar {
     float: right;
     width: 100%;
     background: rgb(7, 105, 185);
@@ -208,17 +208,26 @@ header nav a {
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
-}
+} */
 
 
 .nav-menu {
-    display: grid;
+    position: relative;
     justify-content: center;
     align-items: top;
-    align-self: start;
+    /* align-self: start; */
     grid-template-rows: 6rem 5rem 5rem 3rem;
-    
+    /* float: right; */
+    /* width: 30vw; */
+    background: rgb(7, 105, 185);
+    max-height: 5rem;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    justify-content: space-between;
+    top: 19vh;
 }
+    
 
 .nav-title {
     font-size: 1.6rem;
@@ -248,6 +257,12 @@ header nav a {
 }
 
 .hamburger {
+    position: fixed;
+    left: 17vw;
+    top: 0.2vw;
+}
+
+/* .hamburger {
     display: block;
     width: 35px;
     cursor: pointer;
@@ -256,7 +271,7 @@ header nav a {
     background: none;
     outline: none;
     border: none;
-}
+} */
 
 /* .bar {
     height: 0.2rem;
@@ -268,7 +283,7 @@ header nav a {
     background-color: #ff984c;
 } */
 
-.hamburger .bar, .hamburger:after, .hamburger:before {
+/* .hamburger .bar, .hamburger:after, .hamburger:before {
     width: 30%;
     height: 5px;
     background-color: white;
@@ -281,7 +296,7 @@ header nav a {
 }
 .hamburger.isactive:after {
     transform: rotate(45deg) translate(-9px, -8px);
-}
+} */
 
 .mobile-navigation {
     left: 100%;
@@ -305,7 +320,8 @@ header nav a {
     display: block;
     padding: 13px 15px;
     background-color: rgb(27, 27, 187);
-    max-width: 200px;
+    max-width: 30vw;
+    min-width: 14rem;
     width: 12rem;
     color: white;
 }
@@ -371,7 +387,7 @@ header nav a {
     
 }
 
-@media(min-width: 768px) {
+/* @media(min-width: 768px) {
     .mobile-navigation {
         display: none;
     }
@@ -380,7 +396,7 @@ header nav a {
         display: none;
     }
 
-} 
+}  */
 
 
 .top-nav-container {
@@ -397,10 +413,12 @@ header nav a {
     background: rgb(7, 105, 185);
     min-width: 14rem;
     max-width: 30vw;
+    min-height: 100%;
     display: grid;
     grid-template-rows: 20rem;
     float: left;
     position: fixed;
+    top: -1vh;
 }
 
 
@@ -422,10 +440,11 @@ header nav a {
     position: fixed;
     top: 5rem;
     display: grid;
-    grid-template-rows: 14rem 0rem;
-    grid-template-columns: 30vw;
+    grid-template-rows: 16rem 0rem;
+    /* grid-template-columns: 20vw; */
     min-width: 14rem;
     max-width: 30vw;
+    min-height: 100%;
  } 
 
 .sidebar ul  {
@@ -472,7 +491,8 @@ header{
 
 .title label {
     padding-top: 1rem;
-} */
+    font-size: clamp(1.5rem, 2.8vw, 3rem);
+} 
 
 /* deadpool comic not activated
 https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
@@ -486,12 +506,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .exercise-container {
-     /* grid-template-rows: 63px 303px; */
      display: grid;
-     /* display: flex; */
      flex-wrap: wrap;
-     /* min-height: calc(100vh - 50px); */
-     /* max-width: 80vw; */
      margin: 0 auto;
      padding: 1em 1em;
      float: right;
@@ -499,7 +515,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
      font-size: 24px;
      font-weight: 700;
      /* margin: auto; */
-     min-width: 77vw;
+     width: min(75ch, 50%);
 }
 
 .exercise-display-box {
@@ -513,6 +529,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
 }
 
 .heading-texts {
+    font-size: clamp(1.5rem, 2.5vw, 2rem);
     padding: 1em 3em;
     justify-content: center;
     display: grid;
@@ -522,14 +539,73 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     text-align: center;
 }
 
+.favflex {
+    display: flex;
+    height: 10rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.fav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  
+}
+
+/* @keyframes favme-
+
 .exercise-choice-container {
     display: grid;
     grid-template-rows: 2rem;
+} */
+
+.mab {
+    position: relative;
+    background: white;
+    display: inline-flex;
+} 
+
+.mab__button {
+    background: none;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    color: rgb(20, 19, 19);
+}
+
+.mab__button:not(.mab__button--menu) .mab__icon {
+    margin-right: 9px;
+}
+
+.mab__button--secondary {
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.mab__text {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.mab__list {
+    display: none;
+    position: absolute;
+    top: 115%;
+    box-shadow: 0 0 3px black;
+    right: 0;
+    padding: 6px 0;
+    background: white;
+}
+
+.mab__list--visible {
+    display: initial;
 }
 
 .exercise-choices {
     font-weight: 457;
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 2.3vw, 2rem);
     letter-spacing: 1px;
     padding: 0 1em;
     justify-content: left;
