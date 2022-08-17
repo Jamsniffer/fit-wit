@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/stylesheets/workout-list.css" />
   <link rel="stylesheet" href="/stylesheets/chosen-exercise.css" />
   <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link rel="stylesheet" href="/stylesheets/homepage.css" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -21,12 +22,12 @@
         <a href="/">Pump you up</a>
       </h1>
       <nav>
-        {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
+        {{!-- {{#if loggedIn}} --}}
+        <a href="/full-workout-list">Workouts</a>
         <button id="logout" class="btn-no-style">logout</button>
-        {{else}}
+        {{!-- {{else}} --}}
         <a href="/login">login</a>
-        {{/if}}
+        {{!-- {{/if}} --}}
       </nav>
     </header>
     <main>
@@ -40,8 +41,6 @@
   {{#if loggedIn}}
   <script src="/javascript/logout.js"></script>
   {{/if}}
-  <script src="/javascript/full-workout-list.js"></script>
-  <script src="/javascript/chosen-exercise.js"></script>
 </body>
 
 </html>

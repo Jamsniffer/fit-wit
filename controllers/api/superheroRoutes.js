@@ -4,8 +4,8 @@ const { Superhero } = require("../../models");
 router.get("/", async (req, res) => {
   //find all
   Superhero.findAll()
-    .then((SuperheroData) => {
-      res.json(SuperheroData);
+    .then((superheroData) => {
+      res.json(superheroData);
     })
     .catch((err) => {
       console.log("error/ superhero:", err);
@@ -16,11 +16,11 @@ router.get("/", async (req, res) => {
 router.get("/:id", (req, res) => {
   //find by id
   Superhero.findByPk(req.params.id)
-    .then((SuperheroData) => {
-      res.json(SuperheroData);
+    .then((superheroData) => {
+      res.json(superheroData);
     })
     .catch((err) => {
-      console.log("error/ bodybuilding:", err);
+      console.log("error/ superhero:", err);
       res.status(500).json(err);
     });
 });

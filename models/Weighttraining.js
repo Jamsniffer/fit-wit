@@ -1,9 +1,9 @@
-const { Model, DataTypes } = require("sequelize");
-const sequelize = require("../config/connection");
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../config/connection');
 
-class Cardio extends Model { }
+class Weighttraining extends Model { }
 
-Cardio.init(
+Weighttraining.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -20,24 +20,32 @@ Cardio.init(
     },
     sets: {
       type: DataTypes.INTEGER,
-      defaultValue: 3
+      defaultValue: 3,
     },
     reps: {
       type: DataTypes.INTEGER,
-      defaultValue: 10
+      defaultValue: 10,
     },
     weight: {
       type: DataTypes.INTEGER,
-      defaultValue: 30
-  }
+      defaultValue: 30,
+    },
+    user_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "user",
+        key: "id",
+      },
+      allowNull: true,
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: "cardio",
+    modelName: "weighttraining",
   }
 );
 
-module.exports = Cardio;
+module.exports = Weighttraining;

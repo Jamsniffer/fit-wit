@@ -1,9 +1,0 @@
-header {
-    padding: 0 8vw 3vw 8vw;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
-    z-index: 9999;
-}
