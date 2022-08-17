@@ -35,17 +35,19 @@ User.init(
         len: [8, 20],
       },
     },
-    // fullWorkoutListArray: {
-    //   type: DataTypes.STRING,
-    //   get: function () {
-    //     return JSON.parse(this.getDataValue("fullWorkoutListArray"));
-    //   },
-    //   set: function (val) {
-    //     return this.setDataValue("fullWorkoutListArray", JSON.stringify(val));
-    //   },
-    //   allowNull: true,
-    // },
   },
+  //   fullWorkoutListArray: {
+  //     type: DataTypes.STRING,
+  //     allowNull: true,
+  //     default:[],
+  //     get() {
+  //       return this.getDataValue("fullWorkoutListArray").split(";");
+  //     },
+  //     set(val) {
+  //       this.setDataValue("fullWorkoutListArray", val.join(";"));
+  //     },
+  //   },
+  // },
   {
     hooks: {
       async beforeCreate(newUserData) {

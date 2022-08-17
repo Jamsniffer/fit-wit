@@ -38,10 +38,9 @@ async function signupFormHandler(event) {
         password,
       }),
       headers: { "Content-Type": "application/json" },
-    });
-
+    })
     if (response.ok) {
-      document.location.replace("/");
+      console.log('success');
     } else {
       alert(response.statusText);
     }

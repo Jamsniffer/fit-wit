@@ -1,8 +1,6 @@
 const Weighttraining = require("./Weighttraining")
 const Calisthenics = require('./Calisthenics')
 const Superhero = require('./Superhero')
-
-
 const User = require('./User')
 
 // Table associations
