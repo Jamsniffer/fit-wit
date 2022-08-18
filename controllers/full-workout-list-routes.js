@@ -3,19 +3,13 @@ const models = require("../models");
 const withAuth = require("../utils/auth");
 
 const { Calisthenics, Weighttraining } = models;
-router.get("/", (req, res) => {
-  Calisthenics.findAll().then((dbCalisthenicsData) => {
-    const calisthenics = dbCalisthenicsData.map((calisthenics) =>
-      calisthenics.get({ plain: true })
-    );
-    Weighttraining.findAll().then((dbWeighttrainingData) => {
-      const weighttraining = dbWeighttrainingData.map((weighttraining) =>
-        weighttraining.get({ plain: true })
-      );
+router.get("/", async (req, res) => {
+  const userData = await models.User.findByPk(req.session.user_id);
+  const pureUser = userData.get({ plain: true });
+
       // TODO add users workouts.
-      res.render("full-workout-list", { calisthenics, weighttraining });
+      res.render("full-workout-list", {workoutArray: JSON.parse(pureUser.fullWorkoutListArray)});
     });
-  });
-});
+  
 
 module.exports = router;
