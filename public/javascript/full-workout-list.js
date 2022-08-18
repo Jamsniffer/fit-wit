@@ -8,7 +8,7 @@ const workoutTimer = setInterval(() => {
     let hour = Math.floor(time / 3600);
     let minute = Math.floor((time - hour * 3600) / 60);
     let seconds = time - (hour * 3600 + minute * 60);
-    timeDisplay.textContent = `${hour}:${minute}:${seconds}`;
+    timeDisplay.textContent = `Current workout time: ${hour}:${minute}:${seconds}`;
     // return timeDisplay.textContent;
 }, 1000);
 
@@ -20,7 +20,7 @@ finishBtn.addEventListener('click', () => {
     const finishWorkoutH1 = document.querySelector('.finishWorkoutH1');
     const finishWorkoutDiv = document.querySelector('.finishWorkoutDiv');
 
-    finishWorkoutH1.textContent = `Great Job! your total workout time was: ${timeDisplay.textContent}`;
+    finishWorkoutH1.textContent = `Great Job! your total workout time was ${timeDisplay.textContent.substring(timeDisplay.textContent.indexOf(':'))}`;
     modal.style.display = "block";
 
     finishWorkoutDiv.append(finishWorkoutH1);
@@ -31,10 +31,14 @@ finishBtn.addEventListener('click', () => {
     window.onclick = function (event) {
         if (event.target == modal) {
             modal.style.display = "none";
+            document.location.replace('/');
         }
     }
 
     x.onclick = function () {
         modal.style.display = "none";
+        document.location.replace('/');
     }
 });
+
+

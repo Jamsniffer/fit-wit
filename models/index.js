@@ -1,22 +1,17 @@
 const Weighttraining = require("./Weighttraining")
 const Calisthenics = require('./Calisthenics')
 const Superhero = require('./Superhero')
-
-
 const User = require('./User')
 
 // Table associations
-User.belongsTo(Weighttraining, {
-    foreignKey: 'weighttraining_id'
-})
+Weighttraining.hasOne(User);
+User.belongsTo(Weighttraining);
 
-User.belongsTo(Calisthenics, {
-  foreignKey: "calisthenics_id",
-});
+Calisthenics.hasOne(User);
+User.belongsTo(Calisthenics);
 
-User.belongsTo(Superhero, {
-    foreignKey: "hero_id",
-});
+Superhero.hasOne(User);
+User.belongsTo(Superhero);
 
 module.exports = {
     Weighttraining,

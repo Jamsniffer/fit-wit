@@ -1,9 +1,183 @@
-header {
-    padding: 0 8vw 3vw 8vw;
+:root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.homepage {
+    color: var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+.logoutBTN {
+    background: var(--secondary-color);
+    padding: 20%;
+    border-radius: 15%;
+    cursor: pointer;
+}
+
+.logoutBTN:hover {
+    background-color: #035292;
+}
+
+/* Header and Nav items START */
+
+.homepage .wrapper header {
+    padding: 0.5vw 4vw 0.5vw 4vw;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: sticky;
     position: -webkit-sticky;
+    top: 0;
     z-index: 9999;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.homepage .wrapper header h1 a {
+    display: flex;
+    font-weight: bold;
+    font-size: 3vw;
+    align-items: center;
+    padding: 0 0 0 2vw;
+}
+
+.homepage .wrapper header nav ul li {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    display: inline-block;
+    font-size: 1.5vw;
+    padding: 0 .3vw 0 2vw;
+}
+
+/* Header and Nav items END */
+
+/* Hero section START */
+.homepage .hero .hero-main {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.homepage .hero .hero-main h2 {
+    font-size: 2.5vw;
+    padding: 1vw 0 1vw 2vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .hero .hero-cta {
+    font-size: 1vw;
+    display: flex;
+    flex-wrap: wrap;
+    width: 30%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 1.2vw;
+}
+
+.homepage .hero .hero-cta p {
+    text-align: left;
+    text-indent: 2vw;
+}
+
+/* Hero section END */
+
+/* Workouts section START */
+
+.homepage .workouts-title h2 {
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 2.5vw;
+    padding: 1vw 0 1vw 2vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .workouts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.homepage .workouts .workout {
+    margin: 2vw;
+    flex: 1;
+    text-align: center;
+    align-items: center;
+}
+
+.homepage .workouts .workout img {
+    width: 20vw;
+    height: 25vw;
+    border: solid var(--secondary-color);
+}
+
+.homepage .workouts .workout .workout-name h3 {
+    font-size: 1.5vw;
+    padding: 0.5vw;
+    border-bottom: solid var(--secondary-color);
+}
+
+.homepage .workouts .workout .workout-description p {
+    width: 20vw;
+    font-size: 1vw;
+    line-height: 1.2vw;
+    margin: 1vw auto;
+    text-align: left;
+    text-indent: 2vw;
+}
+
+/* Workouts section END */
+
+/* Sign up section START */
+
+.homepage .signup-section {
+    display:flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.homepage .signup-section .signup-text h4 {
+    font-size: 2vw;
+    display: flex;
+}
+
+.homepage .signup-section .signup-text .signup-bold-underline {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+}
+
+.homepage .signup-section .signup-image img {
+    width: 40vw;
+    height: 10w;
+    border: solid var(--secondary-color);
+}
+
+/* This makes it so that links don't change color after they have been clicked */
+
+.homepage a:visited {
+    color: var(--tertiary-color);
+}
+
+/* ------------------------------------------------------- */
+
+.homepage a:hover {
+    color: #a7dcf5;
 }

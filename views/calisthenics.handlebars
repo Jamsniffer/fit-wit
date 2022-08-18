@@ -1,197 +1,100 @@
- <header>
-            <nav>  
-                <span>
-                    <a href="#">
-                        <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
-                   
-                    <a href="#">
-                        <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
-          
-            </nav>
-        </header>
-        
-     
-        <div class="container">
-             <nav>
-                 <div class="sidebar">
-                   
-        
-                    <div class="profile">
-                            <a href="#">
-                            <img class="profile-pic" src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
-                                 <h1>Username</h1>
-                            <a href="/user-profile"></a>
-                    </div>
-                    
-                    <ul>              
-                        <li>
-                            <a href="#">
-                                <span class="material-icons">numbers</span>
-                                <a href="/user-dashboard">Number of Exercises</a>       
-                          
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="material-icons">task_alt</span>
-                                <a href="/user-dashboard">Finish Up</a>       
-                          
-                        </li>
-                          <li>
-                            <a href="#">
-                                <span class="material-icons">person_pin_circle</span>
-                               <a href="/user-dashboard">Go to Dashboard</a>  
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <span class="material-icons">tips_and_updates</span>
-                               <a href="/safety">Tips for Safety</a>  
-                            </a>
-                        </li>
-        
-                    </ul>
-        </nav>
+{{!-- <header>
+    <nav>
+        <span>
+            <a href="#">
+                <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
 
-<br> 
+            <a href="#">
+                <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
 
-    <section class="exercise-container">
-        <div class="heading-texts">
-            <h2>Calisthenics description and stuff</h2>
+    </nav>
+</header> --}}
 
-    <article class="exercise-section">
-        <div class="title">
-            <label for="section--title">Choose from calisthenics exercises below</label>
+
+<div class="hamburger-container">
+    <div class="top-section">
+        <div class="top-nav">
+            <button class="hamburger">
+                <a href="#">
+                    <span class="material-icons md-38 mab__icon">menu</menu></span>
+                </a>
+                <!-- <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div> -->
+            </button>
         </div>
-    </div>
-
-        <div class="exercise-display-box"></div>
-            <div class="exercise-choice-container">
-             <ol class="exercise-choices">
-
-                <li>
-                    
-                    ExerciseNamePlaceholder                   
-                    <a href="#">
-                        <button type="button" class="exercise-option1"><span class="material-icons md-38">add_task</span></button></a>                   
-                </li>
-                <li>
-                    ExerciseNamePlaceholder                
-                    <a href="#">
-                        <button type="button" class="exercise-option2"> <span class="material-icons">add_task</span></button></a>
-                </li>
-                <li>
-                    ExerciseNamePlaceholder                   
-                    <a href="#">
-                        <button type="button" class="exercise-option3"> <span class="material-icons">add_task</span></button></a>
-                </li>
-                <li>
-                    ExerciseNamePlaceholder
-                    <button type="button" class="exercise-option4"> <span class="material-icons">add_task</span></button></a>
-                </li>
-                <li>
-                    ExerciseNamePlaceholder
-                    <a href="#">
-                        <button type="button" class="exercise-option5"> <span class="material-icons">add_task</span></button></a>
-                </li>
-            
-            </ol>
-        </div>
-    </div>
-
-    </article>
-</section>
-
-<br>
-
-<section class="exercise-container">
-    <div class="heading-texts">
-        <h2>Plyometrics description and stuff</h2>
-
-<article class="exercise-section">
-    <div class="title">
-        <label for="section-title">Choose from plyometrics exercises below</label>
     </div>
 </div>
+<!-- <header> -->
+<!-- <section class="top-nav-container"> -->
 
-    <div class="exercise-display-box"></div>
-        <div class="exercise-choice-container">
-            <ol class="exercise-choices">
+<!-- </section> -->
 
-                <li>
-                    
-                    ExerciseNamePlaceholder                   
-                    <a href="#">
-                        <button type="button" class="exercise-option1"><span class="material-icons md-38">add_task</span></button></a>                   
+<!-- </header> -->
+
+<!-- <nav class="mobile-navigation">
+        <a href="#">Home</a>
+        <a href="#">show # of exercise</a>
+        <a href="#">Finish Up</a>
+        <a href="#">Go to Dashboard</a>
+    </nav> -->
+
+
+<section class="side-nav-container">
+
+    <div class="sidebar">
+
+        <div class="profile">
+            <a href="#">
+                <img class="profile-pic"
+                    src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
+            <h1>Username</h1>
+            <a href="/user-profile"></a>
+        </div>
+        <nav>
+            <!-- <nav class="nav-bar">   -->
+            <!-- <a href="#" class="nav-branding">Activate</a> -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Total Exercises</a>
                 </li>
-                <li>
-                    ExerciseNamePlaceholder                
-                    <a href="#">
-                        <button type="button" class="exercise-option2"> <span class="material-icons">add_task</span></button></a>
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Finish Up</a>
                 </li>
-                <li>
-                    ExerciseNamePlaceholder                   
-                    <a href="#">
-                        <button type="button" class="exercise-option3"> <span class="material-icons">add_task</span></button></a>
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Dashboard</a>
                 </li>
-                <li>
-                    ExerciseNamePlaceholder
-                    <button type="button" class="exercise-option4"> <span class="material-icons">add_task</span></button></a>
-                </li>
-                <li>
-                    ExerciseNamePlaceholder
-                    <a href="#">
-                        <button type="button" class="exercise-option5"> <span class="material-icons">add_task</span></button></a>
-                </li>
-            
-            </ol>
+            </ul>
+            <!-- <button class="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </button> -->
+            <!-- <span> -->
+            <!-- <a href="#">
+                            <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
+                       
+                        <a href="#">
+                            <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a> -->
+
+
+
     </div>
-
-</article>
+    </nav>
 </section>
-
 <br>
 
-<section class="exercise-container">
-    <div class="heading-texts">
-        <h2>Isometrics description and stuff</h2>
-
-        <article class="exercise-section">
-            <div class="title">
-                <label for="section-title">Choose from isometrics exercises below</label>
-            </div>
+<div class="allCalisthenics">
+    {{#each calisthenics as |calisthenics|}}
+    <section class="choicesDiv">
+        <h1 class="choicesH1">{{calisthenics.exercise_name}}</h1>
+        <div class="choicesinfo">
+            <h2 class="choicesDesc">{{calisthenics.description}}</h2>
+            <button id={{calisthenics.id}} type="button" class="exercise-option1"><span id={{calisthenics.id}}
+                    class="material-icons md-38">add_task</span></button>
         </div>
-        
-            <div class="exercise-display-box"></div>
-                <div class="exercise-choice-container">
-                    <ol class="exercise-choices">
-        
-                        <li>
-                            
-                            ExerciseNamePlaceholder                   
-                            <a href="#">
-                                <button type="button" class="exercise-option1"><span class="material-icons md-38">add_task</span></button></a>                   
-                        </li>
-                        <li>
-                            ExerciseNamePlaceholder                
-                            <a href="#">
-                                <button type="button" class="exercise-option2"> <span class="material-icons">add_task</span></button></a>
-                        </li>
-                        <li>
-                            ExerciseNamePlaceholder                   
-                            <a href="#">
-                                <button type="button" class="exercise-option3"> <span class="material-icons">add_task</span></button></a>
-                        </li>
-                        <li>
-                            ExerciseNamePlaceholder
-                            <button type="button" class="exercise-option4"> <span class="material-icons">add_task</span></button></a>
-                        </li>
-                        <li>
-                            ExerciseNamePlaceholder
-                            <a href="#">
-                                <button type="button" class="exercise-option5"> <span class="material-icons">add_task</span></button></a>
-                        </li>
-                    
-                    </ol>
-            </div>
-        </article>
-</section>
+    </section>
+    {{/each}}
+</div>
+
+<script src="/javascript/calisthenics.js"></script>

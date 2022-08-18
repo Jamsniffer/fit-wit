@@ -1,25 +1,40 @@
+:root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+}
+
 .infoDiv {
-    border: 2px solid white;
+    border: 2px solid var(--tertiary-color);
     justify-content: center;
     align-items: center;
     padding: 1%;
     display: flex;
+    margin: 2%;
 }
 
-.title {
-    color: white;
+.workout-title {
+    color: var(--tertiary-color);
+    margin: 2%;
+    text-align: center;
 }
 
 .info {
-    color: white;
-    font-size: 100%;
+    color: var(--tertiary-color);
+    font-size: 200%;
     padding: 0%;
     background: none;
     border: none;
+    text-align: center;
 }
 
 .backArrow {
     width: 7%;
     cursor: pointer;
     filter: invert(1);
+}
+
+.saveBtn {
+    width: 20%;
+    cursor: pointer;
 }

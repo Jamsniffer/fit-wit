@@ -1,6 +1,4 @@
-const seedBodyBuilding = require("./bodybuildingSeed");
 const seedCalisthenics = require("./calisthenicsSeed");
-const seedPowerlifting = require("./powerLiftingSeed");
 const seedWeighttraining = require("./weighttrainingSeed");
 const seedSuperhero = require("./superheroSeed");
 

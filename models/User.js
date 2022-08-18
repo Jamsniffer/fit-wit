@@ -35,27 +35,8 @@ User.init(
         len: [8, 20],
       },
     },
-    // workouts: [
-    //   {
-    //     name:DataTypes.STRING,
-    //     exercises: [
-    //       {
-    //         name: DataTypes.STRING,
-    //         reps: 3,
-    //         weight: {
-    //           type: DataTypes.INTEGER,
-    //           allowNull: true,
-    //         },
-    //         time: {
-    //           type: DataTypes.TIME,
-    //           allowNull: true,
-    //         },
-    //       },
-    //     ],
-    //     allowNull: true
-    //   },
-    // ],
-    // allowNull: true
+    fullWorkoutListArray: {type: DataTypes.TEXT,
+    default: '[]'},
   },
   {
     hooks: {
@@ -63,6 +44,7 @@ User.init(
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
       },
+      //Make sure updatedUserData has password
       async beforeUpdate(updatedUserData) {
         updatedUserData.password = await bcrypt.hash(
           updatedUserData.password,

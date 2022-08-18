@@ -1,0 +1,134 @@
+{{!-- <header>
+    <nav class="nav-bar">
+        <span>
+            <a href="#">
+                <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
+
+            <a href="#">
+                <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a>
+
+    </nav>
+</header> --}}
+
+<div class="hamburger-container">
+    <div class="top-section">
+        <div class="top-nav">
+            <button class="hamburger">
+                <a href="#">
+                    <span class="material-icons md-38 mab__icon">menu</menu></span>
+                </a>
+                <!-- <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div> -->
+            </button>
+        </div>
+    </div>
+</div>
+<!-- <header> -->
+<!-- <section class="top-nav-container"> -->
+
+<!-- </section> -->
+
+<!-- </header> -->
+
+<!-- <nav class="mobile-navigation">
+            <a href="#">Home</a>
+            <a href="#">show # of exercise</a>
+            <a href="#">Finish Up</a>
+            <a href="#">Go to Dashboard</a>
+        </nav> -->
+
+
+<section class="side-nav-container">
+
+    <div class="sidebar">
+
+        <div class="profile">
+            <a href="#">
+                <img class="profile-pic"
+                    src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
+            <h1>Username</h1>
+            <a href="/user-profile"></a>
+        </div>
+        <nav>
+            <!-- <nav class="nav-bar">   -->
+            <!-- <a href="#" class="nav-branding">Activate</a> -->
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Total Exercises</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Finish Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class-="nav-link">Dashboard</a>
+                </li>
+            </ul>
+            <!-- <button class="hamburger">
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                            <div class="bar"></div>
+                        </button> -->
+            <!-- <span> -->
+            <!-- <a href="#">
+                                <button type="submit" class="login"> <span class="material-icons">login</span></button></a>
+                           
+                            <a href="#">
+                                <button type="submit" class="sign_up"> <span class="material-icons">loyalty</span></button></a> -->
+
+
+
+    </div>
+    </nav>
+</section>
+<br>
+
+<section class="container">
+
+    <div class="sidebar">
+        <div class="profile">
+            <a href="#">
+                <img class="profile-pic"
+                    src="https://cdn.pixabay.com/photo/2016/08/08/09/17/avatar-1577909_640.png"></a>
+            <h1>Username</h1>
+            <a href="/user-profile"></a>
+        </div>
+
+        <nav class="sidebar-nav">
+            <a href="#" class="nav-title"></a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Number of Exercises</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Finish Up</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Dashboard</a>
+                </li>
+            </ul>
+            {{!-- <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div> --}}
+</section>
+</nav>
+
+<br>
+
+<div class="allWeighttraining">
+    {{#each weighttraining as |workout|}}
+    <section class="choicesDiv">
+        <h1 class="choicesH1">{{workout.exercise_name}}</h1>
+        <div class="choicesinfo">
+            <h2 class="choicesDesc">{{workout.description}}</h2>
+            <button id={{workout.id}} type="button" class="exercise-option1"><span id={{workout.id}}
+                    class="material-icons md-38">add_task</span></button>
+        </div>
+    </section>
+    {{/each}}
+</div>
+
+<script src="/javascript/weighttraining.js"></script>

@@ -1,88 +1,129 @@
- <section class="hero">
-        <div class="hero-cta">
-          <h2>Hero Section</h2>
-          <p>
-            EXPLAIN DETAILS AND INFORMATION ABOUT THE APP.
-            <br></br>
-            seitan heirloom post-ironic pop-up iPhone mlkshk hella selfies fashion axe occupy readymade put a bird on it
-            messenger bag Wes Anderson Schlitz plaid Bushwick church-key lo-fi skateboard slow-carb hashtag trust fund
-            Williamsburg biodiesel fixie farm-to-table 8-bit banjo XOXO Banksy chillwave bicycle rights retro cliche
-            tattooed bespoke irony mumblecore Shoreditch deep v polaroid McSweeney's bitters cray gentrify tofu Marfa you
-            probably haven't heard of them yr banh mi asymmetrical art party selvage letterpress High Life.
-          </p>
-        </div>
-
-<!-- Hero Section END -->
-
-<!-- Preview different workouts section START -->
-
-<section id="preview-workouts">
-    <div class="flex-row">
-      <h2 class="section-title primary-border">
-        Choose from a selection of different workouts to match your goals for the day! Or switch it up and try something new!
-      </h2>
+<div class="homepage">
+  <section class="hero">
+    <div class="hero-main">
+      <h2>A New Day Begins with Fit-Wit</h2>
+    </div>
+    <div class="hero-cta">
+      <br />
+      <p>
+        Fit-Wit is a fitness app designed to help you track your health and fitness journey.
+        Use Fit-Wit to select from pre-designed exercise routines and track your workouts.
+        Use the User Log to keep track of your progress throughout your fitness journey with Fit-Wit!
+        <br /><br />
+        To start your fitness journey with Fit-Wit follow these easy steps:
+        <br /><br />
+        1. Open Fit-Wit on your device (you are here!)
+        <br /><br />
+        2. Click the Sign Up / Login button in the top right.
+        <br /><br />
+        3. Enter a unique Username, Email address, and Password in the corresponding signup fields.
+        <br /><br />
+        4. Click the signup button.
+        <br /><br />
+        5. Choose your workout.
+        <br /><br />
+        6. Begin your fitness journey today!
+        <br />
+      </p>
+      <br />
     </div>
 
-    <div class="workouts">
-      <article class="workout">
-        <img src=" LINK TO CALISTHENICS IMG" alt="Placeholder text for calisthenics" />
-        <div class="workout-preview">
-          <h3 class="workout-name">Calisthenics</h3>
-          <h4 class="workout-description">Goal / Description for calisthenics</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
-        </div>
-      </article>
+    <!-- Hero Section END -->
 
-      <article class="workout">
-        <img src=" LINK TO WEIGHT TRAINING IMG " alt="Placeholder text for weight training" />
-        <div class="workout-preview">
-          <h3 class="workout-name">Weight Training</h3>
-          <h4 class="workout-description">Goal / Description for weight training</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+    <!-- Preview different workouts section START -->
+
+    <section>
+      <div class="workouts-title">
+        <h2>
+          Choose your workout!
+        </h2>
+      </div>
+      <div class="workouts">
+        <article class="workout">
+          <div class="workout-image">
+            <a href="/calisthenics">
+            <img src="/images/Calisthenics figure2.jpg"
+              alt="Stick figure flexing his muscles for the calisthenics workout section." />
+              </a>
+          </div>
+          <div class="workout-name">
+            <a href="/calisthenics">
+              <h3>Calisthenics</h3>
+            </a>
+          </div>
+          <div class="workout-description">
+            <p> Choose from a variety of calisthenics and body weight exercises that require a minimum amount of
+              equipment to get started!
+              <br /><br />Good for building overall health and fitness!
+            </p>
           </div>
         </article>
 
-      <article class="workout">
-        <img src=" LINK TO WEIGHT TRAINING IMG " alt="Placeholder text for superhero" />
-        <div class="workout-preview">
-          <h3 class="workout-name">Superhero</h3>
-          <h4 class="workout-description">Goal / Description for superhero workout</h4>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sequi neque animi quo cupiditate commodi saepe culpa sed itaque velit maiores optio dolorem excepturi aperiam dolores, voluptatibus suscipit amet quis repellat!</p>
+        <article class="workout">
+          <div class="workout-image">
+            <a href="/weighttraining">
+            <img src="/images/Weight Training figure2.jpg"
+              alt="Stick figure holding a barbell for the weight training section." />
+            </a>
+          </div>
+          <div class="workout-name">
+            <a href="/weighttraining">
+              <h3>Weight Training</h3>
+            </a>
+          </div>
+          <div class="workout-description">
+            <p>Choose from a variety of resistance exercises that utilize weights and a variety of exercise equipment!
+              <br /><br /> Good for building strength and muscle mass!
+            </p>
+          </div>
+        </article>
+
+        <article class="workout">
+          <div class="workout-image">
+            <img src="/images/Superhero Figure2.jpg" alt="Stick figure wearing a cape for the superhero section." />
+            <div class="workout-name">
+              <h3>Superhero</h3>
+            </div>
+            <div class="workout-description">
+              <p>Choose from a variety of exercises inspired by popular superheroes! Get ready to push yourself to your
+                limits and unlock your inner superhero!
+                <br /><br /> Good for those looking for something fun and exciting!
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Preview different workouts section END -->
+
+    <!-- Sign Up section START -->
+{{#unless loggedIn}}
+    <section>
+      <div class="signup-section">
+        <div class="signup-text">
+          <h4>
+
+            Click
+
+             &nbsp;
+              <a href="/login">
+            <div class="signup-bold-underline">SIGN UP TODAY!</div>
+              </a>
+             &nbsp; 
+
+             to join for free! 
+
+          </h4>
         </div>
-      </article>
-    </div>
-  </section>
 
-<!-- Preview different workouts section END -->
-
-<!-- Sign Up section START -->
-
-<section id="sign-up" class="sign-up">
-    <div class="flex-row">
-      <h2 class="section-title secondary-border">
-        Sign up today!
-      </h2>
-      <p>Placeholder Text for sign up section</p>
-    </div>
-
-    <div class="sign-up image">
-      <div>
-        <h3>PUTSIGNUP IMAGE HERE</h3> 
-          <br/>
-          Let us know and we'll be happy to talk to you!
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
-          <br/>
+        <div class="signup-image">
+          <div>
+            <a href="/login">
+            <img src="/images/sign_up_today.jpg" alt="Sign up today!" />
+            </a>
+          </div>
         </div>
+      </div>
+    </section>
+    {{/unless}}
