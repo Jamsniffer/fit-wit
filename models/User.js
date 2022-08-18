@@ -35,17 +35,8 @@ User.init(
         len: [8, 20],
       },
     },
-    // fullWorkoutListArray: {
-    //   type: DataTypes.STRING,
-    //   allowNull: true,
-    //   default: [],
-    //   get() {
-    //     return this.getDataValue("fullWorkoutListArray").split(";");
-    //   },
-    //   set(val) {
-    //     this.setDataValue("fullWorkoutListArray", val.join(";"));
-    //   },
-    // },
+    fullWorkoutListArray: {type: DataTypes.TEXT,
+    default: '[]'},
   },
   {
     hooks: {

@@ -16,8 +16,10 @@ router.post("/", (req, res) => {
     username: req.body.username,
     email: req.body.email,
     password: req.body.password,
+    fullWorkoutListArray: '[]'
   })
     .then((dbUserData) => {
+      console.log(' we saved a user', dbUserData);
       req.session.save(() => {
         req.session.user_id = dbUserData.id;
         req.session.username = dbUserData.username;
@@ -59,6 +61,7 @@ router.post("/login", async (req, res) => {
 
     req.session.save(() => {
       req.session.loggedIn = true;
+      req.session.user_id = dbUserData.id;
 
       res
         .status(200)
