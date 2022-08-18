@@ -24,16 +24,16 @@
   This application is covered by the Open license. 
 
   ## Contributing
-  [kodapassey](https://github.com/kodapassey)
-  <!-- everyone put in their github username and link like I have above -->
-  <!-- [kodapassey](https://github.com/kodapassey)
-  [kodapassey](https://github.com/kodapassey)
-  [kodapassey](https://github.com/kodapassey)
-  [kodapassey](https://github.com/kodapassey) -->
+ - [kodapassey](https://github.com/kodapassey)
+ - [timtaylor817](https://github.com/timtaylor817)
+ - [schadhuntsman](https://github.com/schadhuntsman)
+ - [Hephaestus01](https://github.com/Hephaestus01)
+ - [Jamsniffer](https://github.com/Jamsniffer)
 
   ## Questions
-  :octocat: Find us on GitHub: [kodapassey](https://github.com/kodapassey)
-  <!-- add the same github username/links here pls -->
-  <br />
-  <br />
-  Email us with any questions: kodapassey@charter.net<br /><br />
+  :octocat: Find us on GitHub: 
+   - [kodapassey](https://github.com/kodapassey)
+ - [timtaylor817](https://github.com/timtaylor817)
+ - [schadhuntsman](https://github.com/schadhuntsman)
+ - [Hephaestus01](https://github.com/Hephaestus01)
+ - [Jamsniffer](https://github.com/Jamsniffer)
