@@ -425,6 +425,8 @@ header{
 .title {
     min-width: 25ch;
     padding-top: 1rem;
+    position: relative;
+    top: 1vh;
 }
 
 .title label {
@@ -450,7 +452,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     display: grid;
     width: 61rem;
     width: clamp(9rem, 62rem, 65rem);
-    height: 33rem;
+    height: 30rem;
     position: relative;
     top: 26vh;
  
@@ -484,8 +486,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     width: clamp(9rem, 21rem, 21rem);
     z-index: 99;
     position: relative;
-    left: 4vw;
-    top: 6vh;
+    left: 2vw;
+    top: 1vh;
 }
 
 
@@ -572,8 +574,8 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 20rem;
-    top: -17.3rem;
+    left: 21rem;
+    top: -20.3rem;
 }
 
 .exercise-choices li {
@@ -622,4 +624,10 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     float: right;
     cursor: pointer;
 }
+
+
+/* harley quinn margot robbie when hover
+https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
+harley quinn comic 
+https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
 
