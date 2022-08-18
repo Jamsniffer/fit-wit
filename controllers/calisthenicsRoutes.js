@@ -10,7 +10,6 @@ router.get("/", (req, res) => {
     );
     res.render("calisthenics", { calisthenics });
   });
-})
-
+});
 
 module.exports = router

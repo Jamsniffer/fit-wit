@@ -1,0 +1,38 @@
+:root {
+    --primary-color: #171717;
+    --secondary-color: #0769b9;
+    --tertiary-color: #FFFFFF;
+}
+
+.login-form,
+.signup-form {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 3%;
+    margin-top: 2%;
+    border: 2px solid var(--secondary-color);
+    width: 25%;
+}
+
+input {
+    width: 100%;
+    margin: 4%;
+    padding: 2%;
+    margin-left: 0;
+}
+
+label {
+    font: 100%;
+}
+
+.types {
+    padding: 1%;
+}
+
+.login-signupBTN {
+    padding: 3%;
+    width: 100%;
+    background: var(--secondary-color);
+    cursor: pointer;
+}
