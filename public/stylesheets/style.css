@@ -1,8 +1,8 @@
-/* :root {
+:root {
     --primary-color: #171717;
     --secondary-color: #0769b9;
     --tertiary-color: #FFFFFF;
-} */
+}
 
 /* :root {
     --primary-color: #0c0e0c;
@@ -40,23 +40,6 @@
     --tertiary-color: #b72818;
 } */
 
-footer {
-    padding: 0.5vw 4vw 0.5vw 4vw;
-    display: flex;
-    justify-content: center;
-    position: sticky;
-    bottom: 0;
-    z-index: 9999;
-    align-items: center;
-    border: solid var(--secondary-color);
-    background-color: var(--primary-color);
-    font-size: 1.2vw;
-}
-
-footer h5 {
-    font-weight: 300;
-}
-
 * {
     list-style: none;
     text-decoration: none;
@@ -80,18 +63,43 @@ body .section {
 }
 
 
+header {
+    position: sticky;
+    height: 5rem;
+    /* margin-left: 225px; */
+    transition: all 0.5s ease;
+    min-width: 100vw;
+    margin: auto;
 
-.hide-sidebar {
+}
+
+header a {
+    font-size: 28px;
+    color: #f4fbff;
+}
+
+header a:hover {
+    color: #a2ecff;
+}
+
+header nav a {
+    color: #a7dcf5;
+}
+
+.homepage .wrapper header {
+    padding: 0.5vw 4vw 0.5vw 4vw;
     display: flex;
-    position: relative;
-    left: 20rem;
-    /* top: 1rem; */
-    color: white;
-    height: 4rem;
-    width: 4rem;
-    justify-content: center;
-    align-self: center;
-    top: 1rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    position: fixed;
 }
 
 .profile {
@@ -101,28 +109,42 @@ body .section {
     max-width: 15rem;
 }
 
+.profile h1 {
+    font-size: min(21px, 3.5rem, 3.6rem);
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 10px 0 5px;
+    top: -8rem;
+}
 
 .profile-pic {
     justify-content: center;
     display: flex;
     margin: 1em;
-    /* display: block; */
     border-radius: 50%;
     max-width: 8rem;
     min-width: 3rem;
     align-self: center;
-    /* position: relative; */
     top: -18vh;
     left: 0vw;
     margin: auto;
 }
 
+.sidebar-nav {
+    position: relative;
+   background-color: --secondary-color #0769b9;
+    min-height: 100%;
+    top: -9vh;
+    left: 0vw;
+}
+
 .sidebar ul {
-    display: grid;
-    justify-content: center;
-    align-items: top;
-    align-self: start;
-    grid-template-rows: 5rem 5rem 5rem 5rem;
+    min-height: 33vh;
+    color: #a2ecff;
+    min-width: 14rem;
+    max-width: 30vw;
 }
 
 .sidebar .profile h1 {
@@ -131,7 +153,6 @@ body .section {
     text-align: center;
     display: flex;
     margin: 10px 0 5px;
-    /* position: relative; */
     top: -8rem;
 
 }
@@ -142,7 +163,6 @@ body .section {
     font-family: sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
-    /* position: relative; */
     top: -31vh;
     margin: auto;
     left: 2vw;
@@ -159,7 +179,6 @@ body .section {
     text-align: center;
     display: flex;
     margin: 10px 0 5px;
-    /* position: relative; */
     top: -8rem;
 
 }
@@ -191,67 +210,29 @@ body .section {
     color: #a7dcf5
 }
 
-/* header {
-    position: sticky;
-    height: 5rem;
-    /* margin-left: 225px; 
-    transition: all 0.5s ease;
-     min-width: 100vw;
-    margin: auto;
-
-}*/
-
-/* header a {
-    font-size: 28px;
-    color: #f4fbff;
-} */
-
-/* header a:hover {
-    color: #a2ecff;
-}
-
-header nav a {
-    color: #a7dcf5;
-} */
-
-
-
-/* .nav-bar {
-    float: right;
-    width: 100%;
-    background: rgb(7, 105, 185);
-    max-height: 5rem;
-    display: flex;
-    align-items: center;
-    padding: 0 30px;
-    justify-content: space-between;
-} */
-
-
 .nav-menu {
     position: relative;
     justify-content: center;
     align-items: top;
-    /* align-self: start; */
     grid-template-rows: 6rem 5rem 5rem 3rem;
-    /* float: right; */
-    /* width: 30vw; */
     background: rgb(7, 105, 185);
     max-height: 5rem;
-    display: flex;
+    
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
     top: 19vh;
+    display: grid;
 }
-
+    
 
 .nav-title {
     font-size: 1.6rem;
 }
 
 .nav-link {
-    transition: 0.6s ease;
+    font-size: min(21px, 30px, 35px);
+    color: white;
 }
 
 .nav-link:hover {
@@ -266,11 +247,9 @@ header nav a {
     font-family: sans-serif;
     font-size: 1.3rem;
     font-weight: 400;
-    /* position: relative; */
     top: -31vh;
     margin: auto;
     left: 2vw;
-    /* gap: 8rem; */
 }
 
 .hamburger {
@@ -279,42 +258,11 @@ header nav a {
     top: 0.2vw;
 }
 
-/* .hamburger {
-    display: block;
-    width: 35px;
-    cursor: pointer;
-    height: 35px;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-} */
-
-/* .bar {
-    height: 0.2rem;
-    width: 2rem;
-    display: block;
-    margin: 0.5rem auto;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-    background-color: #ff984c;
-} */
-
-/* .hamburger .bar, .hamburger:after, .hamburger:before {
-    width: 30%;
-    height: 5px;
-    background-color: white;
-    margin: 6px 0px;
-    transition: 0.3sec;
+.hamburger button {
+        position: fixed;
+        left: 21vw;
+        top: 8vh;   
 }
-
-.hamburger.isactive:before {
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburger.isactive:after {
-    transform: rotate(45deg) translate(-9px, -8px);
-} */
 
 .mobile-navigation {
     left: 100%;
@@ -326,7 +274,7 @@ header nav a {
     max-width: 30vw;
     left: 0;
     top: 0;
-    transition: 0.4s;
+    transition: 0.4s; 
     z-index: 98;
 }
 
@@ -350,7 +298,7 @@ header nav a {
 
 
 .nav-bar {
-    /* float: right; */
+          /* float: right; */
     width: 100%;
     background: rgb(7, 105, 185);
     max-height: 15rem;
@@ -380,11 +328,7 @@ header nav a {
 .login {
     position: relative;
     font-family: sans-serif;
-    /* background-color: rgb(7, 105, 185); */
-    /* font-size: 1em; */
-    /* border: 1px solid white; */
     left: 87vw;
-    /* font-weight: 600; */
     top: -1rem;
 }
 
@@ -402,20 +346,9 @@ header nav a {
 
 .sign_up :hover {
     cursor: pointer;
-    color: aquamarine
+    color:aquamarine
+    
 }
-
-/* @media(min-width: 768px) {
-    .mobile-navigation {
-        display: none;
-    }
-
-    .hamburger {
-        display: none;
-    }
-
-}  */
-
 
 .top-nav-container {
     background: rgb(7, 105, 185);
@@ -442,6 +375,8 @@ header nav a {
 
 .sidebar * {
     flex-basis: 100%;
+    font-size: min(21px, 30px, 35px);
+    color: white;
 }
 
 .sidebar {
@@ -451,21 +386,22 @@ header nav a {
     margin: auto;
     background: #0769b9;
     position: fixed;
-    top: 0;
+    top: 3vh;
     left: 0;
     transition: all 0.5s ease;
     float: left;
     position: fixed;
-    top: 5rem;
+    top: 0vh;
     display: grid;
-    grid-template-rows: 16rem 0rem;
-    /* grid-template-columns: 20vw; */
+    grid-template-rows: 29rem 0rem;
     min-width: 14rem;
     max-width: 30vw;
+    width: clamp(4rem, 20vw, 21vw);
     min-height: 100%;
-}
+ } 
 
-.sidebar ul {
+.sidebar ul  {
+    min-height: 33vh;
     color: #a2ecff;
     min-width: 14rem;
     max-width: 30vw;
@@ -475,12 +411,7 @@ header nav a {
     color: aquamarine
 }
 
-/* .sidebar .home {
-    margin-bottom: 28px;
-    text-align: center;
-   } */
 
-/* 
 header{
 	height: 5rem;
     margin-left: 225px;
@@ -488,20 +419,8 @@ header{
     min-width: 100vw;
     margin: auto;
     background: rgb(7, 105, 185);
-} */
+}
 
-/* 
-@media only screen and (max-width: 992px) {
-
-    container {
-       flex-direction: column-reverse;        
-   }
-
-   .sidebar {
-       height: 100vh;
-   }
-
-} */
 
 .title {
     min-width: 25ch;
@@ -511,7 +430,8 @@ header{
 .title label {
     padding-top: 1rem;
     font-size: clamp(1.5rem, 2.8vw, 3rem);
-}
+    color: white;
+} 
 
 */
 /* deadpool comic not activated
@@ -519,23 +439,39 @@ https://www.barnesandnoble.com/blog/wp-content/uploads/2018/05/deadpool.jpg
 deadpool ryan reynolds when hover
 https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-0601-454c-ac85-b544065e3594 */
 
-/* .material-icons.md-18 { font-size: 3rem; } */
+
 
 .material-icons {
     font: 3rem;
 }
 
+.wrapper-exercise {
+    background-color: rgb(7, 105, 185);
+    display: grid;
+    width: 61rem;
+    width: clamp(9rem, 62rem, 65rem);
+    height: 29rem;
+    position: relative;
+    top: 26vh;
+ 
+}
+
+
+
 .exercise-container {
+    width: clamp(9rem, 66rem, 65rem);
     display: grid;
     flex-wrap: wrap;
     margin: 0 auto;
+    position: relative;
     padding: 1em 1em;
-    float: right;
+    left: -1vw;
+    top: -9vh;
+    padding-top: 4rem;
     flex-grow: 1;
     font-size: 24px;
     font-weight: 700;
-    /* margin: auto; */
-    width: min(75ch, 50%);
+    padding-left: 5.5rem;
 }
 
 .exercise-display-box {
@@ -543,10 +479,15 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     grid-template-columns: 10rem;
     grid-template-rows: 2rem;
     background-color: rgb(188, 186, 186);
-    width: 20rem;
     height: 19rem;
     margin: 1em;
+    width: clamp(9rem, 21rem, 21rem);
+    z-index: 99;
+    position: relative;
+    left: 2vw;
+    top: -1vh;
 }
+
 
 .heading-texts {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -557,6 +498,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     align-items: center;
     row-gap: 1rem;
     text-align: center;
+    color: white;
 }
 
 .favflex {
@@ -570,58 +512,53 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    height: 100%;  
 }
 
-/* @keyframes favme-
+
 
 .exercise-choice-container {
     display: grid;
     grid-template-rows: 2rem;
-} */
+} 
+  
 
-.mab {
+
+ 
+  .dropdown {
     position: relative;
-    background: white;
-    display: inline-flex;
-}
+    display: inline-block;
+  }
+  
 
-.mab__button {
-    background: none;
-    border: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-    color: rgb(20, 19, 19);
-}
-
-.mab__button:not(.mab__button--menu) .mab__icon {
-    margin-right: 9px;
-}
-
-.mab__button--secondary {
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.mab__text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.mab__list {
+  .btn-options {
     display: none;
     position: absolute;
-    top: 115%;
-    box-shadow: 0 0 3px black;
-    right: 0;
-    padding: 6px 0;
-    background: white;
-}
-
-.mab__list--visible {
+    background-color: #176fc7;
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    max-width: 116px;
+    font-size: 1.2rem;
+    max-height: 229px;
+  }
+  
+  
+  .btn-options a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-}
+   
+  }
+  
+ 
+  .btn-options a:hover {background-color: rgb(42, 163, 200);}
+  
+  
+  .dropdown:hover .btn-options {display: block;}
+  
+
+  .dropdown:hover .drop-options {background-color: #6adfff;}
 
 .exercise-choices {
     font-weight: 457;
@@ -630,18 +567,19 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     padding: 0 1em;
     justify-content: left;
     align-items: center;
-    /* grid-template-columns: 13rem 25rem; */
     grid-template-rows: repeat(5, 2.3rem);
     display: grid;
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 22rem;
-    top: -19.3rem;
+    left: 20rem;
+    top: -21.3rem;
 }
 
 .exercise-choices li {
+    padding-left: 4rem;
     width: 41vw;
+    color: white;
 }
 
 .exercise-section {
@@ -684,9 +622,3 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     float: right;
     cursor: pointer;
 }
-
-
-/* harley quinn margot robbie when hover
-https://1.bp.blogspot.com/-bOEBziCNZgo/WSA6c3ZJ6ZI/AAAAAAAAEVY/kPKMyOhaljgmf1c_gXLcaognSa59bLhZACEw/s1600/Margot%2BRobbie-Harley%2BQuinn-Suicide%2BSquad.jpg
-harley quinn comic 
-https://cdn11.bigcommerce.com/s-ydriczk/images/stencil/608x608/products/89096/93736/DC-Comics-Harley-Quinn-Classic-with-Gun-official-cardboard-cutout-buy-now-at-starstills__08796.1582849822.jpg?c=2 */
