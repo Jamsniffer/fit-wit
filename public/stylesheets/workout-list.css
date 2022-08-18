@@ -1,45 +1,8 @@
-/* :root {
+:root {
     --primary-color: #171717;
     --secondary-color: #0769b9;
     --tertiary-color: #FFFFFF;
-} */
-
-/* :root {
-    --primary-color: #0c0e0c;
-    --secondary-color: #d8323c;
-    --tertiary-color: #eaebea;
-} */
-
-/* :root {
-    --primary-color: #ff1700;
-    --secondary-color: #ffa600;
-    --tertiary-color: #4d6910;
-} */
-
-/* :root {
-    --primary-color: #a0fefb;
-    --secondary-color: #494fc1;
-    --tertiary-color: #fd084a;
-} */
-
-/* :root {
-    --primary-color: #e8c599;
-    --secondary-color: #bc6022;
-    --tertiary-color: #b72818;
-} */
-
-/* :root {
-    --primary-color: #fde4e3;
-    --secondary-color: #f282b4;
-    --tertiary-color: #ef415e;
-} */
-
-/* :root {
-    --primary-color: #e8c599;
-    --secondary-color: #bc6022;
-    --tertiary-color: #b72818;
-} */
-
+}
 
 body {
     background-color: var(--primary-color);
@@ -98,15 +61,17 @@ body {
     padding: 1%;
     font-size: 75%;
     position: fixed;
+    z-index: 9999;
     bottom: 1%;
     right: 1%;
     border: 1px solid;
     border-radius: 10%;
+    background-color: var(--secondary-color);
 }
 
 .finishBtn:hover {
     cursor: pointer;
-    background-color: lightgray;
+    background-color: #054f8b;
 }
 
 .modal {

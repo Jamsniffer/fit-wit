@@ -46,7 +46,7 @@ footer {
     justify-content: center;
     position: sticky;
     bottom: 0;
-    z-index: 9999;
+    z-index: 9998;
     align-items: center;
     border: solid var(--secondary-color);
     background-color: var(--primary-color);

@@ -27,28 +27,28 @@
         <nav>
           <ul>
             <li>
-              <a href="/full-workout-list">Start Workout</a>
-            </li>
-            <li>
               {{#if loggedIn}}
               <button id="logout" class="logoutBTN">logout</button>
-              {{else}}
-              <a href="/login">Sign Up / Login</a>
-              {{/if}}
+            <li>
+              <a href="/full-workout-list">Start Workout</a>
+            </li>
+            {{else}}
+            <a href="/login">Sign Up / Login</a>
+            {{/if}}
             </li>
           </ul>
         </nav>
       </header>
-      <br/>
+      <br />
       <main>
         {{{body}}}
       </main>
-      <br/>
-      <br/>
+      <br />
+      <br />
       <footer>
         <h5>Fit-Wit is a fitness and health tracking app. Thank you for visiting and using the site!</h5>
       </footer>
-      
+
     </div>
   </div>
 
