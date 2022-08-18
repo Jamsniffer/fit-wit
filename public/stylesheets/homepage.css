@@ -110,7 +110,7 @@
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
 .homepage .workouts .workout {
@@ -145,7 +145,30 @@
 
 /* Sign up section START */
 
+.homepage .signup-section {
+    display:flex;
+    flex: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
 
+.homepage .signup-section .signup-text h4 {
+    font-size: 2vw;
+    display: flex;
+}
+
+.homepage .signup-section .signup-text .signup-bold-underline {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2vw;
+    display: flex;
+}
+
+.homepage .signup-section .signup-image img {
+    width: 40vw;
+    height: 10w;
+    border: solid var(--secondary-color);
+}
 
 /* This makes it so that links don't change color after they have been clicked */
 
