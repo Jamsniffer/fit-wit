@@ -62,7 +62,21 @@ body .section {
     width: 100%;
 }
 
-
+.homepage .wrapper header {
+    padding: 0.5vw 4vw 0.5vw 4vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+    align-items: center;
+    border-style: solid;
+    border-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    position: fixed;
+}
 
 .hide-sidebar {
     display: flex;
@@ -239,11 +253,12 @@ header nav a {
     /* width: 30vw; */
     background: rgb(7, 105, 185);
     max-height: 5rem;
-    display: flex;
+    
     align-items: center;
     padding: 0 30px;
     justify-content: space-between;
     top: 19vh;
+    display: grid;
 }
     
 
@@ -253,6 +268,7 @@ header nav a {
 
 .nav-link {
     font-size: min(21px, 30px, 35px);
+    color: white;
 }
 
 .nav-link:hover {
@@ -278,6 +294,13 @@ header nav a {
     position: fixed;
     left: 17vw;
     top: 0.2vw;
+}
+
+.hamburger button {
+        /* color: white; */
+        position: fixed;
+        left: 21vw;
+        top: 8vh;   
 }
 
 /* .hamburger {
@@ -444,6 +467,8 @@ header nav a {
 
 .sidebar * {
     flex-basis: 100%;
+    font-size: min(21px, 30px, 35px);
+    color: white;
 }
 
 .sidebar {
@@ -460,12 +485,13 @@ header nav a {
     position: fixed;
     top: 0vh;
     display: grid;
-    grid-template-rows: 28rem 0rem;
+    grid-template-rows: 29rem 0rem;
     /* grid-template-columns: 20vw; */
     min-width: 14rem;
     max-width: 30vw;
+    width: clamp(4rem, 20vw, 21vw);
     min-height: 100%;
-    width: min(75ch, 50%);
+    /* width: min(10%, 23%);*/
  } 
 
 .sidebar ul  {
@@ -515,6 +541,7 @@ header{
 .title label {
     padding-top: 1rem;
     font-size: clamp(1.5rem, 2.8vw, 3rem);
+    color: white;
 } 
 
 */
@@ -529,17 +556,35 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     font: 3rem;
 }
 
+.wrapper-exercise {
+    background-color: rgb(7, 105, 185);
+    display: grid;
+    width: 61rem;
+    width: clamp(9rem, 62rem, 65rem);
+    height: 33rem;
+    position: relative;
+    top: 26vh;
+ 
+}
+
+
+
 .exercise-container {
-     display: grid;
-     flex-wrap: wrap;
-     margin: 0 auto;
-     padding: 1em 1em;
-     padding-top: 4rem;
-     flex-grow: 1;
-     font-size: 24px;
-     font-weight: 700;
-     /* margin: auto; */
-     width: min(75ch, 50%);
+    width: clamp(9rem, 66rem, 65rem);
+    display: grid;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+    padding: 1em 1em;
+    left: -1vw;
+    top: -9vh;
+    padding-top: 4rem;
+    flex-grow: 1;
+    font-size: 24px;
+    font-weight: 700;
+    /* margin: 0px 18rem; */
+    /* width: min(75ch, 50%); */
+    padding-left: 5.5rem;
 }
 
 .exercise-display-box {
@@ -547,10 +592,16 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     grid-template-columns: 10rem;
     grid-template-rows: 2rem;
     background-color: rgb(188, 186, 186);
-    width: 20rem;
+    /* width: 20rem; */
     height: 19rem;
     margin: 1em;
+    width: clamp(9rem, 21rem, 21rem);
+    z-index: 99;
+    position: relative;
+    left: 4vw;
+    top: 6vh;
 }
+
 
 .heading-texts {
     font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -561,6 +612,7 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     align-items: center;
     row-gap: 1rem;
     text-align: center;
+    color: white;
 }
 
 .favflex {
@@ -577,56 +629,60 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     height: 100%;  
 }
 
-/* @keyframes favme-
+/* @keyframes favme-*/
 
 .exercise-choice-container {
     display: grid;
     grid-template-rows: 2rem;
-} */
-
-.mab {
-    position: relative;
-    background: white;
-    display: inline-flex;
-    float: right;
 } 
 
-.mab__button {
-    background: none;
+/* Dropdown Button
+.drop-options {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
     border: none;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    cursor: pointer;
-    color: rgb(20, 19, 19);
-}
+  } */
+  
 
-.mab__button:not(.mab__button--menu) .mab__icon {
-    margin-right: 9px;
-}
 
-.mab__button--secondary {
-    width: 100%;
-    justify-content: flex-start;
-}
-
-.mab__text {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
-.mab__list {
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .btn-options {
     display: none;
     position: absolute;
-    top: 115%;
-    box-shadow: 0 0 3px black;
-    right: 0;
-    padding: 6px 0;
-    background: white;
-}
-
-.mab__list--visible {
+    background-color: #176fc7;
+    /* min-width: 160px; */
+    box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+    z-index: 1;
+    max-width: 116px;
+    font-size: 1.2rem;
+    max-height: 229px;
+  }
+  
+  /* Links inside the dropdown */
+  .btn-options a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
     display: block;
-}
+   
+  }
+  
+  /* Change color of dropdown links on hover */
+  .btn-options a:hover {background-color: rgb(42, 163, 200);}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .btn-options {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .drop-options {background-color: #6adfff;}
 
 .exercise-choices {
     font-weight: 457;
@@ -641,12 +697,14 @@ https://www.instagram.com/p/Biw9MfPlSVQ/?utm_source=ig_embed&ig_rid=c1e27081-060
     width: 65vw;
     row-gap: 0.5em;
     position: relative;
-    left: 22rem;
-    top: -19.3rem;
+    left: 20rem;
+    top: -17.3rem;
 }
 
 .exercise-choices li {
+    padding-left: 4rem;
     width: 41vw;
+    color: white;
 }
 
 .exercise-section {
