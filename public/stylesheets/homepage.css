@@ -176,4 +176,7 @@
     color: var(--tertiary-color);
 }
 
+.homepage a:hover {
+    color: #a7dcf5;
+}
 /*  ----------------------------------- */
